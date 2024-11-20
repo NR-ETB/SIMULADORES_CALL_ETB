@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/logo.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>SalesForce - Simulador Aula</title>
+</head>
+<body>
+
+        <div class="left">
+
+            <img src="../images/icons/logo.png" alt="">
+
+            <div class="container">
+
+                <div class="inter-container">
+                    <p>Nombre de usuario</p>
+                    <input id="username" type="text" placeholder="Ingresa el Nombre calltecnico">
+                </div>
+
+                <div class="inter-container">
+                    <p>Contraseña</p>
+                    <input id="password" type="text" placeholder="Ingresa la Contraseña tecnico">
+                </div>
+
+                <button class="btn-ini" onclick="ini_session();">Iniciar Sesión</button>
+
+                <div class="remember">
+                    <input type="checkbox">
+                    <p>Recordarme</p>
+                    <p id="manu" onclick="gred();">Abrir Manual</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="bot">
+                    <span>¿Olvido su contraseña?</span>
+                    <span>Utilizo dominio personalizado</span>
+                </div>
+
+            </div>
+
+            <div class="client">
+                <p>¿No es Cliente?</p>
+                <button>Probar de forma gratuita</button>
+            </div>
+
+            <div class="callte">
+                <img src="../images/icons/calltec.png" alt="">
+                <img src="../images/icons/calltec2.png" alt="">
+            </div>
+
+            <span class="foot">© 2024 Salesforce, Inc. Reservados todos los derechos. | <a href="">Privacidad</a></span>
+            
+        </div>
+
+        <div class="right">
+            <img src="../images/login/right.PNG" alt="">
+        </div>
+
+            <!-- Modales -->
+    <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">PROCESANDO TU PETICIÓN</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="con-spiner">
+                        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    <div class="text-spiner"><p>Por favor no cierres la ventana</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-err">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ERROR</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>INS001-El usuario y/o password no son validos, por favor verifique</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <!-- Modal Password incorrecta -->
+    <div class="modal modal-susc" tabindex="-1" id="ups" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ADVERTENCIA</h5>
+                </div>
+                 <div class="confirmacion">
+                    <br>
+                    <p style="margin: 5px 5px 20px 5px;">Parece que estas realizando el simulador por fuera de la ESCULA ETB, te recomendamos hacerlo por medio de la plataforma, 
+                    para evitar incidentes innesesarios.
+                    </p>
+                </div>
+                 <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Password incorrecta -->
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+    </div>
+
+    <script src="../bootstrap/jquery.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/typed.js"></script>
+    <script src="../../Controller/login/login.js"></script>
+    <script src="../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('Usuario sin Validar --> Usuario: calltecnico   /   Password: tecnico <br> Usuario Validado --> Usuario: calltecnico2   /   Password: tecnico2')
+        });
+    </script>
+
+</body>
+</html>

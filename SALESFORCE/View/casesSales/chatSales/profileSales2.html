@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icons/logo.png">
+    <link rel="stylesheet" href="../../components/css/comp.css">
+    <link rel="stylesheet" href="../../css/profile.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Perfil Principal - Simulador Aula</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="../../images/icons/logo.png" alt="">
+
+        <div class="callte">
+            <img src="../../images/icons/calltec.png" alt="">
+            <img src="../../images/icons/calltec2.png" alt="">
+        </div>
+
+        <input type="text" placeholder="Buscar...">
+
+        <div class="icons">
+            <img src="../../images/icons/star.png" alt="">
+            <img src="../../images/icons/plus.png" alt="">
+            <img src="../../images/icons/got.png" alt="">
+            <img src="../../images/icons/question.png" alt="">
+            <img src="../../images/icons/bell.png" alt="">
+            <img src="../../images/icons/user.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="container-2">
+
+        <img src="../../images/icons/menu.png" alt="">
+
+        <p id="title">Consola de Servicios</p>
+
+        <p id="par">Casos</p>
+
+        <div id="arrow">
+            <img src="../../images/icons/fot arrow.png" alt="">
+        </div>
+
+        <div class="actions22">
+            <img src="../../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+            <audio id="au_menu2" class="audio" style="display: none;">
+                <source type="audio/wav" src="../../../Model/audio/gsd3.mp3">
+            </audio>
+        </div>
+
+    </div>
+
+    <div class="top-content">
+
+        <img id="por" src="../../images/profile/folio.png" alt="">
+
+        <div class="content-1">
+            <p>Casos</p>
+            <h3>Vistos Recientemente</h3>
+        </div>
+
+        <div class="content-2">
+            <img src="../../images/icons/fot arrow.png" alt="">
+            <button><img id="pin" src="../../images/profile/pin.png" alt=""></button>
+        </div>
+
+        <div class="content-3">
+            <button>Nuevo</button>
+            <button>Cambiar Propietario</button>
+            <button>Cambiar Casos</button>
+        </div>
+
+        <div>
+            <p id="text">14+elementos * Se actualizo hace algunos segundos</p>
+        </div>
+
+        <div class="content-4">
+
+            <input type="" name="" id="" placeholder="Busca en esta lista...">
+
+            <button><img src="../../images/profile/config.png" alt=""></button>
+
+            <button><img src="../../images/icons/menu.png" alt=""></button>
+
+            <button><img src="../../images/profile/back.png" alt=""></button>
+
+            <button><img src="../../images/cases/pencil.png" alt=""></button>
+
+            <button><img src="../../images/profile/pastel.png" alt=""></button>
+            <button id="embu"><img src="../../images/profile/em.png" alt=""></button>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content-5">
+
+            <input type="checkbox">
+            <span id="t1">Tipo de Registro de...</span><img id="a1" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t2">Tipo de Caso</span><img id="a2" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t3">Nombre de...</span><img id="a3" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t4">Numero del c...</span><img id="a4" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t5">Asunto</span><img id="a5" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t6">Estado</span><img id="a6" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t7">Fecha de ra...</span><img id="a7" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t8">Fecha/Hora de apertura</span><img id="a8" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t9">Alias del pr...</span><img id="a9" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t10">Área respo...</span><img id="a10" src="../../images/icons/fot arrow.png" alt="">
+
+        </div>
+
+    </div>
+
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+    </script>
+
+    <div class="cen-content">
+            <table>
+                <tbody>
+                    <tr class="bor">
+                        <td id="num">1</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17881363</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66483200</a></td>
+                        <td id="sta">Resuleto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">2</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17879752</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66482846</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">3</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17879053</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66481057</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">4</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17877986</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66484167</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">5</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17887680</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66489501</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">6</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17876015</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66484243</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">7</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17876042</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66489163</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">8</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17876358</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66489072</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">9</td>
+                        <td id="box"><input type="checkbox" checked></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17876615</a></td>
+                        <td id="pqr"><a href="./chatCase.html">MDM-PQR-66488298</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">10</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17875855</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66487757</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">11</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17876077</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66488274</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">12</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17874965</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66487956</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">13</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17875588</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66487695</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">14</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17874413</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66485851</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td id="num">15</td>
+                        <td id="box"><input type="checkbox"></td>
+                        <td id="cs">CASO MASIVO</td>
+                        <td></td>
+                        <td></td>
+                        <td id="ident"><a href="">17874137</a></td>
+                        <td id="pqr"><a href="">MDM-PQR-66486184</a></td>
+                        <td id="sta">Resuelto</td>
+                        <td></td>
+                        <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                        <td id="nam">ntvg</td>
+                        <td></td>
+                        <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="footer-content">
+        <div class="his">
+            <img src="../../images/profile/clock.png" alt="">
+            <p>History</p>
+        </div>
+
+        <div class="not">
+            <img src="../../images/profile/notes.png" alt="">
+            <p>Notes</p>
+        </div>
+
+        <div class="can">
+            <img src="../../images/profile/rec.png" alt="">
+            <p>OmniCanal (Sin Conexión)</p>
+        </div>
+
+        <div class="end-3">
+            <button onclick="location.href='../../menus/menuSales.html'">SALIR DE LA SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../../images/icons/cross_small.svg" alt="">
+        </div>
+    </div>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/typed.js"></script>
+    <script src="../../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('En este apartado, observaras la forma en la que un asesor gestiona un chat, el cual sera abandonado por el cliente, cabe recalcar que este es uno de los muchos escenarios reales, ingresa al CASO MASIVO "9", dando click en su respectivo nombre MDM-PQR-66488274.')
+        });
+    </script>
+    
+</body>
+</html>

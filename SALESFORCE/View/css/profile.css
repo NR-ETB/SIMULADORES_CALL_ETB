@@ -1,0 +1,513 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --b3gray-etb: #f7f7f7;
+    --purpple-etb:  #a31aff;
+}
+/* Variables de Colores */
+
+/* Contenedor Superior del Perfil */
+.top-content{
+    display: flex;
+    width: 100%;
+    height: 215px;
+    background-color: var(--b3gray-etb);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#por{
+    width: 55px;
+    height: 55px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.content-1{
+    font-family: 'Poppins';
+    margin-left: 25px;
+}
+.content-1 h3{
+    width: 350px;
+}
+.content-2{
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 125px;
+}
+.content-2 img{
+    width: 15px;
+    height: 15px;
+    justify-content: space-between;
+}
+.content-2 button{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+}
+#pin{
+    margin-right: 15px;
+}
+.content-3{
+    display: flex;
+    position: relative;
+    top: 90px;
+    right: 155px;
+}
+.content-3 button{
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 1070px;
+    bottom: 80px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    color: var(--bblue-etb);
+}
+.content-4{
+    display: flex;
+    position: relative;
+    top: 120px;
+    left: 35px;
+}
+.content-4 input{
+    width: 250px;
+    height: 30px;
+    margin-left: 15px;
+}
+.content-4 button{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    margin-top: 5px;
+}
+.content-4 img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 2px;
+}
+#embu{
+    position: relative;
+    right: 16px;
+}
+#text{
+    font-family: 'Poppins';
+    font-size: 12px;
+    width: 350px;
+    position: relative;
+    top: 125px;
+    right: 860px;
+}
+.line3{
+    border-top: 1px solid var(--bgray-etb);
+    position: relative;
+    top: 240px;
+}
+.content-5{
+    display: flex;
+    position: relative;
+    right: 1740px;
+    top: 190px;
+}
+.content-5 input{
+    position: relative;
+    bottom: 95px;
+}
+.content-5 img{
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid var(--bgray-etb);
+    padding-right: 5px;
+    position: relative;
+    top: 5px;
+}
+#a1{
+    position: relative;
+    right: 10px;
+}
+#t2{
+    position: relative;
+    right: 20px;
+}
+#a2{
+    position: relative;
+    right: 80px;
+}
+#t3{
+    position: relative;
+    right: 90px;
+}
+#a3{
+    position: relative;
+    right: 155px;
+}
+#t4{
+    position: relative;
+    right: 160px;
+}
+#a4{
+    position: relative;
+    right: 215px;
+}
+#t5{
+    position: relative;
+    right: 220px;
+}
+#a5{
+    position: relative;
+    right: 315px;
+}
+#t6{
+    position: relative;
+    right: 320px;
+}
+#a6{
+    position: relative;
+    right: 415px;
+}
+#t7{
+    position: relative;
+    right: 420px;
+}
+#a7{
+    position: relative;
+    right: 480px;
+}
+#t8{
+    position: relative;
+    right: 485px;
+}
+#a8{
+    position: relative;
+    right: 485px;
+}
+#t9{
+    position: relative;
+    right: 495px;
+}
+#a9{
+    position: relative;
+    right: 560px;
+}
+#t10{
+    position: relative;
+    right: 565px;
+}
+#a10{
+    position: relative;
+    right: 630px;
+}
+.content-5 span{
+    width: 200px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 15px;
+}
+/* Contenedor Superior del Perfil */
+
+/* Contenedor Central del Perfil */
+.cen-content{
+    overflow-y: scroll;
+}
+.cen-content table{
+    font-family: 'Poppins';
+    width: 100%;
+    height: 600px;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+.cen-content table td{
+    border-bottom: 1px solid var(--b2gray-etb);
+}
+.cen-content table img{
+    width: 10px;
+    height: 10px; 
+    position: relative;
+    left: 65px;
+}
+#num{
+    width: 40px;
+    position: relative;
+    left: 60px;
+}
+#box{
+    width: 40px;
+    position: relative;
+    left: 74px;
+}
+#cs{
+    position: relative;
+    left: 67px;
+}
+#ident{
+    width: 40px;
+    position: relative;
+    right: 200px;
+}
+#pqr{
+    width: 190px;
+    position: relative;
+    right: 110px;
+    font-size: 12px;
+}
+#sta{
+    position: relative;
+    right: 130px;
+}
+#hou{
+    position: relative;
+    left: 185px;
+}
+#nam{
+    position: relative;
+    right: 100px;
+}
+/* Contenedor Central del Perfil */
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .top-content {
+        height: auto; /* Ajustar altura para pantallas más pequeñas */
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #por {
+        width: 45px;
+        height: 45px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .content-1 {
+        margin-left: 0;
+        text-align: center; /* Centrar el texto en pantallas más pequeñas */
+    }
+
+    .content-1 h3 {
+        width: 100%;
+        font-size: 1.25rem; /* Ajustar tamaño de fuente */
+    }
+
+    .content-2,
+    .content-3,
+    .content-4,
+    .content-5 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .content-2 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-2 button {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .content-3 button {
+        width: 120px;
+        height: 35px;
+        margin: 10px;
+    }
+
+    .content-4 {
+        align-items: center;
+    }
+
+    .content-4 input {
+        width: 100%;
+        max-width: 200px;
+        height: 30px;
+    }
+
+    .content-4 button {
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+    }
+
+    .content-4 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #text {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .line3 {
+        margin-top: 20px;
+    }
+
+    .content-5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-5 input {
+        margin-top: 10px;
+    }
+
+    .content-5 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-5 span {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .cen-content table {
+        font-size: 1rem;
+    }
+
+    .cen-content table td {
+        padding: 8px;
+    }
+
+    #num,
+    #box,
+    #ident,
+    #pqr,
+    #sta,
+    #hou,
+    #nam {
+        width: auto;
+    }
+}
+
+/* Para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .top-content {
+        padding: 5px;
+    }
+
+    #por {
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .content-1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .content-1 h3 {
+        font-size: 1rem;
+    }
+
+    .content-2 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .content-2 button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .content-3 button {
+        width: 100px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    .content-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-4 input {
+        width: 100%;
+        max-width: 150px;
+        height: 30px;
+    }
+
+    .content-4 button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content-4 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #text {
+        font-size: 0.875rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .line3 {
+        margin-top: 15px;
+    }
+
+    .content-5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-5 input {
+        margin-top: 5px;
+    }
+
+    .content-5 img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .content-5 span {
+        font-size: 0.875rem;
+        padding-left: 5px;
+    }
+
+    .cen-content table {
+        font-size: 0.875rem;
+    }
+
+    .cen-content table td {
+        padding: 4px;
+    }
+
+    #num,
+    #box,
+    #ident,
+    #pqr,
+    #sta,
+    #hou,
+    #nam {
+        width: auto;
+    }
+}
+

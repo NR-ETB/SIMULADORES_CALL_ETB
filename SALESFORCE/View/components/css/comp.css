@@ -1,0 +1,544 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --purpple-etb:  #a31aff;
+    --bkpurpple-etb:  hsl(277, 100%, 94%);
+}
+/* Variables de Colores */
+
+/* Contenedor General del Componente */
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container img{
+    height: 70px;
+}
+
+.container input {
+    font-family: 'Poppins';
+    font-size: 14px;
+    height: 25px;
+    margin-left: 800px;
+    margin-top: 15px;
+    width: 200px; 
+}
+
+.callte{
+    display: flex;
+    opacity: 50%;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+.callte img{
+    height: 50px;
+}
+
+.icons{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 275px;
+}
+
+.icons img{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+
+.line{
+    background-color: var(--bgray-etb);
+    height: 1px;
+    width: 100px;
+    margin-top: 5px;
+    width: 100%
+}
+
+.com{
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    right: 220px;
+    align-items: center;
+}
+
+#par3{
+    width: 15px;
+    height: 15px;
+}
+
+#par4{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+#par5{
+    position: relative;
+    right: 40px;
+    z-index: 100;
+}
+/* Contenedor General del Componente */
+
+/* Contenedor General 2 del Componente */
+.container-2{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--bgray-etb);
+    height: 45px;
+    border-bottom: 4px solid var(--purpple-etb);
+    z-index: 100;
+}
+
+.container-2 img{
+    height: 25px;
+    width: 25px;
+    margin: 10px 0 0 40px;
+}
+
+.container-2 p{
+    font-family: 'Poppins';
+}
+
+#title{
+    font-size: 16px;
+    margin: 10px 35px;
+}
+
+#par{
+    bottom: 17px;
+    position: relative;
+    padding: 7px 0 0 15px;
+    border-top: 4px solid var(--purpple-etb);
+    border-left: 1px solid var(--bgray-etb);
+    border-right: 1px solid var(--bgray-etb);
+    width: 250px;
+    height: 35px;
+    background-color: var(--bkpurpple-etb);
+}
+
+#par2{
+    bottom: 17px;
+    right: 85px;
+    position: relative;
+    padding: 7px 0 0 65px;
+    border-top: 4px solid var(--purpple-etb);
+    border-left: 1px solid var(--bgray-etb);
+    border-right: 1px solid var(--bgray-etb);
+    width: 290px;
+    height: 35px;
+    background-color: var(--bkpurpple-etb);
+}
+
+#arrow{
+    border-right: 1px solid var(--bgray-etb);
+    width: 70px;
+    padding-right: 20px;
+    position: relative;
+    right: 15px;
+}
+/* Contenedor General 2 del Componente */
+
+/* Contenedor Inferior del Componente */
+.footer-content{
+    border-top: 1px solid var(--black-etb);
+    background-color: var(--withe-etb);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: calc(100vh - 60px);
+}
+.his{
+    margin-left: 55px;
+    display: flex;
+}
+.his p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.his img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.not{
+    margin-left: 55px;
+    display: flex;
+}
+.not p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.not img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.can{
+    margin-left: 55px;
+    display: flex;
+}
+.can p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.can img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.end{
+    margin-left: 1055px;
+    margin-top: 10px;
+    display: flex;
+}
+.end button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-2{
+    position: relative;
+    left: 1645px;
+    bottom: 553px;
+    display: flex;
+}
+.end-2 button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-3{
+    position: relative;
+    left: 900px;
+    top: 8px;
+    display: flex;
+}
+.end-3 button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+/* Contenedor Inferior del Componente */
+
+/* Para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        height: 50px;
+    }
+
+    .container input {
+        font-size: 12px;
+        height: 20px;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 300px; 
+    }
+
+    .callte {
+        opacity: 70%;
+        position: static;
+        margin: 10px 0;
+    }
+
+    .callte img {
+        height: 40px;
+    }
+
+    .icons {
+        margin: 10px auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icons img {
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .line {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .com {
+        position: static;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #par3 {
+        width: 10px;
+        height: 10px;
+    }
+
+    #par4 {
+        width: 8px;
+        height: 8px;
+    }
+
+    #par5 {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border-bottom: 2px solid var(--purpple-etb);
+    }
+
+    .container-2 img {
+        height: 20px;
+        width: 20px;
+        margin: 10px 0;
+    }
+
+    .container-2 p {
+        font-size: 14px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #title {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    #par, #par2 {
+        width: 80%;
+        height: auto;
+        padding: 5px;
+    }
+
+    #arrow {
+        width: 50px;
+        padding-right: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .his, .not, .can {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .his img, .not img, .can img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .end {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .end button {
+        height: 35px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .end-2, .end-3 {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .end-2 button, .end-3 button {
+        height: 35px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        height: 40px;
+    }
+
+    .container input {
+        font-size: 10px;
+        height: 18px;
+        margin: 5px auto;
+        width: 100%;
+        max-width: 250px; 
+    }
+
+    .callte {
+        opacity: 80%;
+        position: static;
+        margin: 5px 0;
+    }
+
+    .callte img {
+        height: 30px;
+    }
+
+    .icons {
+        margin: 5px auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icons img {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    .line {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .com {
+        position: static;
+        margin-top: 5px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #par3 {
+        width: 8px;
+        height: 8px;
+    }
+
+    #par4 {
+        width: 6px;
+        height: 6px;
+    }
+
+    #par5 {
+        position: static;
+        margin: 5px auto;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border-bottom: 1px solid var(--purpple-etb);
+    }
+
+    .container-2 img {
+        height: 15px;
+        width: 15px;
+        margin: 5px 0;
+    }
+
+    .container-2 p {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #title {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #par, #par2 {
+        width: 90%;
+        height: auto;
+        padding: 3px;
+    }
+
+    #arrow {
+        width: 40px;
+        padding-right: 5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .his, .not, .can {
+        margin: 5px 0;
+        justify-content: center;
+    }
+
+    .his img, .not img, .can img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .end {
+        margin-left: 0;
+        margin-top: 5px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .end button {
+        height: 30px;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .end-2, .end-3 {
+        position: static;
+        margin-top: 5px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .end-2 button, .end-3 button {
+        height: 30px;
+        width: 100%;
+        max-width: 150px;
+    }
+}
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icons/logo.png">
+    <link rel="stylesheet" href="../../components/css/comp.css">
+    <link rel="stylesheet" href="../../css/chat.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Chat Abandonado Gestion - Simulador Aula</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="../../images/icons/logo.png" alt="">
+
+        <div class="callte">
+            <img src="../../images/icons/calltec.png" alt="">
+            <img src="../../images/icons/calltec2.png" alt="">
+        </div>
+
+        <input type="text" placeholder="Buscar...">
+
+        <div class="icons">
+            <img src="../../images/icons/star.png" alt="">
+            <img src="../../images/icons/plus.png" alt="">
+            <img src="../../images/icons/got.png" alt="">
+            <img src="../../images/icons/question.png" alt="">
+            <img src="../../images/icons/bell.png" alt="">
+            <img src="../../images/icons/user.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="container-2">
+
+        <img src="../../images/icons/menu.png" alt="">
+
+        <p id="title">Consola de Servicios</p>
+
+        <p id="par">Casos</p>
+
+        <div id="arrow">
+            <img src="../../images/icons/fot arrow.png" alt="">
+        </div>
+
+        <img id="par5" src="../../images/chat-img/chat.png" alt="">
+        <p id="par2"> MS-17876615 | Caso</p>
+
+        <div class="com">
+            <img id="par3" src="../../images/icons/fot arrow.png" alt="">
+            <img id="par4" src="../../images/cases/x.png" alt="">
+        </div>
+
+        <div class="actions44">
+            <img src="../../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+            <audio id="au_menu2" class="audio" style="display: none;">
+                <source type="audio/wav" src="../../../Model/audio/gsd5.mp3">
+            </audio>
+        </div>
+
+    </div>
+
+    <div class="principal-content">
+        <div class="contentp-1">
+            <img src="../../images/chat-img/whatsapp.png" alt="">
+            <p id="invi">Caso</p>
+            <span>whatsapp:+573145268795 | Canal de servicio al cliente ETB | Whatsapp</span>
+            <button>Modificar</button>
+        </div>
+
+        <div class="contentp-3-2">
+
+            <div class="p4">
+                <p>Conversación</p>
+                <p id="not">Detalles</p>
+            </div>
+
+            <div class="line6"></div>
+            <div class="line2"></div>
+
+            <div class="content-chat">
+                <textarea name="" id="ases" disabled>
+                    !Maria¡  te voy a transferirte con un asesor de servicio, para finalizar la 
+                    atención de tu solicitud. Permanece en línea y en un momento retomara 
+                    la conversación. Corregir la palabra Servicio
+                </textarea>
+                    <textarea name="" id="clie" disabled>
+                        Claro...
+                    </textarea>
+                <textarea name="" id="ases2" disabled style="display: none;">
+                    Estoy aqui para atenderte, ¿Estas disponible para continuar con tu
+                    solicitud?
+                </textarea>
+                <textarea name="" id="ases3" disabled style="display: none;">
+                    Aqui sigo, no quiero que te vayas sin dar gestión a tu requerimeinto
+                    ¿Continuas con nosotros?
+                </textarea>
+                <textarea name="" id="ases4" disabled style="display: none;">
+                    Seguro te ocupate en algo mas. por el momento la sesion a finalizado, en
+                    caso que desees continuar con tu solicitud, solo escribe la palabra RETORNO.
+                    Estamos disponibles de lunes a domingo las 24 horas del día para atender
+                    tus solicitudes.
+                </textarea>
+            </div>
+
+            <div class="nav-chat" id="chat2">
+                <textarea name="" id="copiedTextarea2"></textarea><button id="" onclick="change2();">Enviar</button>
+            </div>
+
+            <div class="nav-chat" id="chat3" style="display: none;">
+                <textarea name="" id="copiedTextarea3"></textarea><button id="" onclick="change3();">Enviar</button>
+            </div>
+
+            <div class="nav-chat" id="chat4" style="display: none;">
+                <textarea name="" id="copiedTextarea4"></textarea><button onclick="change4();">Enviar</button>
+            </div>
+
+            <div class="nav-chat" id="chat5" style="display: none;">
+                <textarea name="" id="copiedTextarea5" disabled></textarea><button disabled>Enviar</button>
+            </div>
+
+            <script>
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    const textarea = document.getElementById("ases5");
+                    const copiedTextarea = document.getElementById("copiedTextarea");
+
+                    // Actualizar el contenido de 'ases5' cuando cambia 'copiedTextarea'
+                    copiedTextarea.addEventListener("input", function() {
+                        textarea.value = copiedTextarea.value;
+                    });
+                });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    const textarea2 = document.getElementById("ases6");
+                    const copiedTextarea2 = document.getElementById("copiedTextarea2");
+
+                    // Actualizar el contenido de 'ases5' cuando cambia 'copiedTextarea2'
+                    copiedTextarea2.addEventListener("input", function() {
+                        textarea2.value = copiedTextarea2.value;
+                    });
+                });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    const textarea3 = document.getElementById("ases7");
+                    const copiedTextarea3 = document.getElementById("copiedTextarea3");
+
+                    // Actualizar el contenido de 'ases5' cuando cambia 'copiedTextarea3'
+                    copiedTextarea3.addEventListener("input", function() {
+                        textarea3.value = copiedTextarea3.value;
+                    });
+                });
+
+            </script>
+        
+
+        </div>
+
+        <div class="contentp-4-2">
+
+            <script>
+                var today = new Date();
+                var hours = today.getHours();
+                var minutes = today.getMinutes();
+            </script>
+
+            <div class="p6">
+                <img src="../../images/profile/folio.png" alt="">
+                <span>Detalle del Caso</span>
+                <button id="fa"><img src="../../images/icons/fot arrow.png" alt=""></button>
+            </div>
+
+            <div class="p8">
+
+                <div class="p9">
+                    <p>Numero del Caso</p>
+                    <p>17697585</p>
+                </div>
+
+                <div class="line7"></div>
+
+                <div class="p10">
+                    <p>Estado</p>
+                    <p>Resuelto</p>
+                    <img src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line8"></div>
+
+                <div class="p11">
+                    <p>Asunto</p>
+                    <p>FALLA TECNICA</p>
+                    <img id="penci2" src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line9"></div>
+
+                <div class="p13">
+                    <p>Descripción</p>
+                    <p>CLIENTE SOLICITA CANCELACION ABANDONA</p>
+                    <img id="penci2" src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line10"></div>
+
+                <div class="p14">
+                    <p>Propietario del caso</p>
+                    <p>MARIA ALEJANDRA ARIZA HENAO</p>
+                    <img id="penci" src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line8" id="lin"></div>
+
+                <div class="p15">
+                    <p>Prioridad</p>
+                    <p>Media</p>
+                    <img src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line8" id="lin2"></div>
+
+            </div>
+
+        </div>
+
+        <div class="contentp-5-2">
+
+            <div class="p12">
+                <img src="../../images/chat-img/i.png" alt="">
+                <span>Messaging User</span>
+                <button id="fa"><img src="../../images/icons/fot arrow.png" alt=""></button> 
+            </div> 
+
+            <div class="p8">
+
+                <div class="p16">
+                    <p>Nombre de usuario de <br> mensajería</p>
+                    <p>whatsapp:+573145268795</p>
+                    <img src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line8"></div>
+
+                <div class="p17">
+                    <p>Clave de la plataforma de <br> mensajería</p>
+                    <p>whatsapp:+573145268795</p>
+                    <img src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line8"></div>
+
+                <div class="p18">
+                    <p>Tipo de mensaje</p>
+                    <p>Whatsapp</p>
+                </div>
+
+                <div class="line11"></div>
+
+                <div class="p19">
+                    <p>Estado de consentimiento de <br> mensajería</p>
+                    <p>Suscribió de manera implicita</p>
+                    <img id="penci3" src="../../images/cases/pencil.png" alt="">
+                </div>
+
+                <div class="line11"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-content">
+        <div class="his">
+            <img src="../../images/profile/clock.png" alt="">
+            <p>History</p>
+        </div>
+
+        <div class="not">
+            <img src="../../images/profile/notes.png" alt="">
+            <p>Notes</p>
+        </div>
+
+        <div class="can">
+            <img src="../../images/profile/rec.png" alt="">
+            <p>OmniCanal (Sin Conexión)</p>
+        </div>
+
+        <div class="end">
+            <button onclick="location.href='../../menus/menuSales.html'">FINALIZAR SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante2">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant2" style="position: relative; left: 600px; bottom: 930px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante2" style="position: relative; left: 600px; bottom: 650px; height: 660px; width: 500px; z-index: 0;">
+            <p id="text-msg-hab2">
+                <div class="lds-ellipsis" id="wait-text2"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+    </div>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/typed.js"></script>
+    <script src="../../../Controller/main/hablador.js"></script>
+    <script src="../../../Controller/case/chat.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText2('En este momento, estas observando el chat de SALESFORCE, el cual es una herramienta útil y necesaria para la gestión, por este medio es donde tu como asesor tendrás un contacto más cercano al cliente y sus problemáticas a solucionar, el chat será gestionado por ti en el orden de la secuencia. <br><br> Mensaje 1: Estoy aqui para atenderte, ¿Estas disponible para continuar con tu solicitud? <br><br> Mensaje 2: Aquí sigo, no quiero que te vayas sin dar gestión a tu requerimiento ¿Continuas con nosotros? <br><br> Mensaje 3: Seguro te ocupaste en algo más, por el momento la sesión a finalizado, en caso que desees continuar con tu solicitud, solo escribe la palabra RETORNO. Estamos disponibles de lunes a domingo las 24 horas del día para atender tus solicitudes. <br><br> Para finalizar con la interacción del Chat, da click en el boton "FINALIZAR SIMULACIÓN" el cual se encuentra en la barra inferior.')
+        });
+    </script>
+
+</body>
+</html>

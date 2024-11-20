@@ -1,0 +1,223 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+}
+/* Variables de Colores */
+
+/* Generalidades del Cuerpo */
+body{
+    overflow-y: hidden;
+    background-color: var(--gray-etb);
+}
+/* Generalidades del Cuerpo */
+
+/* Contenedor General del Login */
+.general-container{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Contenedor General del Login */
+
+/* Contenedor Izquierdo del Login */
+.left {
+    background-color: var(--gray-etb);
+    width: 50vw; /* Ancho del 50% del viewport */
+    height: 100vh; /* Altura del 100% del viewport */
+    position: absolute;
+    top: 50%; /* Posiciona el contenedor al 50% desde la parte superior */
+    left: 50%; /* Posiciona el contenedor al 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Ajusta el contenedor para que esté centrado */
+    text-align: center;
+}
+
+.left img{
+    height: 112px;
+    position: relative;
+    top: 160px;
+}
+
+.left h1{
+    font-family: 'Poppins';
+    font-weight: 400;
+    position: relative;
+    top: 170px;
+    font-size: 24px;
+}
+
+.container{
+    background-color: var(--withe-etb);
+    position: relative;
+    top: 160px;
+    left: 290px;
+    width: 380px;
+    height: 360px;
+    border: 1px solid var(--bgray-etb);
+    border-radius: 3px;
+}
+
+.inter-container p{
+   font-family: 'Poppins';
+   font-size: 12px;
+   text-align: left;
+   margin: 20px 0 0 20px;
+   color: var(--pblue-etb);
+   padding-bottom: 7px;
+}
+
+.inter-container input {
+    padding: 12px;
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+    width: calc(87% - 20px); /* Ajusta el ancho del input según sea necesario */
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 3px;  
+    font-family: 'Poppins';
+}
+
+.btn-ini {
+    background-color: var(--bblue-etb);
+    border: none;
+    border-radius: 3px;
+    color: var(--withe-etb);
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin: 20px 0 0 20px;
+    display: block;
+    width: calc(94% - 20px); /* Ajusta el ancho del input según sea necesario */
+    height: 42px;
+    cursor: pointer;
+}
+
+.remember{
+    display: flex;
+    margin-left: 20px;
+}
+
+.remember input{
+    cursor: pointer;
+    z-index: 1060;
+}
+
+.remember p{
+    font-family: 'Poppins';
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.bot{
+    display: flex;
+    position: relative;
+    bottom: 25px;
+}
+
+.bot span{
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 20px 0 0 20px;
+    display: block;
+    color: var(--bblue-etb);
+    text-align: left;
+}
+
+.foot{
+    position: relative;
+    top: 380px;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bblue-etb);
+}
+
+/* Media Queries */
+
+/* Para dispositivos móviles en orientación vertical (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .left {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+    }
+
+    .left img {
+        height: 90px;
+        top: 80px;
+    }
+
+    .left h1 {
+        font-size: 20px;
+        top: 100px;
+    }
+
+    .container {
+        width: 90vw;
+        left: 5vw;
+        top: 20px;
+    }
+
+    .inter-container p,
+    .inter-container input,
+    .btn-ini {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bot {
+        bottom: 10px;
+    }
+
+    .foot {
+        top: 250px;
+        text-align: center;
+    }
+}
+
+/* Para dispositivos de tamaño mediano (menos de 1024px de ancho) */
+@media (max-width: 1024px) {
+    .left {
+        width: 50vw;
+        height: auto;
+    }
+
+    .container {
+        width: 80vw;
+        left: 10vw;
+        top: 30px;
+    }
+
+    .inter-container input {
+        width: calc(90% - 20px);
+    }
+
+    .btn-ini {
+        width: calc(90% - 20px);
+    }
+
+    .bot {
+        bottom: 20px;
+    }
+
+    .foot {
+        top: 300px;
+    }
+}
+

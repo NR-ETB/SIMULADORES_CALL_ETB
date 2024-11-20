@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/logo.png">
+    <link rel="stylesheet" href="../css/verifi.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>SalesForce Verificacion - Simulador Aula</title>
+</head>
+<body>
+
+        <div class="left">
+
+            <img src="../images/icons/logo.png" alt="">
+
+            <h1>Verificar su Identidad</h1>
+
+            <div class="container">
+
+                <div class="inter-container">
+                    <p>Estas intentando <b>Iniciar Sesion en Salesforce.</b> Para <br>
+                    asegurarse de que su cuenta de Salesforce es segura, <br>
+                    debemos verificar su identidad.
+                    
+                    <br><br>
+
+                    Introdusca el código de verificación que hemos enviado <br>
+                    por mensaje de texto a +** ******1516.
+                    </p>
+
+                    <p>Código de Verificación</p>
+                    <input type="text" id="code" placeholder="Ingresa el Codigo ABCD444">
+                </div>
+
+                <button class="btn-ini" onclick="verify();">Verificar</button>
+
+                <div class="remember">
+                    <input type="checkbox">
+                    <p>No volver a preguntar</p>
+                </div>
+
+                <div class="bot">
+                    <span>Volver a enviar el código</span>
+                </div>
+
+            </div>
+
+            <span class="foot">© 2024 Salesforce, Inc. Reservados todos los derechos. | <a href="">Privacidad</a></span>
+            
+        </div>
+
+        <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+            <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+                <img src="../images/icons/ETB.svg" alt="">
+            </div>
+            <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+                <p id="text-msg-hab">
+                    <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+                </p>
+            </div>
+            <div class="con-close-alert" onclick="ocultarHablador()">
+                <img src="../images/icons/cross_small.svg" alt="">
+            </div>
+        </div>
+
+    <script src="../bootstrap/jquery.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/typed.js"></script>
+    <script src="../../Controller/login/login.js"></script>
+    <script src="../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('Cuando valides tu cuenta por primera vez, se debe digitar el código de verificación al celular asignado por medio de authenticator, cuando no se tiene la aplicación instalada, el codigo a ingresar es ABCD444')
+        });
+    </script>
+
+</body>
+</html>

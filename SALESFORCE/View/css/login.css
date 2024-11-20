@@ -1,0 +1,289 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+}
+/* Variables de Colores */
+
+/* Generalidades del Cuerpo */
+body{
+    overflow-y: hidden;
+}
+/* Generalidades del Cuerpo */
+
+/* Contenedor General del Login */
+.general-container{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Contenedor General del Login */
+
+/* Contenedor Izquierdo del Login */
+.left {
+    background-color: var(--gray-etb);
+    width: 50vw; /* Ancho del 50% del viewport */
+    height: 100vh; /* Altura del 100% del viewport */
+    position: absolute; /* Cambia a absolute para superponer contenedores */
+    top: 0;
+    left: 0; /* Alinea al lado izquierdo */
+    text-align: center;
+}
+
+.left img{
+    height: 112px;
+    position: relative;
+    top: 140px;
+}
+
+.container{
+    background-color: var(--withe-etb);
+    position: relative;
+    top: 160px;
+    left: 290px;
+    width: 380px;
+    height: 360px;
+    border: 1px solid var(--bgray-etb);
+    border-radius: 3px;
+}
+
+.inter-container p{
+   font-family: 'Poppins';
+   font-size: 12px;
+   text-align: left;
+   margin: 20px 0 0 20px;
+   color: var(--pblue-etb);
+   padding-bottom: 7px;
+}
+
+.inter-container input {
+    padding: 12px;
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+    width: calc(87% - 20px); /* Ajusta el ancho del input según sea necesario */
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 3px;  
+    font-family: 'Poppins';
+}
+
+.btn-ini {
+    background-color: var(--bblue-etb);
+    border: none;
+    border-radius: 3px;
+    color: var(--withe-etb);
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin: 20px 0 0 20px;
+    display: block;
+    width: calc(94% - 20px); /* Ajusta el ancho del input según sea necesario */
+    height: 42px;
+    cursor: pointer;
+}
+
+.remember{
+    display: flex;
+    margin-left: 20px;
+}
+
+.remember p{
+    font-family: 'Poppins';
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#manu{
+    color: var(--bblue-etb);
+    position: relative;
+    left: 135px;
+    cursor: pointer;
+}
+
+.line{
+    background-color: var(--bgray-etb);
+    height: 1px;
+    width: 100px;
+    margin: 10px 0 0 20px;
+    width: calc(94% - 20px); /* Ajusta el ancho del input según sea necesario */
+}
+
+.bot{
+    display: flex;
+}
+
+.bot span{
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 20px 0 0 20px;
+    display: block;
+    color: var(--bblue-etb);
+    text-align: left;
+}
+
+.client{
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 290px;
+}
+
+.client p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 0 20px 0 40px;
+}
+
+.client button{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    font-family: 'Poppins';
+    font-size: 12px;
+    border: none;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+}
+
+.callte{
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 360px;
+}
+
+.callte img{
+    height: 50px;
+}
+
+.foot{
+    position: relative;
+    top: 360px;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bblue-etb);
+}
+/* Contenedor Derecho del Login */
+.right {
+    background-color: var(--gray-etb);
+    width: 50vw; /* Ancho del 50% del viewport */
+    height: 100vh; /* Altura del 100% del viewport */
+    position: absolute; /* Cambia a absolute para superponer contenedores */
+    top: 0;
+    right: 0; /* Alinea al lado derecho */
+}
+
+/* Media Queries */
+
+/* Para dispositivos móviles en orientación vertical (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .left {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: auto;
+        text-align: center;
+    }
+
+    .right {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: auto;
+    }
+
+    .container {
+        width: 90vw;
+        left: 5vw;
+        top: 20px;
+    }
+
+    .inter-container p,
+    .inter-container input,
+    .btn-ini {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .callte {
+        left: 10px;
+        top: 20px;
+    }
+
+    .client {
+        top: auto;
+        left: auto;
+        margin: 20px auto;
+    }
+
+    .client p {
+        margin: 0 10px;
+    }
+
+    .foot {
+        top: 300px;
+        text-align: center;
+    }
+
+    .bot span {
+        margin: 10px 0;
+    }
+}
+
+/* Para dispositivos móviles en orientación horizontal (menos de 1024px de ancho) */
+@media (max-width: 1024px) {
+    .left {
+        width: 50vw;
+    }
+
+    .right {
+        width: 50vw;
+    }
+
+    .container {
+        width: 90vw;
+        left: 5vw;
+        top: 30px;
+    }
+
+    .callte {
+        left: 20px;
+        top: 30px;
+    }
+
+    .client {
+        top: 50px;
+        left: 20px;
+    }
+
+    .client p {
+        margin: 0 15px;
+    }
+
+    .foot {
+        top: 400px;
+    }
+
+    .bot span {
+        margin: 15px 0;
+    }
+}
+
