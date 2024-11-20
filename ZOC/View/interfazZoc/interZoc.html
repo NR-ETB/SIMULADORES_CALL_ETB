@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/zoci.png">
+    <link rel="stylesheet" href="../css/comp.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Interfaz - Simulador ZOC</title>
+</head>
+<body>
+
+    <div class="top-content">
+        <div class="top1">
+            <p>File</p>
+            <p id="spas">Edit</p>
+            <p id="spas">Review</p>
+            <p id="spas">Logging</p>
+            <p id="spas">Transfer</p>
+            <p id="spas">Script</p>
+            <p id="spas">Options</p>
+            <p id="spas">Help</p>
+        </div>
+    </div>
+
+    <div class="top-content2">
+        <div class="top2">
+            <img id="boo" onclick="mod(),habladorText('En my connectios se debe subir el Host, para esto selecciona el boton “More”')" src="../images/interfaz/e-book.png" alt="">
+            <img src="../images/interfaz/ter1.png" alt="">
+            <img src="../images/interfaz/ter2.png" alt="">
+        </div>
+
+        <div class="top3">
+            <img src="../images/interfaz/ter33.png" alt="">
+            <img src="../images/interfaz/play.png" alt="">
+            <img src="../images/interfaz/ter4.png" alt="">
+            <img src="../images/interfaz/ter5.png" alt="">
+        </div>
+
+        <div class="top4">
+            <img src="../images/interfaz/paper.png" alt="">
+            <img src="../images/interfaz/paper2.png" alt="">
+            <img src="../images/interfaz/edit.png" alt="">
+            <img src="../images/interfaz/imp.png" alt="">
+        </div>
+
+        <div class="top5">
+            <img src="../images/interfaz/down.png" alt="">
+            <img src="../images/interfaz/upload.png" alt="">
+            <img src="../images/interfaz/upload2.png" alt="">
+        </div>
+
+        <div class="top6">
+            <img src="../images/interfaz/play2.png" alt="">
+            <img src="../images/interfaz/square.png" alt="">
+        </div>
+
+        <div class="top7">
+            <img src="../images/interfaz/full.png" alt="">
+            <img src="../images/interfaz/full2.png" alt="">
+            <img src="../images/interfaz/full3.png" alt="">
+            <img src="../images/interfaz/full4.png" alt="">
+        </div>
+
+        <div class="top8">
+            <img src="../images/interfaz/tool.png" alt="">
+            <img src="../images/interfaz/tool2.png" alt="">
+            <img src="../images/interfaz/tool3.png" alt="">
+            <img src="../images/interfaz/tool4.png" alt="">
+        </div>
+
+        <div class="top9">
+            <img src="../images/interfaz/tool5.png" alt="">
+            <img src="../images/interfaz/tool6.png" alt="">
+        </div>
+
+        <div class="top10">
+            <img src="../images/interfaz/port.png" alt="">
+        </div>
+
+        <div class="top11">
+            <img id="es15" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+            <audio id="au_menu2" class="audio" style="display: none;">
+                <source type="audio/wav" src="../../Model/audio/ZOC4.mp3">
+            </audio>
+        </div>
+
+    </div>
+
+    <div class="cen-content">
+        <div class="cen1">
+            <button><img src="../images/interfaz/e-book.png" alt=""> (untitled)</button>
+        </div>
+
+        <div class="cen2">
+            <p id="cent"><img src="../images/interfaz/point.png" alt=""> CENTRO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CHAPINERO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CUNI</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CHICO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> NORMANDIA</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CALI</p>
+            <p><img src="../images/interfaz/point.png" alt=""> MEDELLIN</p>
+            <p><img src="../images/interfaz/point.png" alt=""> BARRANQUILLA</p>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+    <div class="cen-content2">
+
+        <img id="ba" src="../images/interfaz/etb.PNG" alt="" style="display: none;">
+
+        <div class="modal-one" id="one" style="display: none;">
+
+            <div class="modal-header">
+                <p>ZOC7 Tip of the Day</p>
+            </div>
+    
+            <div class="modal-body">
+                <div class="block">
+                    <div class="bu">
+                        <img src="../images/modals/foc.png" alt="">
+                    </div>
+                    <div>
+                        <h5>Did you know...</h5>
+                        <br><br>
+                        <p>To recolate the folder where ZOC files are stored. <br>
+                        simply quit ZOC and move the folder to a different place. <br><br>
+                        On the next start, ZOC will find that the folder is no longer <br>
+                        there and will ask you to point it to the new location.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal-footer">
+                <div class="fot">
+                    <select name="" id="">
+                        <option value="">Show a new tip every day</option>
+                    </select>
+        
+                    <button>Next tip</button>
+                    <button id="clos" onclick="clos(),habladorText('Al cerrar la ventana sale para conectar el “Host Directory” y se debe cerrar la ventana, ahora deberas seleccionar el icono, del libro azul, que se encuentra hubicado en la zona superior izquierda del menu de iconos')">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-two" id="two" style="display: none;">
+            <div class="modal-header2">
+                <img src="../images/interfaz/ter33.png" alt="">
+                <p>Qick Connection</p>
+                <img src="" alt="">
+            </div>
+    
+            <div class="modal-body2">
+                <div class="mod1">
+                    <p>Connect to</p>
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+
+                    <p>Port</p>
+                    <input type="text">
+                </div>
+
+                <div class="mod2">
+                    <p>Options...</p>
+                </div>
+
+                <div class="mod3">
+                    <div class="mod4">
+                        <p>Session profile</p>
+                        <select id="por1"  name="">
+                            <option value="">Standrard.zoc</option>
+                        </select>
+                        <button id="port1">Edit...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p>Connection type</p>
+                        <select id="por2"  name="">
+                            <option value="">Secure Shell</option>
+                        </select>
+                        <button id="port2">Configure...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p>Emulation</p>
+                        <select id="por3"  name="">
+                            <option value="">VT100</option>
+                        </select>
+                        <button id="port3">Configure...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p id="por44">Username</p>
+                        <input id="por4" type="text">
+                    </div>
+
+                    <div class="mod4">
+                        <p>Password</p>
+                        <input id="por5" type="text" disabled>
+                    </div>
+
+                    <div class="mod4">
+                        <p id="port5"><input type="checkbox">Save password</p>
+                    </div>
+
+                    <div class="mod4">
+                        <p>SSH key file</p>
+                        <input id="por6" type="text" disabled>
+                        <button id="port4">...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p id="port6"><input type="checkbox">Try to authorize via global key files</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal-footer2">
+                <div class="fot2">
+                    <p><input type="checkbox" checked>Show this windows when starting the program</p>
+                    <button id="clo">Connect</button>
+                    <button class="sel" id="clos2" onclick="clos2();">Cancel</button>
+                    <button id="clos3" disabled>Save As...</button>
+                    <button id="clos4">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-three" id="three" style="display: none;">
+            <div class="modal-header3">
+                <img src="../images/interfaz/e-book.png" alt="">
+                <p>Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body3">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22">
+                    <p id="w1">My Connections</p>
+                    <p>Public Host</p>
+                    <p>TN3720 Hosts</p>
+                    <p id="w2">SOPORTE</p>
+                </div>
+
+                <div class="mod33">
+
+                </div>
+                   
+            </div>
+    
+            <div class="modal-footer3">
+                <div class="fot3">
+                    <p id="sho"><input type="checkbox">Show this windows when starting the program</p>
+                    <button id="clos22">Connect</button>
+                    <button id="clos33">New...</button>
+                    <button id="clos33">Edit...</button>
+                    <button id="clos33">Clone...</button>
+                    <button id="clos33">Delete</button>
+                    <button id="clos1" onclick="mod2(),habladorText('Se debe seleccionar “Import”')"">More</button>
+                    <button id="clos44">Cancel</button>
+                    <button id="clos55">Save</button>
+                    <button id="clos66">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-one" id="m-one" style="display: none;">
+            <div class="menu-body">
+                <li>
+                    <div class="on">
+                        <ul>Create Shortcut...</ul>
+                        <ul>Move entry to</ul>
+                        <ul><div class="lin"></div></ul>
+                    </div>
+
+                    <div class="on">
+                        <ul>Create Folder...</ul>
+                        <ul>Manages Sections...</ul>
+                        <ul><div class="lin"></div></ul>
+                    </div>
+
+                    <div class="on">
+                        <ul>Search... Ctrl+F</ul>
+                        <ul id="on">Find Next... Ctrl+N</ul>
+                        <ul><div class="lin"></div></ul>
+                    </div>
+
+                    <div class="on">
+                        <ul id="imp" onclick="mod3(),habladorText('Se debe seleccionar ZOC V4 o V5');">Import...</ul>
+                        <ul>Export...</ul>
+                        <ul>Print</ul>
+                        <ul>Mark Dues</ul>
+                        <ul><div class="lin"></div></ul>
+                    </div>
+
+                    <div>
+                        <ul>Settings...</ul>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+        <div class="menu-two" id="m-two" style="display: none;">
+            <div class="menu-header">
+                <p>Import Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="menu-body2">
+                <div class="mod1">
+                </div>
+
+                <div class="mod222">
+                    <p>Type of Host Directory to Import</p>
+                </div>
+
+                <div class="mod333">
+                    <li class="lis">
+                        <ul>CSV Ascii-Text</ul>
+                        <ul>Puttym (Windows)</ul>
+                        <ul>Secure (Windows)</ul>
+                        <ul>Unicom (Windows)</ul>
+                        <ul>Terminate (DOS)</ul>
+                        <ul>Telemate (Windows)</ul>
+                        <ul>Telix (Windows)</ul>
+                        <ul>Telix (DOS)</ul>
+                        <ul>ZOC V3 (Windows, OS/2)</ul>
+                        <ul id="zo" onclick="mod5(),habladorText('Selecciona el boton oscuro con los 3 puntos');">ZOC V4/V5 (Windows, OS/2)</ul>
+                        <ul>ZOC V6/V7 (Windows, OS/2)</ul>
+                    </li>
+                    <button id="clos777" onclick="mod6(),habladorText('En un escenario real, se abrira el explorador de archivos de Windows, en el cual deberas buscar, seleccionar y subir el archivo “Host Dictory”, Luego se habilitará la opción “Next”')">...</button>
+                </div>
+                
+            </div>
+    
+            <div class="menu-footer">
+                <div class="fot33">
+                    <p id="sho2">File name to import: <span id="invi">iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</span> 
+                    <select name="" id="zoch">
+                        <option value="">ZOCHOSTS.INI</option>
+                        <option value="">C:\Users\1102565789\Downloads\HostDirectory</option>
+                    </select></p>
+                    <select name="" id="zoch2" style="display: none;">
+                        <option value="">C:\Users\1102565789\Downloads\HostDirectory</option>
+                    </select></p>
+                    <button id="zzz" onclick="mod7(),habladorText('Se debe seleccionar “Done” y se guardan las centrales')" disabled>Next >></button>
+                    <button id="clos33">Cancel</button>
+                    <button id="clos33">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-three" id="m-three" style="display: none;">
+            <div class="menu-header">
+                <p>Import Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="menu-body2">
+                <div class="mod1">
+                </div>
+
+                <div class="mod2222">
+                    <p>Entries to Import</p>
+                </div>
+
+                <div class="mod3333">
+                    <li class="lis2">
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Telnet Connections Example</ul>
+                        <ul>Rainmaker (Weather via Telnet)</ul>
+                        <ul>Telehack</ul>
+                        <ul>LUIS Catalog (SUS Florida)</ul>
+                        <ul>M320_B/QUILLA</ul>
+                        <ul>M320_BMANGA N</ul>
+                        <ul>M320_CALI</ul>
+                        <ul>M320_CENTRO2</ul>
+                        <ul>M320_CHAPINERO2</ul>
+                        <ul>M320_CHICO2</ul>
+                        <ul>M320_CUNI2</ul>
+                        <ul>M320_NORMANDIA</ul>
+                        <ul>M320_NORMANDIA</ul>
+                    </li>
+                </div>
+
+                <div class="mod4444">
+                    <p>Entries to Import</p>
+                </div>
+
+                <div class="mod5555">
+                    <li class="lis3">
+                        <ul id="zzz3">My Connections</ul>
+                        <ul>Public Host</ul>
+                        <ul>TN3720 Hosts</ul>
+                        <ul>SOPORTE</ul>
+                    </li>
+                </div>
+                
+            </div>
+    
+            <div class="menu-footer">
+                <div class="fot333">
+                    <p><input type="radio">Import all entries</p>
+                    <p><input type="radio" checked>Import select entries only</p>
+                    <select name="" id="">
+                        <option value="">All Entries</option>
+                    </select>
+                    <p id="sec"><input type="checkbox">Import to new section</p>
+                    <input id="sec2" type="text" disabled>
+                    <button id="zzz2" onclick="mod8(),habladorText('Ahora te encuentras en el modulo personalizado de soporte y rastreo de Zoc, puedes apreciar que en la parte inferior derecha, se ha habilitado el boton para FINALIZAR LA SIMULACIÓN')">Done >></button>
+                    <button id="clos33">Cancel</button>
+                    <button id="clos33">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-four" id="four" style="display: none;">
+            <div class="modal-header4">
+                <img src="../images/interfaz/e-book.png" alt="">
+                <p>Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body4">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22222">
+                    <p>My Connections</p>
+                    <p>Public Host</p>
+                    <p>TN3720 Hosts</p>
+                    <p id="w3">SOPORTE</p>
+                </div>
+
+                <div class="mod33333">
+                    <table id="tab">
+                        <tbody>
+                            <tr>
+                            <th>Name</th>
+                            <th id="th3">Connect to</th>
+                            <th id="th1">Last Connect</th>
+                            <th id="th2">Comment</th>
+                            </tr>
+
+                            <tr id="tr1">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHAPINERO2</td>
+                                <td>10.247.55.16:28 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHICO2</td>
+                                <td>10.247.61.247:26 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CUNI2</td>
+                                <td>10.247.54.11:22 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_NORMANDIA</td>
+                                <td>10.247.52.10:39 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
+            </div>
+    
+            <div class="modal-footer4">
+                <div class="fot3">
+                    <p id="sho"><input type="checkbox">Show this windows when starting the program</p>
+                    <button id="clos222">Connect</button>
+                    <button id="clos333">New...</button>
+                    <button id="clos333">Edit...</button>
+                    <button id="clos333">Clone...</button>
+                    <button id="clos333">Delete</button>
+                    <button id="clos333">More</button>
+                    <button id="clos44">Cancel</button>
+                    <button id="clos55">Save</button>
+                    <button id="clos66">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="fle" id="fle" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle2" id="fle2" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle3" id="fle3" style="display: none;">
+            <img src="../images/icons/arrow2.png" alt="">
+        </div>
+
+        <div class="fle4" id="fle4" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle5" id="fle5" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle6" id="fle6" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle7" id="fle7" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle8" id="fle8" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle9" id="fle9" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle10" id="fle10" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="fot-content">
+        <div class="his">
+            <img src="../images/interfaz/full5.png" alt="">
+            <p>Secure Shell</p>
+        </div>
+
+        <div class="not">
+            <p>VT100</p>
+        </div>
+
+        <div class="can">
+            <p>Zmodem</p>
+        </div>
+
+        <div class="can">
+            <input type="checkbox">
+            <p>ZOC2408_01.log</p>
+        </div>
+
+        <div class="end-3" id="jake">
+            <button onclick="location.href='../menus/menuZoc.html'">SALIR DE LA SIMULACIÓN</button>
+        </div>
+
+        <div class="end-3" id="finn" style="display: none;">
+            <button onclick="location.href='../menus/menuZoc.html'">FINALIZAR SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../images/icons/cross_small.svg" alt="">
+        </div>
+    </div>
+
+    <script src="../bootstrap/jquery.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/typed.js"></script>
+    <script src="../../Controller/interfaz/zoc1.js"></script>
+    <script src="../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('Al ingresar al Zoc se enseñara la siguiente información y se debe cerrar esa ventana emergente')
+        });
+    </script>
+
+</body>
+</html>

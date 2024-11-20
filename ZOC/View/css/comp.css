@@ -1,0 +1,316 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --b3gray-etb: #f7f7f7;
+    --purpple-etb:  #a31aff;
+    --red-etb:  #d40000;
+    --yelow-etb: #fff6c2;
+}
+/* Variables de Colores */
+
+/* Reset del CSS */
+body{
+    overflow-y: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* Reset del CSS */
+
+/* Contenedor Superior del Componente */
+.top-content{
+    background-color: var(--b3gray-etb);
+}
+.top1{
+    display: flex;
+}
+#spas{
+    margin-left: 45px;
+}
+.top-content2{
+    background-color: var(--b3gray-etb);
+    display: flex;
+}
+.top-content2 img{
+    width: 35px;
+    height: 35px;
+}
+.top2{
+    border-right: 1px solid var(--black-etb);
+    margin-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#boo{
+    cursor: pointer;
+}
+.top3{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top4{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top5{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top6{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top7{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top8{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top9{
+    border-right: 1px solid var(--black-etb);
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.top10{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.top11 img{
+    width: 38px;
+    height: 38px;
+    position: relative;
+    top: 117px;
+    right: 285px;
+    animation-name: animacionAudio;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes animacionAudio {
+    0%{
+        rotate: 0deg;
+        transform: scale(1);
+    }
+    25%{
+        rotate: 5deg;
+        transform: scale(1.025);
+    }
+    50%{
+        rotate: 10deg;
+        transform: scale(1.05);
+    }
+    75%{
+        rotate: 5deg;
+        transform: scale(1.025);
+    }
+    100%{
+        rotate: 0deg;
+        transform: scale(1);
+    }
+}
+/* Contenedor Superior del Componente */
+
+/* Contenedor Central del Componente */
+.cen-content{
+    margin-top: 15px;
+}
+.cen1 img{
+    width: 15px;
+    height: 15px;    
+}
+.cen1 button{
+    margin-top: 5px;
+    background-color: var(--b3gray-etb);
+    border: transparent;
+    border-top: 1px solid var(--black-etb);
+    border-right: 1px solid var(--black-etb);
+    border-bottom: 1px solid var(--b3gray-etb);
+    position: relative;
+    top: 2px;
+}
+.cen2{
+    display: flex;
+    border-top: 1px solid var(--black-etb);
+    border-bottom: 1px solid var(--black-etb);
+    background-color: var(--b3gray-etb);
+    padding: 8px 0;
+}
+.cen2 img{
+    width: 10px;
+    height: 10px; 
+}
+#cent{
+    margin-left: 0px;
+}
+.cen2 p{
+    font-size: 16px;
+    margin-left: 30px;
+}
+.cen-content2{
+    margin-top: 15px;
+    background-color: var(--withe-etb);
+    height: 690px;
+    border: 1px solid var(--b2gray-etb);
+}
+.cen-content2 img{
+    width: 450px;
+    height: 660px;
+}
+.ba{
+    width: 450px;
+    height: 660px;
+    position: relative;
+    bottom: 580px;
+}
+.ba2{
+    width: 450px;
+    height: 660px;
+    position: relative;
+    top: 0;
+}
+/* Contenedor Central del Componente */
+
+/* Contenedor Inferior del Componente */
+.fot-content{
+    border-top: 1px solid var(--black-etb);
+    background-color: var(--b3gray-etb);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    top: calc(100vh - 60px);
+}
+.his{
+    margin-left: 55px;
+    display: flex;
+}
+.his p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.his img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.not{
+    margin-left: 55px;
+    display: flex;
+}
+.not p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.not img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.can{
+    margin-left: 55px;
+    display: flex;
+}
+.can p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.can img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.end{
+    margin-left: 1275px;
+    margin-top: 10px;
+    display: flex;
+}
+.end button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-2{
+    position: relative;
+    left: 1645px;
+    bottom: 535px;
+    display: flex;
+}
+.end-2 button{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-3{
+    position: relative;
+    left: 900px;
+    top: 8px;
+    display: flex;
+}
+.end-3 button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+/* Contenedor Inferior del Componente */

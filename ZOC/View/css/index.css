@@ -1,0 +1,86 @@
+/* Fuente Personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+/* Variables de Colores */
+:root {
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000;
+    --b2gray-etb: #969492;
+}
+
+/* Generalidades del Cuerpo */
+body {
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-etb);
+}
+
+/* Imagen de Fondo */
+img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    max-width: 1250px; /* Ancho máximo */
+    max-height: 100vh; /* Evita que la imagen exceda la altura de la ventana */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    margin: 0 auto 40px; /* Centra la imagen y establece el margen inferior */
+}
+
+/* Botón */
+button {
+    color: var(--withe-etb);
+    background-color: var(--bblue-etb);
+    position: relative; /* Mantener como relative */
+    margin: 5px auto; /* Reducido para subir los botones */
+    display: block; /* Para centrar con auto */
+    bottom: 25px;
+    height: 50px;
+    border: 2px solid var(--black-etb);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+#man {
+    height: 48px; /* Asegúrate que sea del mismo tamaño */
+}
+
+
+button:hover {
+    color: var(--orange-etb);
+    background-color: var(--black-etb);
+    border: 2px solid var(--bblue-etb);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    img {
+        max-height: 70vh; /* Ajustar altura en pantallas más pequeñas */
+        margin-bottom: 20px; /* Ajustar margen inferior */
+    }
+    button {
+        font-size: 1.25rem; /* Ajustar tamaño de fuente */
+        height: 2.5rem; /* Ajustar altura */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-height: 60vh; /* Ajustar altura en pantallas más pequeñas */
+        margin-bottom: 15px; /* Ajustar margen inferior */
+    }
+    button {
+        font-size: 1.125rem; /* Ajustar tamaño de fuente */
+        height: 2.2rem; /* Ajustar altura */
+    }
+}
+

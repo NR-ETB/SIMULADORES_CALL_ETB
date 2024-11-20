@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/zoci.png">
+    <link rel="stylesheet" href="../css/comp.css">
+    <link rel="stylesheet" href="../css/modal4.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Interfaz - Simulador ZOC</title>
+</head>
+<body>
+
+    <div class="top-content">
+        <div class="top1">
+            <p>File</p>
+            <p id="spas">Edit</p>
+            <p id="spas">Review</p>
+            <p id="spas">Logging</p>
+            <p id="spas">Transfer</p>
+            <p id="spas">Script</p>
+            <p id="spas">Options</p>
+            <p id="spas">Help</p>
+        </div>
+    </div>
+
+    <div class="top-content2">
+        <div class="top2">
+            <img class="cur" onclick="mod4(),habladorText('Da click en el boton “Edit”')" src="../images/interfaz/e-book.png" alt="">
+            <img src="../images/interfaz/ter1.png" alt="">
+            <img src="../images/interfaz/ter2.png" alt="">
+        </div>
+
+        <div class="top3">
+            <img src="../images/interfaz/ter33.png" alt="">
+            <img src="../images/interfaz/play.png" alt="">
+            <img src="../images/interfaz/ter4.png" alt="">
+            <img src="../images/interfaz/ter5.png" alt="">
+        </div>
+
+        <div class="top4">
+            <img src="../images/interfaz/paper.png" alt="">
+            <img src="../images/interfaz/paper2.png" alt="">
+            <img src="../images/interfaz/edit.png" alt="">
+            <img src="../images/interfaz/imp.png" alt="">
+        </div>
+
+        <div class="top5">
+            <img src="../images/interfaz/down.png" alt="">
+            <img src="../images/interfaz/upload.png" alt="">
+            <img src="../images/interfaz/upload2.png" alt="">
+        </div>
+
+        <div class="top6">
+            <img src="../images/interfaz/play2.png" alt="">
+            <img src="../images/interfaz/square.png" alt="">
+        </div>
+
+        <div class="top7">
+            <img src="../images/interfaz/full.png" alt="">
+            <img src="../images/interfaz/full2.png" alt="">
+            <img src="../images/interfaz/full3.png" alt="">
+            <img src="../images/interfaz/full4.png" alt="">
+        </div>
+
+        <div class="top8">
+            <img src="../images/interfaz/tool.png" alt="">
+            <img src="../images/interfaz/tool2.png" alt="">
+            <img src="../images/interfaz/tool3.png" alt="">
+            <img src="../images/interfaz/tool4.png" alt="">
+        </div>
+
+        <div class="top9">
+            <img src="../images/interfaz/tool5.png" alt="">
+            <img src="../images/interfaz/tool6.png" alt="">
+        </div>
+
+        <div class="top10">
+            <img src="../images/interfaz/port.png" alt="">
+        </div>
+
+        <div class="top11">
+            <img id="es15" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+            <audio id="au_menu2" class="audio" style="display: none;">
+                <source type="audio/wav" src="../../Model/audio/ZOC5.mp3">
+            </audio>
+        </div>
+    </div>
+
+    <div class="cen-content">
+        <div class="cen1">
+            <button class="cur"><img src="../images/interfaz/e-book.png" alt=""> (untitled)</button>
+        </div>
+
+        <div class="cen2">
+            <p id="cent"><img src="../images/interfaz/point.png" alt=""> CENTRO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CHAPINERO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CUNI</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CHICO</p>
+            <p><img src="../images/interfaz/point.png" alt=""> NORMANDIA</p>
+            <p><img src="../images/interfaz/point.png" alt=""> CALI</p>
+            <p><img src="../images/interfaz/point.png" alt=""> MEDELLIN</p>
+            <p><img src="../images/interfaz/point.png" alt=""> BARRANQUILLA</p>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+    <div class="cen-content2" id="cent2">
+
+        <div class="modal-four" id="m-four">
+            <div class="modal-header4">
+                <img src="../images/interfaz/e-book.png" alt="">
+                <p>Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body4">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22222">
+                    <p>My Connections</p>
+                    <p>Public Host</p>
+                    <p>TN3720 Hosts</p>
+                    <p id="w3">SOPORTE</p>
+                </div>
+
+                <div class="mod33333">
+                    <table id="tab">
+                        <tbody>
+                            <tr>
+                            <th>Name</th>
+                            <th>Connect to</th>
+                            <th id="th1">Last Connect</th>
+                            <th id="th2">Comment</th>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr1">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHAPINERO2</td>
+                                <td>10.247.55.16:28 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHICO2</td>
+                                <td>10.247.61.247:26 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CUNI2</td>
+                                <td>10.247.54.11:22 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_NORMANDIA</td>
+                                <td>10.247.52.10:39 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
+            </div>
+    
+            <div class="modal-footer4">
+                <div class="fot3">
+                    <p id="sho"><input type="checkbox">Show this windows when starting the program</p>
+                    <button id="clos222" onclick="mod(),habladorText('Ahora apreciaras como se conecta, y puedes utilizar la terminal, para iniciar, copia y pega el comando show interfaces descriptions | match PIPECI1063870')">Connect</button>
+                    <button id="clos333">New...</button>
+                    <button id="clos333">Edit...</button>
+                    <button id="clos333">Clone...</button>
+                    <button id="clos333">Delete</button>
+                    <button id="clos333">More</button>
+                    <button id="clos44">Cancel</button>
+                    <button id="clos555">Save</button>
+                    <button id="clos666">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-four" id="me-four" style="display: none;">
+            <div class="menu-header">
+                <p>AutoConnect</p>
+                <img src="" alt="">
+            </div>
+            <div class="menu-body2">
+                <div class="mod1">
+                </div>
+
+                <div class="mod333">
+                    <p>Name: M32_CENTRO2</p>
+                    <p>Status: Connecting to 10.246.57.16:22</p>
+                    <p>Count: 1</p>
+
+                    <div class="line"></div>
+
+                    <p>Last: </p>
+                </div>
+                
+            </div>
+    
+            <div class="menu-footer">
+                <div class="fot33">
+                    <div id="sho2">
+                        <button id="clos33" disabled>Retry Now</button>
+                        <button id="clos33">Skip this</button>  
+                        <button id="clos33">Drop this</button>  
+                        <p>Timeout <input type="number"></p>
+                    </div>
+                    <div id="sho3">
+                        <button id="clos33">Cancel</button>
+                        <button id="clos33">Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-three" id="me-three" style="display: none;">
+            <div class="menu-header">
+                <p>Editor Host Directory Section</p>
+                <img src="" alt="">
+            </div>
+            <div class="menu-body3">
+                <div class="mod1">
+                </div>
+
+                <div class="md222222">
+                    <p>Section Name</p>
+                </div>
+
+                <div class="md3">
+                    <input type="text" placeholder="SOPORTE">
+                </div>
+                
+            </div>
+    
+            <div class="menu-footer">
+                <div class="fot33">
+                    <div id="sho4">
+                        <button id="clos1" onclick="mod4();">OK</button>
+                        <button id="clos33">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-six" id="m-six" style="display: none;">
+            <div class="modal-header4">
+                <img src="../images/interfaz/e-book.png" alt="">
+                <p>Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body6">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22222">
+                    <p>My Connections</p>
+                    <p>Public Host</p>
+                    <p>TN3720 Hosts</p>
+                    <p id="w3">SOPORTE</p>
+                </div>
+
+                <div class="mod33333">
+                    <table id="tab">
+                        <tbody>
+                            <tr>
+                            <th>Name</th>
+                            <th>Connect to</th>
+                            <th id="th1">Last Connect</th>
+                            <th id="th2">Comment</th>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr1">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHAPINERO2</td>
+                                <td>10.247.55.16:28 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHICO2</td>
+                                <td>10.247.61.247:26 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CUNI2</td>
+                                <td>10.247.54.11:22 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_NORMANDIA</td>
+                                <td>10.247.52.10:39 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
+            </div>
+    
+            <div class="modal-footer6">
+                <div class="fot3">
+                    <p id="sho"><input type="checkbox">Show this windows when starting the program</p>
+                    <button id="clos22">Connect</button>
+                    <button id="clos333">New...</button>
+                    <button id="clos333" class="edi" onclick="mod5(),habladorText('Aquí se debe cambiar la ip que en este caso es 10.214.128.60, el candado que se visualiza se valida que es la central para editar, seleccionar OK para el cambio')">Edit...</button>
+                    <button id="clos333">Clone...</button>
+                    <button id="clos333">Delete</button>
+                    <button id="clos333">More</button>
+                    <button id="clos44">Cancel</button>
+                    <button id="clos555">Save</button>
+                    <button id="clos666">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-six" id="m-six2" style="display: none;">
+            <div class="modal-header4">
+                <img src="../images/interfaz/e-book.png" alt="">
+                <p>Host Directory</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body6">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22222">
+                    <p>My Connections</p>
+                    <p>Public Host</p>
+                    <p>TN3720 Hosts</p>
+                    <p id="w3">SOPORTE</p>
+                </div>
+
+                <div class="mod33333">
+                    <table id="tab">
+                        <tbody>
+                            <tr>
+                            <th>Name</th>
+                            <th>Connect to</th>
+                            <th id="th1">Last Connect</th>
+                            <th id="th2">Comment</th>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_B/QUILLA</td>
+                                <td>10.34.5.12:24 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_BMANGA N</td>
+                                <td>10.247.68.7:34 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CALI</td>
+                                <td>10.28.6.7:20 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr9">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CENTRO2</td>
+                                <td>10.247.56.17:28 (SSH)</td>
+                                <td>today</td>
+                                <td>2 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHAPINERO2</td>
+                                <td>10.247.55.16:28 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CHICO2</td>
+                                <td>10.247.61.247:26 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_CUNI2</td>
+                                <td>10.247.54.11:22 (SSH)</td>
+                                <td>today</td>
+                                <td>1 connectios</td>
+                            </tr>
+
+                            <tr id="tr0">
+                                <td><img src="../images/interfaz/point.png" alt=""> M320_NORMANDIA</td>
+                                <td>10.247.52.10:39 (SSH)</td>
+                                <td>(never)</td>
+                                <td>0 connectios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
+            </div>
+    
+            <div class="modal-footer6">
+                <div class="fot3">
+                    <p id="sho"><input type="checkbox">Show this windows when starting the program</p>
+                    <button id="clos22">Connect</button>
+                    <button id="clos333">New...</button>
+                    <button id="clos333">Edit...</button>
+                    <button id="clos333">Clone...</button>
+                    <button id="clos333">Delete</button>
+                    <button id="clos333">More</button>
+                    <button id="clos44">Cancel</button>
+                    <button id="clos555" class="edi" onclick="mod7(),habladorText('Aquí sale de nuevo con el primer salto la central, después de tomar la Ip del primer salto se da el segundo salto y se debe cambiar el tercer octeto de la ip en este caso queda en 128')">Save</button>
+                    <button id="clos666">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-eight" id="mo-eight"  style="display: none;">
+            <div class="modal-header4">
+                <p>Editor Host Directory Entry</p>
+                <img src="" alt="">
+            </div>
+            <div class="modal-body7">
+                <div class="mod1">
+                </div>
+
+                <div class="mod22222">
+                    <p id="w1">Host</p>
+                    <p>Options</p>
+                    <p>Login</p>
+                    <p>Shortcuts</p>
+                    <p>Window</p>
+                    <p>BBS</p>
+                    <p id="w2">Info</p>
+                </div>
+
+            <div class="mod333333">
+                    <div class="md22">
+                        <p>Host info</p>
+                    </div>
+
+                <div class="mod444444">
+
+                    <div class="md44">
+                        <p>Title <input type="text"></p>
+                        <p id="pot"><img src="../images/interfaz/point.png" alt=""></p>
+                        <p><input type="checkbox">Short first in host <br> directory list</p>
+                    </div>
+
+                    <div class="md5">
+                        <p id="pot2">Section <select name="" id="pot7" disabled>
+                            <option value="">SOPORTE</option>
+                        </select></p>
+                    </div>
+
+                </div>
+
+                <div class="md222">
+                    <p>Connection</p>
+                </div>
+
+                <div class="mod4444444" id="list">
+
+                    <div class="md4">
+                        <p id="pot4">Connect to <input type="text" id="pot5"></p>
+                        <p id="pot6">Port <input type="text" id="pot3"></p>
+                    </div>
+
+                    <div class="md4">
+                        <select name="" id="auto">
+                            <option value="">
+                            AutoConnect (progress dialog with retry)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="mod4">
+                        <p>Session profile</p>
+                        <select id="por1"  name="">
+                            <option value="">Standrard.zoc</option>
+                        </select>
+                        <button id="port1">Edit...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p>Connection type</p>
+                        <select id="por2"  name="">
+                            <option value="">Secure Shell</option>
+                        </select>
+                        <button id="port2">Configure...</button>
+                    </div>
+
+                    <div class="mod4">
+                        <p>Emulation</p>
+                        <select id="por3"  name="">
+                            <option value="">VT100</option>
+                        </select>
+                        <button id="port3">Configure...</button>
+                    </div>
+                </div>
+                
+            </div>
+                   
+            </div>
+    
+            <div class="modal-footer7">
+                <div class="fot333">
+                    <button id="clos44">Cancel</button>
+                    <button id="clos5555" class="cur" onclick="mod6(),habladorText('Da click en Save y te conectaras al primer salto')">OK</button>
+                    <button id="clos6666">Help</button>
+                </div>
+            </div>
+        </div>
+
+        <img class="ba" id="back" src="../images/interfaz/etb.PNG" alt="">
+        <img class="ba2" id="back2" src="../images/interfaz/etb2.jpg" alt="" style="display: none;">
+
+        <div id="terminal">
+
+            <div class="coma" id="comma" style="display: none;">
+                <p>< helpdesk@BIGBOSS777 ></p>
+                <input type="text" id="te" onchange="mod2()">
+            </div>
+
+            <div class="coma" id="comma2" style="display: none;">
+                <p>
+                    Interface: xe-8/0/1<br>
+                    Status: up<br>
+                    Protocol: up<br>
+                    Description: gestión_cpe: PIPECI1063870<br><br>
+                
+                    Interface: xe-8/0/2<br>
+                    Status: down<br>
+                    Protocol: down<br>
+                    Description: ID: 12345<br><br>
+                
+                    Interface: xe-8/0/3<br>
+                    Status: up<br>
+                    Protocol: up<br>
+                    Description: SATIP: abcde
+                </p>            
+            </div>
+
+            <div class="coma" id="comma3" style="display: none;">
+                <p>< helpdesk@BIGBOSS777 ></p>
+                <input type="text" id="te2" onchange="mod3()">
+            </div>
+
+            <div class="coma" id="comma4" style="display: none;">
+                <p>
+                    Pinging xe-8/0/2 with 32 bytes of data:<br>
+                    Reply from xe-8/0/2: bytes=32 time< 1ms TTL=64<br>
+                    Reply from xe-8/0/2: bytes=32 time< 1ms TTL=64<br>
+                    Reply from xe-8/0/2: bytes=32 time< 1ms TTL=64<br>
+                    Reply from xe-8/0/2: bytes=32 time< 1ms TTL=64<br><br>
+                
+                    Ping statistics for xe-8/0/2:<br>
+                    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)<br>
+                    Approximate round trip times in milliseconds:<br>
+                    Minimum = 0ms, Maximum = 0ms, Average = 0ms<br><br>
+                
+                    Additional Statistics:<br>
+                    Packets received: 4<br>
+                    Packets lost: 0<br>
+                    Loss rate: 0%
+                </p>         
+            </div>
+
+        </div>
+
+        <div id="terminal2">
+
+            <div class="coma" id="comma6" style="display: none;">
+                <p>
+                    VSI Name: WebServer_VSI_01<br>
+                    VSI ID: VSI-123456<br>
+                    Status: Active<br>
+                    Created On: 2024-01-15<br>
+                    Last Modified: 2024-09-20<br>
+                    Region: US-East<br>
+                    Instance Type: t2.medium<br>
+                    IP Address: 192.168.1.100<br>
+                    MAC Address: 00:1A:2B:3C:4D:5E<br>
+                    Security Groups: <br>
+                    &nbsp;&nbsp;&nbsp; - Web_SG<br>
+                    &nbsp;&nbsp;&nbsp; - App_SG<br>
+                    Attached Volumes: <br>
+                    &nbsp;&nbsp;&nbsp; - Volume ID: vol-abc123 (Size: 50GB, Type: gp2)<br>
+                    Tags: <br>
+                    &nbsp;&nbsp;&nbsp; - Environment: Production<br>
+                    &nbsp;&nbsp;&nbsp; - Owner: Jane Doe<br><br>
+
+                    VSI ID: VSI-987654<br>
+                    Description: High Availability Database Cluster<br>
+                    Status: Running<br>
+                    Created On: 2024-02-10<br>
+                    Last Modified: 2024-09-15<br>
+                    Region: EU-West<br>
+                    Instance Type: m5.large<br>
+                    IP Address: 10.0.0.25<br>
+                    MAC Address: 02:3B:4C:5D:6E:7F<br>
+                    Security Groups: <br>
+                    &nbsp;&nbsp;&nbsp; - DB_SG<br>
+                    &nbsp;&nbsp;&nbsp; - Backup_SG<br>
+                    Attached Volumes: <br>
+                    &nbsp;&nbsp;&nbsp; - Volume ID: vol-def456 (Size: 200GB, Type: io1, IOPS: 300)<br>
+                    &nbsp;&nbsp;&nbsp; - Volume ID: vol-ghi789 (Size: 100GB, Type: gp2)<br>
+                    Tags: <br>
+                    &nbsp;&nbsp;&nbsp; - Environment: Staging<br>
+                    &nbsp;&nbsp;&nbsp; - Owner: John Smith<br>
+                    &nbsp;&nbsp;&nbsp; - Project: Database Migration<br>
+                    Backups: <br>
+                    &nbsp;&nbsp;&nbsp; - Last Backup: 2024-09-10 (Successful)<br>
+                    &nbsp;&nbsp;&nbsp; - Backup Frequency: Daily<br>
+                    Monitoring: <br>
+                    &nbsp;&nbsp;&nbsp; - CPU Utilization: 45%<br>
+                    &nbsp;&nbsp;&nbsp; - Memory Usage: 70%<br>
+                </p>
+                
+            </div>
+
+            <div class="coma" id="comma8" style="display: none;">
+                <p>
+                    Interface Configuration:<br>
+                    Interface Name: GigabitEthernet1/0/1<br>
+                    Description: Uplink to Core Switch<br>
+                    IP Address: 192.168.1.1<br>
+                    Subnet Mask: 255.255.255.0<br>
+                    Status: Up<br>
+                    Protocol Status: Up<br>
+                    MAC Address: 00:1A:2B:3C:4D:5E<br>
+                    MTU: 1500 bytes<br>
+                    Speed: 1000 Mbps<br>
+                    Duplex: Full<br>
+                    Last Updated: 2024-09-24 12:34:56<br>
+                    Traffic Statistics:<br>
+                    &nbsp;&nbsp;&nbsp; Total Packets Sent: 1,500,000<br>
+                    &nbsp;&nbsp;&nbsp; Total Packets Received: 1,250,000<br>
+                    &nbsp;&nbsp;&nbsp; Input Errors: 0<br>
+                    &nbsp;&nbsp;&nbsp; Output Errors: 0<br>
+                    Security Features:<br>
+                    &nbsp;&nbsp;&nbsp; Port Security: Enabled<br>
+                    &nbsp;&nbsp;&nbsp; MAC Filtering: Active<br>
+                    VLAN Membership:<br>
+                    &nbsp;&nbsp;&nbsp; VLAN ID: 10<br>
+                    &nbsp;&nbsp;&nbsp; VLAN Name: Marketing<br>
+                </p>
+                              
+            </div>
+
+            <div class="coma2" id="comma9" style="display: none;">
+                <p>< helpdesk@BIGBOSS777 ></p>
+                <input type="text" id="te4" onchange="mod9()">
+            </div>
+
+            <div class="coma" id="comma10" style="display: none;">
+                <p>
+                    VLAN ID: 10<br>
+                    VLAN Name: Marketing<br>
+                    Status: Active<br>
+                    Created On: 2024-03-01<br>
+                    Last Modified: 2024-09-20<br>
+                    VLAN Type: Ethernet<br>
+                    Number of Ports: 5<br>
+                    Tagged Ports: Eth1/1, Eth1/2, Eth1/3<br>
+                    Untagged Ports: Eth1/4, Eth1/5<br>
+                    Connected Interface: GigabitEthernet1/0/1<br>
+                    Protocol: IEEE 802.1Q<br>
+                    MTU Size: 1500 bytes<br>
+                    IP Address: 192.168.10.1<br>
+                    Subnet Mask: 255.255.255.0<br>
+                    DHCP: Enabled<br>
+                    Description: VLAN for marketing department<br>
+                    Associated Security Groups: Marketing_SG, Internal_SG<br>
+                    Last Maintenance: 2024-08-15 (Successful)<br>
+                </p>                            
+            </div>
+            
+            <div class="coma2" id="comma11" style="display: none;">
+                <p>< helpdesk@BIGBOSS777 ></p>
+                <input type="text" id="te5" onchange="mod10()">
+            </div>
+
+            <div class="coma" id="comma12" style="display: none;">
+                <p>
+                    Current Configuration:<br>
+                    Device Name: Router-01<br>
+                    Device Type: Cisco Router<br>
+                    Software Version: IOS-XE 16.12.1<br>
+                    Configuration Mode: Global<br>
+                    Interfaces:<br>
+                    Interface GigabitEthernet1/0/1<br>
+                    Description: Uplink to Core Switch<br>
+                    IP Address: 192.168.1.1<br>
+                    Subnet Mask: 255.255.255.0<br>
+                    Status: Up<br>
+                    MAC Address: 00:1A:2B:3C:4D:5E<br>
+                    MTU: 1500 bytes<br>
+                    Speed: 1000 Mbps<br>
+                    Duplex: Full<br>
+                    VLAN Configuration:<br>
+                    VLAN ID: 10<br>
+                    VLAN Name: Marketing<br>
+                    Status: Active<br>
+                    Number of Ports: 5<br>
+                    Tagged Ports: Eth1/1, Eth1/2, Eth1/3<br>
+                    Untagged Ports: Eth1/4, Eth1/5<br>
+                    Routing Protocols:<br>
+                    OSPF<br>
+                    Router ID: 1.1.1.1<br>
+                    Area: 0<br>
+                    Networks: 192.168.1.0/24<br>
+                    Security Settings:<br>
+                    Access Control List: ACL-100<br>
+                    Firewall Status: Enabled<br>
+                    NAT: Enabled<br>
+                    System Logging:<br>
+                    Logging Level: Informational<br>
+                    Log File: /var/log/router.log<br>
+                    Last Log Entry: 2024-09-24 12:34:56 - Interface GigabitEthernet1/0/1 is up<br>
+                </p>                                        
+            </div>
+
+            <div class="coma2" id="comma13" style="display: none;">
+                <p>< helpdesk@BIGBOSS777 ></p>
+                <input type="text" id="te6" onchange="mod11()">
+            </div>
+
+            <div class="coma" id="comma14" style="display: none;">
+                <p>
+                    MAC Address Configuration:<br>
+                    Interface: GigabitEthernet1/0/1<br>
+                    MAC Address: 00:1A:2B:3C:4D:5E<br>
+                    Status: Active<br>
+                    Vendor: Cisco Systems, Inc.<br>
+                    Protocol: Ethernet<br>
+                    MTU: 1500 bytes<br>
+                    Address Type: Unicast<br>
+                    Last Updated: 2024-09-24 12:34:56<br>
+                    Number of Packets Sent: 1,500,000<br>
+                    Number of Packets Received: 1,250,000<br>
+                    Error Count: 0<br>
+                    Security Features:<br>
+                    &nbsp;&nbsp;&nbsp; - Port Security: Enabled<br>
+                    &nbsp;&nbsp;&nbsp; - MAC Filtering: Active<br>
+                </p>                                                       
+            </div>
+
+            <div class="coma" id="comma15" style="display: none;">
+                <p>
+                    Device Name: Router-01<br>
+                    Address: 1234 Network Ave, Suite 567<br>
+                    City: Tech City<br>
+                    State: CA<br>
+                    ZIP Code: 90210<br>
+                    Country: USA<br>
+                </p>                                                   
+            </div>
+
+        </div>
+
+        <div class="fle" id="fle" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle2" id="fle2" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle3" id="fle3" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle5" id="fle5" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle6" id="fle6" style="display: none;">
+            <img src="../images/icons/arrow3.png" alt="">
+        </div>
+
+        <div class="fle7" id="fle7" style="display: none;">
+            <img src="../images/icons/arrow3.png" alt="">
+        </div>
+
+        <div class="fle8" id="fle8" style="display: none;">
+            <img src="../images/icons/arrow2.png" alt="">
+        </div>
+
+        <div class="fle9" id="fle9" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle10" id="fle10" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+        <div class="fle11" id="fle11" style="display: none;">
+            <img src="../images/icons/arrow.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="fle4" id="fle4" style="display: none;">
+        <img src="../images/icons/arrow2.png" alt="">
+    </div>
+
+    <div class="fot-content">
+        <div class="his">
+            <img src="../images/interfaz/full5.png" alt="">
+            <p>Secure Shell</p>
+        </div>
+
+        <div class="not">
+            <p>VT100</p>
+        </div>
+
+        <div class="can">
+            <p>Zmodem</p>
+        </div>
+
+        <div class="can">
+            <input type="checkbox">
+            <p>ZOC2408_01.log</p>
+        </div>
+
+        <div class="end-3" id="jake">
+            <button onclick="location.href='../menus/menuZoc.html'">SALIR DE LA SIMULACIÓN</button>
+        </div>
+
+        <div class="end-3" id="finn" style="display: none;">
+            <button onclick="location.href='../menus/menuZoc.html'">FINALIZAR SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../images/icons/cross_small.svg" alt="">
+        </div>
+    </div>
+
+    <script src="../bootstrap/jquery.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/typed.js"></script>
+    <script src="../../Controller/interfaz/zoc4.js"></script>
+    <script src="../../Controller/main/hablador.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            habladorText('Para conectarte con la central celeccionada, da click en el boton “Connect”')
+        });
+    </script>
+
+</body>
+</html>

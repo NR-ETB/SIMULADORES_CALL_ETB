@@ -1,0 +1,980 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --b2blue-etb: #0070d1;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --b3gray-etb: #f7f7f7;
+    --purpple-etb:  #a31aff;
+    --red-etb:  #d40000;
+    --yelow-etb: #fff6c2;
+}
+/* Variables de Colores */
+
+body{
+    overflow-x: hidden;
+}
+
+/* Contenedor del Modal Uno */
+.modal-one{
+    position: relative;
+    left: 750px;
+    top: 100px;
+    border: 1px solid var(--bgray-etb);
+    width: 600px;
+    height: 360px;
+}
+.modal-header p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.modal-body{
+    background-color: var(--b3gray-etb);
+    height: 300px;
+}
+.block{
+    background-color: var(--withe-etb);  
+    border: 1px solid var(--bgray-etb); 
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 40px; 
+    width: 520px;
+    height: 250px;
+    font-size: 14px;
+}
+.block h5{
+    position: relative;
+    top: 25px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.block p{
+    margin-left: 15px;
+}
+.bu{
+    background-color: var(--b2blue-etb);
+    width: 80px;
+    height: 248px;
+}
+.bu img{
+    width: 55px;
+    height: 55px;
+    margin: 10px 0 0 12px;
+}
+.modal-footer{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+.fot{
+    margin-left: 40px;
+}
+.fot select{
+    background-color: var(--b3gray-etb);
+}
+.fot button{
+    width: 90px;
+    position: relative;
+    left: 137px;
+}
+#clos{
+    cursor: pointer;
+    border: 2px solid var(--bblue-etb);
+}
+/* Contenedor del Modal Uno */
+
+/* Contenedor del Modal Dos */
+.modal-two{
+    position: relative;
+    left: 700px;
+    top: 40px;
+    border: 1px solid var(--bgray-etb);
+    width: 700px;
+    height: 580px;
+}
+.modal-header2 {
+    display: flex;
+}
+.modal-header2 img{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.modal-header2 p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.modal-body2{
+    background-color: var(--b3gray-etb);
+    height: 520px;
+}
+.mod1{
+    display: flex;
+    margin-left: 25px;
+    position: relative;
+    top: 15px;
+}
+.mod1 p{
+    margin: 0 15px 0 25px;
+}
+.mod1 select{
+    width: 200px;
+}
+.mod1 input{
+    width: 70px;
+}
+.mod2{
+    border: 1px solid var(--b2gray-etb);
+    width: 495px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.mod2 p{
+    position: relative;
+    bottom: 14px;
+    left: 5px;
+    background-color: var(--b3gray-etb);
+    width: 70px;
+}
+.mod3{
+    position: relative;
+    bottom: 385px;
+    margin-left: 70px;
+}
+.mod4{
+    display: flex;
+    margin-top: 15px;
+}
+.mod4 p{
+    margin-right: 25px;
+    font-size: 12.6px;
+}
+.mod4 button{
+    width: 85px;
+}
+#por1{
+    position: relative;
+    left: 15px;
+    width: 185px;
+}
+#por2{
+    width: 185px;
+}
+#por3{
+    position: relative;
+    left: 43px;
+    width: 185px;
+}
+#por4{
+    position: relative;
+    left: 40px;
+    width: 300px;
+}
+#por44 , #por4{
+    margin-top: 45px;
+}
+#por5{
+    position: relative;
+    left: 44px;
+    width: 300px;
+}
+#por6{
+    position: relative;
+    left: 35px;
+    width: 245px;
+}
+#port1{
+    position: relative;
+    left: 50px;
+}
+#port2{
+    position: relative;
+    left: 35px;
+}
+#port3{
+    position: relative;
+    left: 77px;
+}
+#port4{
+    background-color: var(--b2gray-etb);
+    border: 1px solid var(--black-etb);
+    border-radius: 2px;
+    position: relative;
+    left: 50px;
+    width: 40px;
+}
+#port5{
+    position: relative;
+    left: 130px;
+}
+#port6{
+    position: relative;
+    left: 130px;
+}
+.modal-footer2{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+.fot2{
+    display: grid;
+    margin-left: 40px;
+}
+.fot2 select{
+    background-color: var(--b3gray-etb);
+}
+.fot2 button{
+    width: 90px;
+    position: relative;
+    left: 540px;
+    bottom: 530px;
+}
+.sel{
+    cursor: pointer;
+    border: 2px solid var(--bblue-etb);    
+}
+#clos{
+    cursor: pointer;
+    border: 2px solid var(--bblue-etb);
+}
+#clos2{
+    cursor: pointer;
+    margin-top: 10px;
+}
+#clos3{
+    margin-top: 10px;
+}
+#clos4{
+    margin-top: 410px;
+}
+/* Contenedor del Modal Dos */
+
+/* Contenedor del Modal Tres */
+.modal-three{
+    position: relative;
+    left: 580px;
+    top: 40px;
+    border: 1px solid var(--bgray-etb);
+    width: 800px;
+    height: 580px;
+}
+.modal-header3 {
+    display: flex;
+}
+.modal-header3 img{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.modal-header3 p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.modal-body3{
+    background-color: var(--b3gray-etb);
+    height: 520px;
+}
+.mod1{
+    display: flex;
+    margin-left: 25px;
+    position: relative;
+    top: 15px;
+}
+.mod1 p{
+    margin: 0 15px 0 25px;
+}
+.mod1 select{
+    width: 200px;
+}
+.mod1 input{
+    width: 70px;
+}
+.mod22{
+    display: flex;
+    border: 1px solid var(--b2gray-etb);
+    width: 602px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.mod22 p{
+    position: relative;
+    bottom: 25px;
+    right: 1px;
+    background-color: var(--b3gray-etb);
+    width: 150px;
+    height: 24px;
+    font-size: 12px;
+    border-left: 1px solid var(--b2gray-etb);
+    border-top: 1px solid var(--b2gray-etb);
+    padding-left: 10px;
+}
+#w1{
+    background-color: var(--withe-etb);
+    height: 26px;
+}
+#w2{
+    border-right: 1px solid var(--b2gray-etb);
+}
+.mod33{
+    position: relative;
+    width: 600px;
+    height: 427px;
+    bottom: 429px;
+    margin-left: 36px;
+    background-color: var(--withe-etb);
+    z-index: 1;
+}
+.modal-footer3{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+#sho{
+    position: relative;
+    bottom: 30px;
+    font-size: 14px;
+}
+.fot3{
+    display: grid;
+    margin-left: 40px;
+}
+.fot3 select{
+    background-color: var(--b3gray-etb);
+}
+.fot3 button{
+    width: 90px;
+    position: relative;
+    left: 640px;
+    bottom: 530px;
+}
+#clos1{
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid var(--bblue-etb);
+}
+#clos22{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+#clos33{
+    margin-top: 10px;
+}
+#zzz{
+    cursor: pointer;
+}
+#zzz2{
+    cursor: pointer;
+    border: 2px solid var(--bblue-etb);
+}
+#zzz3{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+}
+#clos44{
+    margin-top: 240px;
+}
+#clos55{
+    position: relative;
+    left: 402px;
+    bottom: 553px;
+}
+#clos66{
+    position: relative;
+    left: 0px;
+    bottom: 576px;
+}
+/* Contenedor del Modal Tres */
+
+/* Contenedor del Menu One */
+.menu-one{
+    position: relative;
+    left: 1281px;
+    bottom: 234px;
+    border: 1px solid var(--bgray-etb);
+    width: 250px;
+}
+.menu-body{
+    background-color: var(--b3gray-etb);
+    font-size: 14px;
+}
+li{
+    text-align: left;
+    list-style: none;
+    margin-left: 40px;
+}
+.on{
+    margin-bottom: 15px;
+}
+#on{
+    color: var(--b2gray-etb);
+}
+.lin{
+    position: relative;
+    top: 7px;
+    width: 208px;
+    height: 1px;
+    background-color: var(--bgray-etb);
+}
+#imp{
+    cursor: pointer;
+}
+/* Contenedor del Menu One */
+
+/* Contenedor del Menu Two */
+.menu-two{
+    position: relative;
+    left: 780px;
+    bottom: 466px;
+    border: 1px solid var(--bgray-etb);
+    width: 550px;
+    z-index: 1;
+}
+.menu-header {
+    background-color: var(--withe-etb);
+    display: flex;
+}
+.menu-header p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.menu-header img{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.menu-body2{
+    background-color: var(--b3gray-etb);
+    height: 390px;
+}
+.mod222{
+    display: flex;
+    border: 1px solid var(--b2gray-etb);
+    width: 375px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+.mod222 p{
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+    background-color: var(--b3gray-etb);
+    width: 190px;
+    height: 24px;
+    font-size: 12px;
+}
+#w2{
+    border-right: 1px solid var(--b2gray-etb);
+}
+.mod333{
+    position: relative;
+    width: 340px;
+    height: 260px;
+    bottom: 330px;
+    margin-left: 50px;
+    background-color: var(--withe-etb);
+    z-index: 1;
+}
+.lis{
+    text-align: left;
+    font-size: 14.2px;
+    margin-left: 5px;
+}
+.menu-footer{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+#zoch2{
+    position: relative;
+    bottom: 60px;
+    margin-left: 15px;
+}
+#sho2{
+    position: relative;
+    bottom: 60px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.fot33{
+    display: grid;
+    margin-left: 40px;
+}
+.fot33 select{
+    width: 270px;
+}
+.fot33 button{
+    width: 90px;
+    position: relative;
+    left: 400px;
+    bottom: 420px;
+}
+#clos1{
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid var(--bblue-etb);
+}
+#clos22{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+#clos777{
+    position: relative;
+    left: 300px;
+    top: 38px;
+    background-color: var(--b2gray-etb);
+    border: 1px solid var(--black-etb);
+    width: 40px;
+    cursor: pointer;
+}
+#zo{
+    cursor: pointer;
+}
+#invi{
+    color: transparent
+}
+/* Contenedor del Menu Two */
+
+/* Contenedor del Menu Three */
+.menu-three{
+    position: relative;
+    left: 560px;
+    top: 20px;
+    border: 1px solid var(--bgray-etb);
+    width: 980px;
+    z-index: 1;
+}
+.menu-header2 {
+    background-color: var(--withe-etb);
+    display: flex;
+}
+.menu-header2 p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.menu-header2 img{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.menu-body3{
+    background-color: var(--b3gray-etb);
+    height: 390px;
+}
+.mod2222{
+    display: flex;
+    border: 1px solid var(--b2gray-etb);
+    width: 375px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+.mod2222 p{
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+    background-color: var(--b3gray-etb);
+    width: 100px;
+    height: 24px;
+    font-size: 12px;
+}
+#w2{
+    border-right: 1px solid var(--b2gray-etb);
+}
+.mod3333{
+    position: relative;
+    width: 340px;
+    height: 260px;
+    bottom: 270px;
+    margin-left: 50px;
+    background-color: var(--bblue-etb);
+    z-index: 1;
+    overflow-y: auto;
+}
+.lis2{
+    text-align: left;
+    font-size: 14.2px;
+    margin-left: 5px;
+    color: var(--withe-etb);
+}
+.lis3{
+    text-align: left;
+    font-size: 14.2px;
+    margin-left: 5px;
+}
+.mod4444{
+    display: flex;
+    border: 1px solid var(--b2gray-etb);
+    width: 375px;
+    height: 350px;
+    position: relative;
+    bottom: 610px;
+    margin-left: 450px;
+}
+.mod4444 p{
+    position: relative;
+    bottom: 12px;
+    left: 10px;
+    background-color: var(--b3gray-etb);
+    width: 190px;
+    height: 24px;
+    font-size: 12px;
+}
+.mod5555{
+    position: relative;
+    width: 340px;
+    height: 260px;
+    bottom: 890px;
+    margin-left: 470px;
+    background-color: var(--withe-etb);
+    z-index: 1;
+    overflow-y: auto;
+}
+#sec{
+    position: relative;
+    bottom: 400px;
+    left: 420px;
+}
+#sec2{
+    position: relative;
+    bottom: 400px;
+    left: 450px;
+    width: 300px;
+}
+.menu-footer{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+.fot333{
+    display: grid;
+    margin-left: 40px;
+}
+.fot333 p{
+    position: relative;
+    bottom: 340px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.fot333 select{
+    width: 270px;
+    position: relative;
+    bottom: 340px;
+    margin-left: 10px;
+    background-color: var(--b3gray-etb);
+}
+.fot333 button{
+    width: 90px;
+    position: relative;
+    left: 820px;
+    bottom: 490px;
+}
+#zo{
+    cursor: pointer;
+}
+#invi{
+    color: transparent
+}
+/* Contenedor del Menu Three */
+
+/* Contenedor del Modal Cuatro */
+.modal-four{
+    position: relative;
+    left: 580px;
+    bottom: 630px;
+    border: 1px solid var(--bgray-etb);
+    width: 800px;
+    height: 580px;
+}
+.modal-header4 {
+    display: flex;
+}
+.modal-header4 img{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+.modal-header4 p{
+    font-size: 14px;
+    background-color: var(--withe-etb);
+}
+.modal-body4{
+    background-color: var(--b3gray-etb);
+    height: 520px;
+}
+.mod22222{
+    display: flex;
+    border: 1px solid var(--b2gray-etb);
+    width: 602px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.mod22222 p{
+    position: relative;
+    bottom: 25px;
+    right: 1px;
+    background-color: var(--b3gray-etb);
+    width: 150px;
+    height: 24px;
+    font-size: 12px;
+    border-left: 1px solid var(--b2gray-etb);
+    border-top: 1px solid var(--b2gray-etb);
+    padding-left: 10px;
+}
+#w3{
+    background-color: var(--withe-etb);
+    height: 26px;
+    border-right: 1px solid var(--b2gray-etb);
+}
+.mod33333{
+    position: relative;
+    width: 600px;
+    height: 427px;
+    bottom: 429px;
+    margin-left: 36px;
+    background-color: var(--withe-etb);
+    z-index: 1;
+}
+#tab{
+    text-align: left;
+    font-size: 15px;
+}
+#tab th{
+    font-weight: 500;
+    border: 1px solid var(--b2gray-etb);
+    padding-left: 15px;
+}
+#th1{
+    padding-right: 21px;
+}
+#th2{
+    padding-left: 45px;
+    width: 125px;
+}
+#tab img{
+    width: 10px;
+    height: 10px;
+}
+#tab td{
+    text-align: left;
+    padding-left: 12px;
+}
+#tr1{
+    cursor: pointer;
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+}
+.modal-footer4{
+    background-color: var(--b3gray-etb);
+    border-bottom: 1px solid var(--bgray-etb); 
+    height: 40px;
+}
+#sho{
+    position: relative;
+    bottom: 30px;
+    font-size: 14px;
+}
+.fot3{
+    display: grid;
+    margin-left: 40px;
+}
+.fot3 select{
+    background-color: var(--b3gray-etb);
+}
+.fot3 button{
+    width: 90px;
+    position: relative;
+    left: 640px;
+    bottom: 530px;
+}
+#clos1{
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid var(--bblue-etb);
+}
+#clos222{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 50px;
+    border: 2px solid var(--bblue-etb);
+}
+#clos333{
+    margin-top: 10px;
+}
+/* Contenedor del Modal Cuatro */
+
+/* Contenedor de las Guias */
+.fle img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1325px;
+    top: 55px;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle2 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1380px;
+    bottom: 478px;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle3 img{
+    height: 45px;
+    width: 45px;
+    animation: shake2 2s infinite;
+    position: relative;
+    right: 6px;
+    bottom: 110px;
+}
+@keyframes shake2 {
+
+    0%, 100% { transform: translateY(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateY(-5px); }
+    20%, 40%, 60%, 80% { transform: translateY(5px); }
+
+}
+.fle4 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1360px;
+    bottom: 268px;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle5 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1385px;
+    bottom: 374px;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle6 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1045px;
+    bottom: 645px;
+    z-index: 1;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle7 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1185px;
+    bottom: 560px;
+    z-index: 1;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle8 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1325px;
+    bottom: 892px;
+    z-index: 1;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle9 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1525px;
+    bottom: 407px;
+    z-index: 1;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.fle10 img{
+    height: 45px;
+    width: 45px;
+    animation: shake 2s infinite;
+    position: relative;
+    left: 1365px;
+    bottom: 1164px;
+    z-index: 1;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+/* Contenedor de las Guias */
