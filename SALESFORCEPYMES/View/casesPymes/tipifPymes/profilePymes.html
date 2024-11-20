@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icons/logo.png">
+    <link rel="stylesheet" href="../../components/css/comp.css">
+    <link rel="stylesheet" href="../../css/profile.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/modals.css">
+    <title>Tipificación del Caso - Simulador Aula</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="../../images/icons/etb.png" alt="">
+
+        <input type="text" placeholder="Buscar...">
+
+        <div class="callte">
+            <img src="../../images/icons/calltec.png" alt="">
+            <img src="../../images/icons/calltec2.png" alt="">
+        </div>
+
+        <div class="icons">
+            <img src="../../images/icons/star.png" alt="">
+            <img src="../../images/icons/plus.png" alt="">
+            <img src="../../images/icons/got.png" alt="">
+            <img src="../../images/icons/question.png" alt="">
+            <img src="../../images/icons/bell.png" alt="">
+            <img src="../../images/icons/user.png" alt="">
+        </div>
+
+    </div>
+
+        <div class="line"></div>
+
+        <div class="container-2">
+
+            <img src="../../images/icons/menu.png" alt="">
+
+            <p id="title">Consola de Servicios</p>
+
+            <p id="par">Casos</p>
+
+            <div id="arrow">
+                <img src="../../images/icons/fot arrow.png" alt="">
+            </div>
+
+            <div class="actions22">
+                <img src="../../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+                <audio id="au_menu2" class="audio" style="display: none;">
+                    <source type="audio/wav" src="../../../Model/audio/gsp7.mp3">
+                </audio>
+            </div>
+
+        </div>
+
+        <div class="top-content">
+
+            <img id="por" src="../../images/profile/folio.png" alt="">
+
+            <div class="content-1">
+                <p>Casos</p>
+                <h3>Vistos Recientemente</h3>
+            </div>
+
+            <div class="content-2">
+                <img src="../../images/icons/fot arrow.png" alt="">
+                <button><img id="pin" src="../../images/profile/pin.png" alt=""></button>
+            </div>
+
+            <div class="content-3">
+                <button id="nt" onclick="new_tip(),habladorText('Selecciona la opcion SOPORTE TECNICO y da click en SIGUIENTE, para continuar.');">Nuevo</button>
+                <button>Cambiar Propietario</button>
+                <button>Cambiar Casos</button>
+            </div>
+
+            <div>
+                <img id="arro" src="../../images/cases/arrow.png" alt="">
+                <p id="text">14+elementos * Se actualizo hace algunos segundos</p>
+            </div>
+
+            <div class="content-4">
+
+                <input type="" name="" id="" placeholder="Busca en esta lista...">
+
+                <button><img src="../../images/profile/config.png" alt=""></button>
+
+                <button><img src="../../images/icons/menu.png" alt=""></button>
+
+                <button><img src="../../images/profile/back.png" alt=""></button>
+
+                <button><img src="../../images/cases/pencil.png" alt=""></button>
+
+                <button><img src="../../images/profile/pastel.png" alt=""></button>
+                <button id="embu"><img src="../../images/profile/em.png" alt=""></button>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-5">
+
+                <input type="checkbox">
+                <span id="t1">Tipo de Regis...</span><img id="a1" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t2">Tipo de Caso</span><img id="a2" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t3">Nombre de la cuenta</span><img id="a3" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t4">Numero del...</span><img id="a4" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t5">Asunto</span><img id="a5" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t6">Estado</span><img id="a6" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t7">Fecha...</span><img id="a7" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t8">Fecha/Hora de a...</span><img id="a8" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t9">Al...</span><img id="a9" src="../../images/icons/fot arrow.png" alt="">
+
+                <span id="t10">Ár...</span><img id="a10" src="../../images/icons/fot arrow.png" alt="">
+
+            </div>
+
+        </div>
+
+        <script>
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() + 1;
+            var year = today.getFullYear();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+        </script>
+
+        <div class="cen-content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="num">1</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">ZenTech</td>
+                            <td id="ident"><a href="">17881363</a></td>
+                            <td id="pqr"><a href="">Caida Total</a></td>
+                            <td id="sta">Cerrado</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">2</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Vibe</td>
+                            <td id="ident"><a href="">17879752</a></td>
+                            <td id="pqr"><a href="">CAIDA DEL SERVICIO</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">3</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Flux</td>
+                            <td id="ident"><a href="">17879053</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">4</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Nexis</td>
+                            <td id="ident"><a href="">17877986</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">5</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Edge</td>
+                            <td id="ident"><a href="">17887680</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">Cerrado</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">6</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Quanta</td>
+                            <td id="ident"><a href="">17876015</a></td>
+                            <td id="pqr"><a href="">ESC_SOP_LA_RUEDA_17876015_-</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">7</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Echo</td>
+                            <td id="ident"><a href="">17876042</a></td>
+                            <td id="pqr"><a href="">Cambio dirección IP Troncal</a></td>
+                            <td id="sta">Abierto</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">8</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Prism</td>
+                            <td id="ident"><a href="">17876358</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">Asignado</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">9</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Byte</td>
+                            <td id="ident"><a href="">17876615</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">Cerrado</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">10</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Forge</td>
+                            <td id="ident"><a href="">17875855</a></td>
+                            <td id="pqr"><a href="">Falla en Voz</a></td>
+                            <td id="sta">Cerrado</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">11</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Pulse</td>
+                            <td id="ident"><a href="">17876077</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL ID00026613</a></td>
+                            <td id="sta">Abierto</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">12</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Omni</td>
+                            <td id="ident"><a href="">17874965</a></td>
+                            <td id="pqr"><a href="">NO ESTABLECE LLAMADAS</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">13</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Vortex</td>
+                            <td id="ident"><a href="">17875588</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">14</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Blaze</td>
+                            <td id="ident"><a href="">17874413</a></td>
+                            <td id="pqr"><a href="">Caida Total</a></td>
+                            <td id="sta">Abierto</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+
+                        <tr>
+                            <td id="num">15</td>
+                            <td id="box"><input type="checkbox"></td>
+                            <td id="cs">SOPORTE TECNIC...</td>
+                            <td id="tp">SOPORTE TECNIC...</td>
+                            <td id="na">Nova</td>
+                            <td id="ident"><a href="">17874137</a></td>
+                            <td id="pqr"><a href="">CAIDA TOTAL</a></td>
+                            <td id="sta">En Proceso</td>
+                            <td id="feh"><script>document.write(`${month}/${day}/${year}`)</script></td>
+                            <td id="hou"><script>document.write(`${month}/${day}/${year}`)</script> <script>document.write(`${hours}:${minutes}`)</script></td>
+                            <td id="nam">ntvg</td>
+                            <td></td>
+                            <td><img src="../../images/icons/fot arrow.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div id="overlay" style="display: none;"></div>
+
+        <div class="tip" id="tip" style="display: none;">
+            <img onclick="close1();" src="../../images/icons/x.png" alt="">
+            <div class="container-modal">
+                <div class="modal-header">
+                    <h3>Nuevo Caso</h3>
+                </div>
+
+                <div class="lin"></div>
+
+                <div class="modal-body">
+
+                    <p>Seleccionar un tipo de registro</p>
+
+                    <div class="eli">
+                        <div class="cas">
+                            <input type="radio" disabled>CASO PQR
+                        </div>
+                        <div class="sop">
+                            <input type="radio">SOPORTE TECNICO
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <div class="bot">
+                        <button id="can" onclick="close1();">Cancelar</button>
+                        <button id="sig" onclick="tipi(),habladorText2('Se debe tipificar el caso con los datos del cliente, rellena o selecciona unicamente los campos de color amarrillos ya que estos son los obligatorios, aunque en un secenario mas real lo mas recomendable es añadir la mayor y correcta cantidad de informacion del caso posible, tambien se recomienda encarecidamente el uso del manual de usuario para entender mejor la tipificación, caso ejemplo: <br><br> DATOS OBLIGATORIOS: <br><br> NIT: 800985400 <br> Nombre de Cuenta: INTER CORPS S.A.S 800985400 <br> Categoría: Incidente <br> Fecha de radicación: “Hoy” <br> Area final de solucion: HDP <br> ID Servicio: IDL00CI10284790 <br> Fecha de afectacion inicio y final: “Hoy” y “Mañana” <br> Prioridad: Alta <br> Asunto y Descripción: Añade el asunto Caida Total, rellena la plantilla y pegala en la descripcion <br><br> NIT: <br> Nombre Empresa: <br> ID Servicio: <br> Descripcion Falla: br <br> Direccion: <br> Nombre Contacto:  <br> Telefono: <br> Contacto En Sede: br <br> Teléfono: <br><br> DATOS EXTRA: <br><br> Direccion: CL 140 10 A 48 OF 303 <br> Nombre Contacto: JOSE RAUL SALAMANCA HURTADO <br> Telefono: 2068964 <br> Contacto En Sede: JOSE RAUL SALAMANCA HURTADO <br><br> Por ultimo clickea en guardar, se crea el caso y finalizaras con la simulacion.');"">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tip2" id="tip2" style="display: none;">
+                <img id="equis" onclick="close2();" src="../../images/icons/x.png" alt="">
+            <div class="container-modal">
+                <div class="modal-header2">
+                    <h3>Nuevo Caso: SOPORTE TECNICO</h3>
+                </div>
+
+                <div class="lin"></div>
+
+                <div class="modal-body2">
+
+                    <div class="p4">
+                        <p><span>*</span> =Información obligatoria</p>
+                    </div>
+
+                    <div class="p5">
+                        <p>Información del Caso</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Numero del Caso</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><span id="invi">i</span></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Caso Principal</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="">Buscar Casos...</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor22">
+                                        <td>Nombre de Cuenta</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="" disabled selected>Buscar Cuentas...</option>
+                                            <option value="">INTER CROPS S.A.S 800985400</option>
+                                            <option value="">DNG PRODUCTOS DE MALA CALIDAD 800253700</option>
+                                            <option value="">MASTER PUNKINGS S.A 800742500</option>
+                                            <option value="">SUSHI PUSHING AWAY S.A.S 800486200</option>
+                                            <option value="">ADM EMPRESA DE TRANSISTORES 800697100</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Código único numérico-CUN</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><span id="invi">i</span></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><span>*</span> Fecha de radicación</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><input type="date" name="" id="calen"></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td>Servicio</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="" disabled selected>IDL00CI10284790</option>
+                                            <option value="" disabled>Mostrar mas resultados para IDL00CI10284790</option>
+                                            <option value="">AC-501420 INTER S.A.S</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Dirección Intalación</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Ciudad Instalacion</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Categoria</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="">-- Ninguno --</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa5"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Gestionado por</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="">Genialo</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="tab-two">
+                            <table>
+                                <tbody>
+            
+                                    <tr class="bor">
+                                        <td>Tipo de registro del caso</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td id="sec">SOPORTE TECNICO</td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Propietario del caso</td>
+                                    </tr>
+        
+                                    <tr class="bor2">
+                                        <td><img src="../../images/icons/user.png" alt=""><a href="">Maria Alejandra Ariza Henao</a></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td>Categoria</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="">-- Ninguno --</option>
+                                            <option value="">Incidente</option>
+                                            <option value="">Evento</option>
+                                            <option value="">Requerimiento</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td>Ruta de Archivo</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td>Área final de Solución</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="">-- Ninguno --</option>
+                                            <option value="">HDP</option>
+                                            <option value="">ASC</option>
+                                            <option value="">GAOR</option>
+                                            <option value="">CSIR</option>
+                                            <option value="">AISV</option>
+                                            <option value="">LD</option>
+                                            <option value="">CX</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa2"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Envío a Cuadrilla</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="checkbox" id="checked"></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa3"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>ID Servicio</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Integrar con Remedy</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="checkbox" id="checked"></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa4"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Activo</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="" disabled selected>Buscar Activos...</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Información Adicional</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Numero de Service Manager</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Origen del Caso</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="">-- Ninguno --</option>
+                                            <option value="">Correo electrónico</option>
+                                            <option value="">Teléfonico</option>
+                                            <option value="">Web</option>
+                                            <option value="">Centro de Servicio</option>
+                                            <option value="">Asesor</option>
+                                            <option value="">Proactivos</option>
+                                            <option value="">Proactivos Web</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Plan</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="">
+                                            <option value="" disabled selected>Buscar Planes...</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor22">
+                                        <td>Fecha Inicio Afectación <img src="../../images/cases/info.png" alt=""></td>
+                                    </tr>
+
+                                    <tr class="bor33">
+                                        <td id="fe">Fecha</td>
+                                        <td id="ho">Hora</td>
+                                    </tr>
+        
+                                    <tr class="bor33">
+                                        <td><input type="date" name="" id=""></td>
+                                        <td><input type="time" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor22">
+                                        <td>Fecha Fin Afectación <img src="../../images/cases/info.png" alt=""></td>
+                                    </tr>
+
+                                    <tr class="bor33">
+                                        <td id="fe">Fecha</td>
+                                        <td id="ho">Hora</td>
+                                    </tr>
+        
+                                    <tr class="bor33">
+                                        <td><input type="date" name="" id=""></td>
+                                        <td><input type="time" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td>Estimado Afectados <img src="../../images/cases/info.png" alt=""></td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Modelo Comercial</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>IMEI</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="tab-two">
+                            <table>
+                                <tbody>
+            
+                                    <tr class="bor">
+                                        <td><span>*</span> Estado</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td>Causal Estado</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="">En Proceso</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Subcausal Estado</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><select name="" id="" disabled>
+                                            <option value="">-- Ninguno --</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor22">
+                                        <td>Prioridad</td>
+                                    </tr>
+        
+                                    <tr class="bor22">
+                                        <td><select name="" id="">
+                                            <option value="">-- Ninguno --</option>
+                                            <option value="">Alta</option>
+                                            <option value="">Media</option>
+                                            <option value="">Baja</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa6"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Pertenencia Horas</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li" id="spa7"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Pertenencia Minutos</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Pertenencia Segundos</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id=""></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Descripción</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-three">
+                            <table>
+                                <tbody>
+                                    <tr class="bor222">
+                                        <td>Asunto</td>
+                                    </tr>
+        
+                                    <tr class="bor222">
+                                        <td><input type="text" name="" id="asu"></td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td><div class="li"></div></td>
+                                    </tr>
+        
+                                    <tr class="bor222">
+                                        <td>Descripción</td>
+                                    </tr>
+        
+                                    <tr class="bor222">
+                                        <td><textarea name="" id="des"></textarea></td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Datos del Contacto</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td><span>*</span> Nombre del Contacto</td>
+                                    </tr>
+        
+                                    <td class="bor">
+                                        <select name="" id="">
+                                        <option value="">JOSE RAUL SALAMANCA HURTADO</option>
+                                        <option value="">JOSE RAUL SALAMANCA HURTADO</option>
+                                        <option value="">JOSE RAUL SALAMANCA HURTADO 2068964</option>
+                                        <option value="">+ Crear Contacto</option>
+                                    </select></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="tab-two">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Correo Electrinico Web</td>
+                                    </tr>
+        
+                                    <tr class="bor">
+                                        <td><input type="text" name="" id="invi2"></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Tipificación del Caso</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Fecha de Tipificación</td>
+                                    </tr>
+        
+                                    <td class="bor"><span id="invi">i</samp></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Tipo de Caso</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="asu"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Proceso</td>
+                                    </tr>
+        
+                                    <td class="bor"><span id="invi">i</samp></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Agrupación</td>
+                                    </tr>
+        
+                                    <td class="bor"><span id="invi">i</samp></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Tipología</td>
+                                    </tr>
+        
+                                    <td class="bor"><span id="invi">i</samp></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Descripción cierre de caso</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Descripción Solución</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="tab-two">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Causa Inputabilidad</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Área responsable (imputabilidad)</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Ajuste <img src="../../images/cases/info.png" alt=""></td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="p5">
+                        <p>Sistema Legado</p>
+                    </div>
+
+                    <div class="tab">
+
+                        <div class="tab-one">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Grupo Aseguramiento</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Estado de envío Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Intentos Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor">0</td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Estado de Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Fecha de Envio a Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Fecha de Resolucion Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Solucion de Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="tab-two">
+                            <table>
+                                <tbody>
+                                    <tr class="bor">
+                                        <td>Id Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Responsable Sistema Legado</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>No Proveedor/Aliado <img src="../../images/cases/info.png" alt=""></td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                    <tr class="bor">
+                                        <td>Categoria de la Resolucion Nivel 1</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Categoria de la Resolucion Nivel 2</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Categoria de la Resolucion Nivel 3</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Categoria de la Resolucion Nivel 4</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+
+                                    <tr class="bor">
+                                        <td>Categoria de la Resolucion Nivel 5</td>
+                                    </tr>
+        
+                                    <td class="bor"><input type="text" id="invi2"></td>
+
+                                    <tr class="bor">
+                                        <td><div class="li"></div></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+
+                    <div class="modal-footer2">
+                        <div class="bot">
+                            <button id="can" onclick="close2();">Cancelar</button>
+                            <button id="can">Guardar y nuevo</button>
+                            <button id="sig" onclick="location.href='../../menus/menuPymes.html'">Guardar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="footer-content">
+        <div class="his">
+            <img src="../../images/profile/thun.png" alt="">
+            <p>Noticias en tiempo real de Chatter</p>
+        </div>
+
+        <div class="end-3">
+            <button onclick="location.href='../../menus/menuPymes.html'">SALIR DE LA SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../../images/icons/cross_small.svg" alt="">
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante2">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant2" style="position: relative; left: 600px; bottom: 1100px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante2" style="position: relative; left: 600px; bottom: 740px; height: 815px; width: 500px; z-index: 0; overflow: auto;">
+            <p id="text-msg-hab2">
+                <div class="lds-ellipsis" id="wait-text2"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+    </div>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/typed.js"></script>
+    <script src="../../../Controller/case/case.js"></script>
+    <script src="../../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('En este apartado, aprenderas a realizar la gestion inicial de una FALLA, pasando por la tipificación y opciones seleccionar, las cuales algunas seran obligatorias y otras seran opcionales, para dar inicio a la gestion, da click en el boton NUEVO de la parte superior derecha de la vista.')
+        });
+    </script>   
+</body>
+</html>

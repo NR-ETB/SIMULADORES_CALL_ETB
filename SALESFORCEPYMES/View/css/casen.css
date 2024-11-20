@@ -1,0 +1,254 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --b3gray-etb: #f7f7f7;
+    --purpple-etb:  #a31aff;
+    --red-etb:  #d40000;
+    --yelow-etb: #fff6c2;
+}
+/* Variables de Colores */
+
+/* Contenedor del Cuerpo */
+body{
+    overflow-x: hidden;
+}
+/* Contenedor del Cuerpo */
+
+/* Contenedor Contenedor Principal del Caso */
+.principal-content {
+    background-color: #54698d;
+    max-height: 4600px; 
+}
+/* Contenedor Contenedor Principal del Caso */
+
+/* Contenedor Contenedor Uno del Caso */
+.contentp-1{
+    display: flex;
+    height: 170px;
+    background: var(--b3gray-etb);
+    font-family: 'Poppins';
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    top: 25px;
+    margin: 0 25px;
+}
+.contentp-1 img{
+    width: 45px;
+    height: 45px;
+    margin: 15px 0 0 25px;
+    position: relative;
+    bottom: 10px;
+}
+.contentp-1 p{
+    font-weight: 300;
+    margin-left: 15px;
+    position: relative;
+    bottom: 15px;
+}
+.contentp-1 span{
+    font-weight: 800;
+    position: relative;
+    top: 20px;
+    right: 38px;
+}
+#arro{
+    position: relative;
+    left: 1630px;
+    bottom: 60px;
+    animation: shake 2s infinite;
+}
+@keyframes shake {
+
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+}
+.contentp-1 button{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 1700px;
+    bottom: 60px;
+    background-color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    color: var(--withe-etb);
+    font-size: 12px;
+}
+#cur{
+    position: relative;
+    left: 1640px;
+    bottom: 80px;
+}
+#plus{
+    width: 90px;
+    margin-right: 10px;
+}
+#plus2{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 1185px;
+    top: 9px;
+    z-index: 100;
+}
+#prop{
+    width: 130px;
+}
+#arrow-b{
+    width: 40px;
+}
+#arrow-b img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+/* Contenedor Contenedor Uno del Caso */
+
+/* Contenedor Contenedor Dos del Caso */
+.contentp-2{
+    display: flex;
+    height: 580px;
+    background: var(--b3gray-etb);
+    font-family: 'Poppins';
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    top: 25px;
+    margin: 0 25px;
+    overflow-y: hidden;
+}
+.contentp-2 img{
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid var(--bgray-etb);
+    padding-right: 5px;
+    position: relative;
+    top: 5px;
+}
+#t1{
+    position: relative;
+    left: 75px;
+}
+#a1{
+    position: relative;
+    left: 83px;
+}
+#t2{
+    position: relative;
+    left: 95px;
+}
+#a2{
+    position: relative;
+    left: 900px;
+}
+#t3{
+    position: relative;
+    left: 910px;
+}
+#a3{
+    position: relative;
+    left: 990px;
+}
+#t4{
+    position: relative;
+    left: 1000px;
+}
+#a4{
+    position: relative;
+    left: 1010px;
+}
+#t5{
+    position: relative;
+    left: 1020px;
+}
+#a5{
+    position: relative;
+    left: 1030px;
+}
+.p1{
+    margin-left: 25px;
+    position: relative;
+    top: 140px;
+    right: 170px;
+}
+.p1 img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 27px;
+    bottom: 12px;
+}
+.p1 button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.p2{
+    margin-left: 75px;
+}
+.p3{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+#invi{
+    color: transparent;
+}
+.cen-content {
+    margin-left: 25px;
+    position: relative;
+    bottom: 533px;
+}
+.cen-content table{
+    font-family: 'Poppins';
+    width: 98.64%;
+    height: 150px;
+    font-size: 13px;
+    border-collapse: collapse;
+    background-color: var(--withe-etb);
+}
+.cen-content table td{
+    border-bottom: 1px solid var(--b2gray-etb);
+}
+#num{
+    width: 40px;
+    position: relative;
+    left: 15px;
+}
+#cs{
+    position: relative;
+    left: 15px;
+    color: var(--bblue-etb);
+}
+#tp{
+    position: relative;
+    left: 20px;    
+}
+#na{
+    position: relative;
+    right: 90px;    
+}
+#hou{
+    position: relative;
+    right: 95px;    
+}
+#nam{
+    position: relative;
+    right: 90px;    
+}
+/* Contenedor Contenedor Dos del Caso */

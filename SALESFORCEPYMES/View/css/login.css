@@ -1,0 +1,533 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+}
+/* Variables de Colores */
+
+/* Generalidades del Cuerpo */
+body{
+    overflow-y: hidden;
+}
+/* Generalidades del Cuerpo */
+
+/* Contenedor General del Login */
+.general-container{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Contenedor General del Login */
+
+/* Contenedor Izquierdo del Login */
+.left {
+    background-color: var(--gray-etb);
+    width: 50vw; /* Ancho del 50% del viewport */
+    height: 100vh; /* Altura del 100% del viewport */
+    position: absolute; /* Cambia a absolute para superponer contenedores */
+    top: 0;
+    left: 0; /* Alinea al lado izquierdo */
+    text-align: center;
+}
+
+.left img{
+    height: 112px;
+    position: relative;
+    top: 140px;
+}
+
+.container{
+    background-color: var(--withe-etb);
+    position: relative;
+    top: 160px;
+    left: 290px;
+    width: 380px;
+    height: 360px;
+    border: 1px solid var(--bgray-etb);
+    border-radius: 3px;
+}
+
+.inter-container p{
+   font-family: 'Poppins';
+   font-size: 12px;
+   text-align: left;
+   margin: 20px 0 0 20px;
+   color: var(--pblue-etb);
+   padding-bottom: 7px;
+}
+
+.inter-container input {
+    padding: 12px;
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+    width: calc(87% - 20px); /* Ajusta el ancho del input según sea necesario */
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 3px;  
+    font-family: 'Poppins';
+}
+
+.btn-ini {
+    background-color: var(--bblue-etb);
+    border: none;
+    border-radius: 3px;
+    color: var(--withe-etb);
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin: 20px 0 0 20px;
+    display: block;
+    width: calc(94% - 20px); /* Ajusta el ancho del input según sea necesario */
+    height: 42px;
+    cursor: pointer;
+}
+
+.remember{
+    display: flex;
+    margin-left: 20px;
+}
+
+.remember p{
+    font-family: 'Poppins';
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#manu{
+    color: var(--bblue-etb);
+    position: relative;
+    left: 135px;
+    cursor: pointer;
+}
+
+.line{
+    background-color: var(--bgray-etb);
+    height: 1px;
+    width: 100px;
+    margin: 10px 0 0 20px;
+    width: calc(94% - 20px); /* Ajusta el ancho del input según sea necesario */
+}
+
+.bot{
+    display: flex;
+}
+
+.bot span{
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 20px 0 0 20px;
+    display: block;
+    color: var(--bblue-etb);
+    text-align: left;
+}
+
+.client{
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 290px;
+}
+
+.client p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 0 20px 0 40px;
+}
+
+.client button{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    font-family: 'Poppins';
+    font-size: 12px;
+    border: none;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    position: relative;
+    bottom: 10px;
+}
+
+.callte{
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 360px;
+}
+
+.callte img{
+    height: 50px;
+}
+
+.foot{
+    position: relative;
+    top: 360px;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bblue-etb);
+}
+/* Contenedor Derecho del Login */
+.right {
+    background-color: var(--gray-etb);
+    width: 50vw; /* Ancho del 50% del viewport */
+    height: 100vh; /* Altura del 100% del viewport */
+    position: absolute; /* Cambia a absolute para superponer contenedores */
+    top: 0;
+    right: 0; /* Alinea al lado derecho */
+}
+
+/* Media Queries */
+
+/* Para dispositivos móviles (menor a 768px) */
+@media (max-width: 768px) {
+    .general-container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100vw; /* Ajusta el ancho al 100% del viewport */
+        height: 50vh; /* Ajusta la altura al 50% del viewport */
+        position: relative; /* Cambia a relative para evitar superposiciones */
+    }
+
+    .left {
+        display: none; /* Oculta el contenedor izquierdo en dispositivos móviles */
+    }
+
+    .container {
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .inter-container p {
+        margin: 10px 0;
+        padding-bottom: 5px;
+    }
+
+    .inter-container input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-ini {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .remember {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remember p {
+        margin-left: 0;
+    }
+
+    #manu {
+        position: static;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .client {
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .client p {
+        margin: 10px 0;
+    }
+
+    .client button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .callte {
+        position: static;
+        top: auto;
+        left: auto;
+        margin: 10px auto;
+    }
+
+    .callte img {
+        height: 40px;
+    }
+
+    .foot {
+        position: static;
+        top: auto;
+        margin-top: 20px;
+    }
+}
+
+/* Para tablets y dispositivos pequeños (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .general-container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50vw; /* Ancho del 50% del viewport */
+        height: 100vh; /* Altura del 100% del viewport */
+    }
+
+    .container {
+        position: relative;
+        top: 40px;
+        left: 20px;
+        width: 80%;
+        height: auto;
+    }
+
+    .inter-container p {
+        margin: 15px 0;
+        padding-bottom: 6px;
+    }
+
+    .inter-container input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-ini {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .remember {
+        margin-left: 0;
+    }
+
+    .remember p {
+        margin-left: 0;
+    }
+
+    #manu {
+        position: static;
+        left: 0;
+        margin-top: 15px;
+    }
+
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bot {
+        flex-direction: column;
+    }
+
+    .client {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .client p {
+        margin: 15px 0;
+    }
+
+    .client button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .callte {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .callte img {
+        height: 45px;
+    }
+
+    .foot {
+        position: static;
+        top: auto;
+        margin-top: 30px;
+    }
+}
+
+/* Para pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .general-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-color: var(--gray-etb);
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .left img {
+        height: 112px;
+        position: relative;
+        top: 140px;
+    }
+
+    .container {
+        background-color: var(--withe-etb);
+        position: relative;
+        top: 160px;
+        left: 290px;
+        width: 380px;
+        height: 360px;
+        border: 1px solid var(--bgray-etb);
+        border-radius: 3px;
+    }
+
+    .inter-container p {
+        font-family: 'Poppins';
+        font-size: 12px;
+        text-align: left;
+        margin: 20px 0 0 20px;
+        color: var(--pblue-etb);
+        padding-bottom: 7px;
+    }
+
+    .inter-container input {
+        padding: 12px;
+        text-align: left;
+        margin-left: 20px;
+        display: block;
+        width: calc(87% - 20px);
+        border: 1px solid var(--b2gray-etb);
+        border-radius: 3px;  
+        font-family: 'Poppins';
+    }
+
+    .btn-ini {
+        background-color: var(--bblue-etb);
+        border: none;
+        border-radius: 3px;
+        color: var(--withe-etb);
+        font-size: 12px;
+        font-family: 'Poppins';
+        margin: 20px 0 0 20px;
+        display: block;
+        width: calc(94% - 20px);
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .remember {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .remember p {
+        font-family: 'Poppins';
+        font-size: 13px;
+        margin-left: 5px;
+    }
+
+    #manu {
+        color: var(--bblue-etb);
+        position: relative;
+        left: 135px;
+        cursor: pointer;
+    }
+
+    .line {
+        background-color: var(--bgray-etb);
+        height: 1px;
+        width: calc(94% - 20px);
+        margin: 10px 0 0 20px;
+    }
+
+    .bot {
+        display: flex;
+    }
+
+    .bot span {
+        font-family: 'Poppins';
+        font-size: 12px;
+        margin: 20px 0 0 20px;
+        display: block;
+        color: var(--bblue-etb);
+        text-align: left;
+    }
+
+    .client {
+        display: flex;
+        position: relative;
+        top: 200px;
+        left: 290px;
+    }
+
+    .client p {
+        font-family: 'Poppins';
+        font-size: 12px;
+        margin: 0 20px 0 40px;
+    }
+
+    .client button {
+        background-color: var(--withe-etb);
+        color: var(--bblue-etb);
+        font-family: 'Poppins';
+        font-size: 12px;
+        border: none;
+        border: 1px solid var(--b2gray-etb);
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .callte {
+        display: flex;
+        position: relative;
+        top: 80px;
+        left: 360px;
+    }
+
+    .callte img {
+        height: 50px;
+    }
+
+    .foot {
+        position: relative;
+        top: 360px;
+        font-family: 'Poppins';
+        font-size: 12px;
+    }
+}

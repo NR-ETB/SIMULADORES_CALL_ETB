@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icons/logo.png">
+    <link rel="stylesheet" href="../../components/css/comp.css">
+    <link rel="stylesheet" href="../../css/casen.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/modals.css">
+    <title>Caso Resuelto - Simulador Aula</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="../../images/icons/etb.png" alt="">
+
+        <input type="text" placeholder="Buscar...">
+        
+        <div class="callte">
+            <img src="../../images/icons/calltec.png" alt="">
+            <img src="../../images/icons/calltec2.png" alt="">
+        </div>
+
+        <div class="icons">
+            <img src="../../images/icons/star.png" alt="">
+            <img src="../../images/icons/plus.png" alt="">
+            <img src="../../images/icons/got.png" alt="">
+            <img src="../../images/icons/question.png" alt="">
+            <img src="../../images/icons/bell.png" alt="">
+            <img src="../../images/icons/user.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="container-2">
+
+        <img src="../../images/icons/menu.png" alt="">
+
+        <p id="title">Consola de Servicios</p>
+
+        <p id="par">Casos</p>
+
+        <div id="arrow">
+            <img src="../../images/icons/fot arrow.png" alt="">
+        </div>
+
+        <div class="com">
+            <img id="par3" src="../../images/icons/fot arrow.png" alt="">
+            <img id="par4" src="../../images/cases/x.png" alt="">
+        </div>
+
+        <div class="actions55">
+            <img src="../../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+            <audio id="au_menu2" class="audio" style="display: none;">
+                <source type="audio/wav" src="../../../Model/audio/gsp6.mp3">
+            </audio>
+        </div>
+    </div>
+
+    <div class="principal-content">
+        <div class="contentp-1">
+            <div class="p3">
+                <a href="">Casos > 17887680</a>
+                <h1>Nota</h1>
+                <img id="arro" src="../../images/cases/arrow.png" alt="">
+                <button id="cur" onclick="new_note(),habladorText2('NOTA: HDP----Maria_Ariza---->Pymes: se verifica conexiones fisicas estado equipos se realiza reinicio y la falla persiste.'),habladorText('Escribe la NOTA: HDP----Maria_Ariza---->Pymes: se verifica conexiones fisicas estado equipos se realiza reinicio y la falla persiste. Da click en Agregar a Registro, cabe recalcar que esto se añadira directamente a REMEDY y esto lo puedes verfificar en el item de notas, una vez se ha realizado correctamente el registro')">Nuevo</button>
+            </div>
+
+            <div class="p1">
+                <p>3 elementos * Ordenados por Última modificación * Se actualizó hace 7 minutos</p>
+                <button><img src="../../images/profile/config.png" alt=""></button>
+                <button><img src="../../images/cases/load.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="contentp-2">
+
+            <span id="t1">Titulo</span><img id="a1" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t2">Vista previa del texto</span><img id="a2" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t3">Creado por</span><img id="a3" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t4">Ultima modific...</span><img id="a4" src="../../images/icons/fot arrow.png" alt="">
+
+            <span id="t5">Ultima modificación por</span><img id="a5" src="../../images/icons/fot arrow.png" alt="">
+        </div>
+
+        <script>
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() + 1;
+            var year = today.getFullYear();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+        </script>
+
+        <div class="cen-content">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="num">1</td>
+                        <td id="cs">Seguimien...</td>
+                        <td id="tp">HDP Maria Ariza: Se envía correo al cliente con avances De: MARIA ALEJANDRA
+                            ARIZA HENAO Enviado: jueves, 29 de agosto de 2024 12:31 Para:...</td>
+                        <td id="na">Maria Alejandra Ariza Henao</td>
+                        <td id="hou">8/29/2024 12:31 PM</td>
+                        <td id="nam">Maria Alejandra Ariza Henao</td>
+                    </tr>
+    
+                    <tr>
+                        <td id="num">2</td>
+                        <td id="cs">Seguimien...</td>
+                        <td id="tp">Seguimiento hdp keypala / Quedamos a la espera de la confirmaci?n
+                            personal de cofo</td>
+                        <td id="na">INTEGRA ETB</td>
+                        <td id="hou">8/01/2024 10:40 AM</td>
+                        <td id="nam">INTEGRA ETB</td>
+                    </tr>
+    
+                    <tr>
+                        <td id="num">3</td>
+                        <td id="cs">Seguimien...</td>
+                        <td id="tp">Seguimiento hdp keypala / Ingenieros agradezco de su ayuda con avances de
+                            caso helpdisk@BOCJUMP7700> ping 10.243.160.2 source 10.243.160.1...</td>
+                        <td id="na">INTEGRA ETB</td>
+                        <td id="hou">7/24/2024 08:59 AM</td>
+                        <td id="nam">INTEGRA ETB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="his">
+            <img src="../../images/profile/thun.png" alt="">
+            <p>Noticias en tiempo real de Chatter</p>
+        </div>
+
+        <div class="end-3">
+            <button onclick="location.href='../../menus/menuPymes.html'">SALIR DE LA SIMULACIÓN</button>
+        </div>
+    </div>
+
+    <div class="tip4" id="tip4" style="display: none;">
+        <div class="container-modal">
+            <div class="modal-header4">
+                <div class="head">
+                    <img src="../../images/cases/book2.png" alt="">
+                    <h3>Seguimiento</h3>
+                </div>
+                
+                <div class="but">
+                    <img src="../../images/cases/line.png" alt="">
+                    <img src="../../images/cases/expan.png" alt="">
+                    <img id="cur" onclick="close4();" src="../../images/cases/x.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="line" id="lb"></div>
+
+            <div class="modal-body4">
+
+                <div class="corp">
+                    <p>Seguimiento</p>
+                    <img src="../../images/cases/padlock.png" alt="">
+                    <p id="corp2">Visibilidad establecida por registro</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="corp4">
+
+                    <div class="act">
+                        <button><img src="../../images/cases/b.png" alt=""></button>
+                        <button><img src="../../images/cases/i.png" alt=""></button>
+                        <button><img src="../../images/cases/u.png" alt=""></button>
+                        <button><img src="../../images/cases/s.png" alt=""></button>
+                        <button><img src="../../images/cases/menu.png" alt=""></button>
+                        <button><img src="../../images/cases/numbres.png" alt=""></button>
+                        <button><img src="../../images/cases/iz1.png" alt=""></button>
+                        <button><img src="../../images/cases/iz2.png" alt=""></button>
+                        <button><img src="../../images/cases/img.png" alt=""></button>
+                    </div>
+
+                    <div class="eli">
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+
+                </div>
+
+            <div class="line" id="aba"></div>
+
+                <div class="corp3">
+                    <p>Relacionado con</p>
+                    <button><img src="../../images/profile/folio.png" alt=""><a href="">111111111</a></button>
+                </div>
+
+            </div>
+
+            <div class="modal-footer4">
+                <div class="bot">
+                    <button id="can2" onclick="close4();">Eliminar</button>
+                    <button id="can">Compartir</button>
+                    <button id="can" onclick="location.href='./finalPymesPartII.html'">Agregar a Registro</button>
+                    <button id="can">Listo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+            <p id="text-msg-hab">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../../images/icons/cross_small.svg" alt="">
+        </div>
+    </div>
+
+    <div class="alert-flotante" id="alert-flotante2">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant2" style="position: relative; right: 150px; bottom: 300px;">
+            <img src="../../images/icons/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante2" style="position: relative; right: 150px; bottom: 300px; height: 95px; width: 500px; z-index: 0;">
+            <p id="text-msg-hab2">
+                <div class="lds-ellipsis" id="wait-text2"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+    </div>
+
+    <script src="../../bootstrap/jquery.js"></script>
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/typed.js"></script>
+    <script src="../../../Controller/case/case.js"></script>
+    <script src="../../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('Una vez aqui, podras apreciar las NOTAS, con relacion ha la falla, ademas de tener algunos datos extras utiles e importantes, como lo son las fechas y horas, ademas del usuario que realizo dicha nota, para realizar una nueva, dirigete al boton NUEVO, en la parte superior derecha.')
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,410 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --purpple-etb:  #a31aff;
+    --bkpurpple-etb:  hsl(277, 100%, 94%);
+    --bkblue-etb: #ebf6ff;
+}
+/* Variables de Colores */
+
+/* Contenedor General del Componente */
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.container img{
+    height: 70px;
+}
+
+.container input {
+    font-family: 'Poppins';
+    font-size: 14px;
+    height: 25px;
+    margin-left: 800px;
+    margin-top: 15px;
+    width: 200px; 
+}
+
+.icons{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 305px;
+}
+
+.icons img{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+
+.line{
+    background-color: var(--bgray-etb);
+    height: 1px;
+    width: 100px;
+    margin-top: 5px;
+    width: 100%
+}
+
+.com{
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    right: 220px;
+    align-items: center;
+}
+
+#par3{
+    width: 15px;
+    height: 15px;
+}
+
+#par4{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+#par5{
+    position: relative;
+    right: 40px;
+    z-index: 100;
+}
+/* Contenedor General del Componente */
+
+/* Contenedor General 2 del Componente */
+.container-2{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--bgray-etb);
+    height: 45px;
+    border-bottom: 4px solid var(--bblue-etb);
+    z-index: 100;
+}
+
+.container-2 img{
+    height: 25px;
+    width: 25px;
+    margin: 10px 0 0 40px;
+}
+
+.container-2 p{
+    font-family: 'Poppins';
+}
+
+#title{
+    font-size: 16px;
+    margin: 10px 35px;
+}
+
+#par{
+    bottom: 17px;
+    position: relative;
+    padding: 7px 0 0 15px;
+    border-top: 4px solid var(--bblue-etb);
+    border-left: 1px solid var(--bgray-etb);
+    border-right: 1px solid var(--bgray-etb);
+    width: 250px;
+    height: 35px;
+    background-color: var(--bkblue-etb);
+}
+
+#par2{
+    bottom: 17px;
+    right: 85px;
+    position: relative;
+    padding: 7px 0 0 65px;
+    border-top: 4px solid var(--bblue-etb);
+    border-left: 1px solid var(--bgray-etb);
+    border-right: 1px solid var(--bgray-etb);
+    width: 290px;
+    height: 35px;
+    background-color: var(--bkblue-etb);
+}
+
+#arrow{
+    border-right: 1px solid var(--bgray-etb);
+    width: 70px;
+    padding-right: 20px;
+    position: relative;
+    right: 15px;
+}
+/* Contenedor General 2 del Componente */
+
+/* Contenedor Inferior del Componente */
+.footer-content{
+    border-top: 1px solid var(--black-etb);
+    background-color: var(--withe-etb);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: calc(100vh - 60px);
+}
+.his{
+    margin-left: 55px;
+    display: flex;
+}
+.his p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.his img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.not{
+    margin-left: 55px;
+    display: flex;
+}
+.not p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.not img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.can{
+    margin-left: 55px;
+    display: flex;
+}
+.can p{
+    font-family: 'Poppins';
+    margin-left: 15px;
+}
+.can img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+}
+.end{
+    margin-left: 1275px;
+    margin-top: 10px;
+    display: flex;
+}
+.end button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-2{
+    position: relative;
+    left: 1645px;
+    bottom: 535px;
+    display: flex;
+}
+.end-2 button{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.end-3{
+    position: relative;
+    left: 1200px;
+    top: 8px;
+    display: flex;
+}
+.end-3 button{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border-radius: 5px;
+    border: 1px solid var(--b2gray-etb);
+    height: 40px;
+    cursor: pointer;
+}
+.callte{
+    display: flex;
+    opacity: 50%;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+.callte img{
+    height: 50px;
+}
+/* Contenedor Inferior del Componente */
+
+/* Media Queries */
+
+/* Para dispositivos móviles en orientación vertical (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container input {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .icons {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .icons img {
+        margin-left: 10px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .com {
+        position: static;
+        margin-bottom: 10px;
+        right: auto;
+    }
+
+    #par3, #par4 {
+        width: 12px;
+        height: 12px;
+    }
+
+    #par5 {
+        position: static;
+        right: auto;
+    }
+
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border-bottom: 1px solid var(--bgray-etb);
+    }
+
+    .container-2 img {
+        margin: 10px;
+    }
+
+    #title {
+        margin: 10px;
+    }
+
+    #par, #par2 {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #arrow {
+        width: auto;
+        padding-right: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+        top: auto;
+    }
+
+    .his, .not, .can {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .end, .end-2, .end-3 {
+        position: static;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .end button, .end-2 button, .end-3 button {
+        width: 100%;
+        height: auto;
+    }
+
+    .callte {
+        position: static;
+        margin-top: 10px;
+        opacity: 100%;
+    }
+
+    .callte img {
+        height: 40px;
+    }
+}
+
+/* Para dispositivos de tamaño mediano (menos de 1024px de ancho) */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container input {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .icons {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .com {
+        margin-right: 0;
+    }
+
+    .container-2 {
+        height: auto;
+    }
+
+    .container-2 img {
+        margin: 10px 0;
+    }
+
+    #par, #par2 {
+        width: 80%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .end, .end-2, .end-3 {
+        margin: 10px;
+    }
+
+    .end button, .end-2 button, .end-3 button {
+        width: 100%;
+        height: auto;
+    }
+
+    .callte img {
+        height: 45px;
+    }
+}
+

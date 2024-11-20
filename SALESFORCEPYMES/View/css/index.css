@@ -1,0 +1,78 @@
+/* Fuente Personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000;
+    --b2gray-etb: #969492;
+}
+/* Generalidades del Cuerpo */
+body {
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Imagen de Fondo */
+img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    position: relative;
+    bottom: 100px; /* Usar porcentaje para que se ajuste mejor a diferentes tamaños de pantalla */
+}
+
+
+/* Botón */
+button {
+    color: var(--withe-etb);
+    background-color: var(--bblue-etb);
+    position: absolute; 
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 50px;
+    border: 2px solid var(--black-etb);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+button:hover {
+    color: var(--orange-etb);
+    background-color: var(--black-etb);
+    border: 2px solid var(--bblue-etb);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    img {
+        bottom: 8%; /* Ajustar en base al tamaño de pantalla */
+    }
+    button {
+        font-size: 1.25rem; /* Ajustar tamaño de fuente */
+        height: 2.5rem; /* Ajustar altura */
+        bottom: 8%; /* Ajustar en base al tamaño de pantalla */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        bottom: 5%; /* Ajustar en base al tamaño de pantalla */
+    }
+    button {
+        font-size: 1.125rem; /* Ajustar tamaño de fuente */
+        height: 2.2rem; /* Ajustar altura */
+        bottom: 5%; /* Ajustar en base al tamaño de pantalla */
+    }
+}

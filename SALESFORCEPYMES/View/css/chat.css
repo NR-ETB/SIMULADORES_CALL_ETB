@@ -1,0 +1,700 @@
+/* Fuente Perzonalida */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --b3gray-etb: #f7f7f7;
+    --purpple-etb:  #a31aff;
+}
+/* Variables de Colores */
+
+/* Contenedor Contenedor Principal del Caso */
+.principal-content {
+    background-color: #54698d;
+    max-height: 927px; 
+    overflow: hidden;
+}
+/* Contenedor Contenedor Principal del Caso */
+
+/* Contenedor Contenedor Uno del Caso */
+.contentp-1{
+    display: flex;
+    background: var(--b3gray-etb);
+    font-family: 'Poppins';
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+    margin: 0 25px;
+}
+.contentp-1 img{
+    width: 45px;
+    height: 45px;
+    margin: 15px 0 0 25px;
+    position: relative;
+    bottom: 10px;
+}
+.contentp-1 p{
+    font-weight: 300;
+    margin-left: 15px;
+    position: relative;
+    bottom: 15px;
+}
+.contentp-1 span{
+    font-weight: 800;
+    position: relative;
+    top: 20px;
+    right: 38px;
+}
+.contentp-1 button{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 1050px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    color: var(--bblue-etb);
+    margin-top: 15px;
+    font-size: 12px;
+}
+#plus{
+    width: 90px;
+    margin-right: 10px;
+}
+#plus2{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 1185px;
+    top: 9px;
+    z-index: 100;
+}
+#prop{
+    width: 130px;
+}
+#arrow-b{
+    width: 40px;
+}
+#arrow-b img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+#invi{
+    color: transparent;
+}
+/* Contenedor Contenedor Uno del Caso */
+
+/* Contenedor Contenedor del Chat */
+.content-chat{
+    border: 1px solid var(--b2gray-etb);
+    width: 1275px;
+    height: 550px;
+    margin-top: 20px;
+    margin-left: 15px;
+    overflow: auto;
+}
+#ases{
+    background-color: var(--b2gray-etb);
+    color: var(--withe-etb);
+    font-family: 'Poppins';
+    width: 600px;
+    height: 220px;
+    border-radius: 15px;
+    position: relative;
+    left: 650px;
+    top: 20px;
+}
+#clie{
+    background-color: var(--b3gray-etb); 
+    color: var(--black-etb);
+    font-family: 'Poppins';
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    right: 590px;
+    top: 120px;
+}
+#ases2{
+    background-color: var(--b2gray-etb);
+    color: var(--withe-etb);
+    font-family: 'Poppins';
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    position: relative;
+    left: 650px;
+    top: 140px;
+}
+#clie2{
+    background-color: var(--b3gray-etb); 
+    color: var(--black-etb);
+    font-family: 'Poppins';
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    right: 590px;
+    top: 240px;
+}
+#ases3{
+    background-color: var(--b2gray-etb);
+    color: var(--withe-etb);
+    font-family: 'Poppins';
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    position: relative;
+    left: 650px;
+    top: 240px;
+}
+#clie3{
+    background-color: var(--b3gray-etb); 
+    color: var(--black-etb);
+    font-family: 'Poppins';
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+    right: 590px;
+    top: 340px;
+}
+/* Contenedor Contenedor del Chat */
+
+/* Contenedor Contenedor Dos del Caso */
+.contentp-2{
+    display: flex;
+    background: var(--withe-etb);
+    font-family: 'Poppins';
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    top: 25px;
+    margin: 0 25px;
+}
+.p1{
+    margin-left: 25px;
+}
+.p2{
+    margin-left: 75px;
+}
+.p3{
+    margin-left: 75px;
+}
+/* Contenedor Contenedor Dos del Caso */
+
+/* Contenedor Contenedor Tres del Caso */
+.contentp-3-2{
+    background: var(--withe-etb);  
+    font-family: 'Poppins';
+    border-radius: 5px;
+    position: relative;
+    top: 45px;
+    margin: 0 25px;  
+    width: 70%;
+    height: 650px;
+}
+.p4{
+    display: flex;
+    margin-left: 25px;
+}
+#not{
+    margin-left: 45px;
+}
+.line6{
+    border-top: 4px solid var(--bblue-etb);
+    width: 7%;
+    position: relative;
+    top: 7px;
+    left: 15px;
+}
+.line2{
+    background-color: var(--black-etb);
+    height: 1px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 95%
+}
+/* Contenedor Contenedor Tres del Caso */
+
+/* Contenedor Contenedor Cuatro del Caso */
+.contentp-4-2{
+    background-color: var(--withe-etb);
+    font-family: 'Poppins';
+    width: 26%;
+    height: 400px;
+    position: relative;
+    left: 1370px;
+    bottom: 605px;
+    border-radius: 5px;
+}
+.p6{
+    background-color: var(--b3gray-etb);
+    border-radius: 5px 5px 0 0;
+}
+.p6 img{
+    height: 45px;
+    width: 45px;
+    margin: 15px 0 0 25px;
+}
+.p6 span{
+    position: relative;
+    bottom: 20px;
+    margin-left: 25px;
+}
+#fa{
+    background-color: var(--withe-etb);
+    border: 1px solid var(--black-etb);
+    width: 40px;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    left: 210px;
+}
+#fa img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 19px;
+    bottom: 9px;
+}
+.p7{
+    margin: 15px 0 0 25px;
+}
+.p7 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 333px;
+}
+.p8{
+    margin: 15px 0 0 25px;
+    font-size: 14px;
+}
+.p8 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 190px;
+    bottom: 30px;
+}
+.p11{
+    position: relative;
+    bottom: 32px;    
+}
+.p13{
+    position: relative;
+    bottom: 62px;    
+}
+.p14{
+   position: relative;
+   left: 230px;
+   bottom: 402px;
+}
+.p15{
+    position: relative;
+    left: 230px;
+    bottom: 425px;
+}
+#sec36{
+    margin-left: 150px;
+    margin-top: 12px;
+}
+.line{
+    border-top: 1px solid var(--bgray-etb);
+}
+#sec39{
+    margin-left: 210px;
+}
+#sec56{
+    margin-left: 128px;
+}
+#sec57{
+    margin-left: 78px;
+}
+.line7{
+    border-top: 1px solid var(--bgray-etb);
+    width: 220px;
+    position: relative;
+}
+.line8{
+    border-top: 1px solid var(--bgray-etb);
+    width: 220px;
+    position: relative;
+    bottom: 30px;
+}
+.line9{
+    border-top: 1px solid var(--bgray-etb);
+    width: 450px;
+    position: relative;
+    bottom: 62px;
+}
+.line10{
+    border-top: 1px solid var(--bgray-etb);
+    width: 450px;
+    position: relative;
+    bottom: 92px;
+}
+#lin{
+    position: relative;
+    left: 230px;
+    bottom: 424px;
+    width: 220px;
+}
+#lin2{
+    position: relative;
+    left: 230px;
+    bottom: 454px;
+    width: 220px;
+}
+#penci{
+    left: 215px;
+}
+#penci2{
+    left: 420px;
+}
+/* Contenedor Contenedor Cuatro del Caso */
+
+/* Contenedor Contenedor Quinto del Caso */
+.contentp-5-2{
+    background-color: var(--withe-etb);
+    font-family: 'Poppins';
+    width: 26%;
+    height: 310px;
+    position: relative;
+    left: 1370px;
+    bottom: 580px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.p12 img{
+    height: 45px;
+    width: 45px;
+    margin: 15px 0 0 25px;
+}
+.p12{
+    background-color: var(--b3gray-etb);
+    border-radius: 5px; 
+}
+.p12 span{
+    position: relative;
+    bottom: 20px;
+    margin-left: 25px;
+}
+#fa2{
+    background-color: var(--withe-etb);
+    border: 1px solid var(--black-etb);
+    width: 40px;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    left: 155px;
+}
+#fa2 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 19px;
+    bottom: 9px;
+}
+.p18{
+    position: relative;
+    left: 255px;
+    bottom: 235px;
+}
+.p19{
+    position: relative;
+    left: 235px;
+    bottom: 212px;
+}
+.line11{
+    border-top: 1px solid var(--bgray-etb);
+    width: 220px;
+    position: relative;
+    left: 235px;
+    bottom: 242px;
+}
+#penci3{
+    position: relative;
+    left: 212px;
+}
+/* Contenedor Contenedor Quinto del Caso */
+
+/* Media Queries */
+
+/* Para dispositivos móviles (menor a 768px) */
+@media (max-width: 768px) {
+    .principal-content {
+        max-height: none;
+        padding: 0 10px;
+        overflow: auto;
+    }
+
+    .contentp-1 {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+    .contentp-1 img {
+        margin: 10px auto;
+    }
+    .contentp-1 p {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .contentp-1 span {
+        margin-top: 10px;
+        text-align: center;
+        display: block;
+    }
+    .contentp-1 button {
+        width: 100%;
+        margin-top: 10px;
+        left: auto;
+        position: static;
+    }
+
+    #plus2 {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .content-chat {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    #ases, #ases2, #ases3 {
+        width: 100%;
+        position: static;
+        margin: 10px 0;
+    }
+    #clie, #clie2 {
+        width: 100%;
+        position: static;
+        margin: 10px 0;
+    }
+
+    .contentp-2 {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contentp-3-2, .contentp-4-2, .contentp-5-2 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        left: auto;
+        bottom: auto;
+        position: static;
+    }
+
+    .p4, .p6, .p7, .p8, .p12, .p13, .p14, .p15, .p18, .p19 {
+        margin: 10px 0;
+    }
+
+    #fa, #fa2 {
+        width: 100%;
+        position: static;
+        left: auto;
+    }
+
+    .line, .line6, .line7, .line8, .line9, .line10, .line11 {
+        width: 100%;
+    }
+
+    #penci, #penci2, #penci3 {
+        position: static;
+        left: auto;
+    }
+}
+
+/* Para tablets y dispositivos pequeños (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .principal-content {
+        max-height: none;
+        padding: 0 15px;
+    }
+
+    .contentp-1 {
+        flex-direction: column;
+        margin: 0;
+        padding: 15px;
+    }
+    .contentp-1 img {
+        margin: 15px auto;
+    }
+    .contentp-1 p {
+        margin: 10px 0;
+    }
+    .contentp-1 span {
+        margin-top: 10px;
+    }
+    .contentp-1 button {
+        width: 100%;
+        margin-top: 10px;
+        left: auto;
+        position: static;
+    }
+
+    #plus2 {
+        position: static;
+        margin: 15px auto;
+    }
+
+    .content-chat {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    #ases, #ases2, #ases3 {
+        width: 100%;
+        position: static;
+        margin: 15px 0;
+    }
+    #clie, #clie2 {
+        width: 100%;
+        position: static;
+        margin: 15px 0;
+    }
+
+    .contentp-2 {
+        flex-direction: column;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .contentp-3-2, .contentp-4-2, .contentp-5-2 {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        left: auto;
+        bottom: auto;
+        position: static;
+    }
+
+    .p4, .p6, .p7, .p8, .p12, .p13, .p14, .p15, .p18, .p19 {
+        margin: 15px 0;
+    }
+
+    #fa, #fa2 {
+        width: 100%;
+        position: static;
+        left: auto;
+    }
+
+    .line, .line6, .line7, .line8, .line9, .line10, .line11 {
+        width: 100%;
+    }
+
+    #penci, #penci2, #penci3 {
+        position: static;
+        left: auto;
+    }
+}
+
+/* Para pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .principal-content {
+        max-height: 927px;
+        padding: 0 25px;
+    }
+
+    .contentp-1 {
+        background: var(--b3gray-etb);
+        font-family: 'Poppins';
+        border-radius: 5px;
+        position: relative;
+        top: 25px;
+        margin: 0 25px;
+    }
+    .contentp-1 img {
+        width: 45px;
+        height: 45px;
+        margin: 15px 0 0 25px;
+    }
+    .contentp-1 p {
+        font-weight: 300;
+        margin-left: 15px;
+    }
+    .contentp-1 span {
+        font-weight: 800;
+        position: relative;
+        top: 20px;
+        right: 38px;
+    }
+    .contentp-1 button {
+        width: 80px;
+        height: 30px;
+        position: relative;
+        left: 1050px;
+        background-color: var(--withe-etb);
+        border: 1px solid var(--b2gray-etb);
+        color: var(--bblue-etb);
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .content-chat {
+        width: 1275px;
+        height: 550px;
+        margin-top: 20px;
+        margin-left: 15px;
+        overflow: auto;
+    }
+    #ases, #ases2, #ases3 {
+        position: relative;
+        left: 650px;
+        background-color: var(--b2gray-etb);
+        color: var(--withe-etb);
+    }
+    #clie, #clie2 {
+        background-color: var(--b3gray-etb);
+        color: var(--black-etb);
+        position: relative;
+        right: 590px;
+    }
+
+    .contentp-2 {
+        background: var(--withe-etb);
+        font-family: 'Poppins';
+        border-radius: 0 0 5px 5px;
+        position: relative;
+        top: 25px;
+        margin: 0 25px;
+    }
+
+    .contentp-3-2, .contentp-4-2, .contentp-5-2 {
+        background: var(--withe-etb);
+        font-family: 'Poppins';
+        border-radius: 5px;
+        position: relative;
+        top: 45px;
+        margin: 0 25px;
+    }
+
+    .p4, .p6, .p7, .p8, .p12, .p13, .p14, .p15, .p18, .p19 {
+        margin: 15px 0;
+    }
+
+    .line, .line6, .line7, .line8, .line9, .line10, .line11 {
+        width: auto;
+    }
+
+    #penci, #penci2, #penci3 {
+        position: relative;
+        left: 215px;
+    }
+}

@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+/* Fuente Perzonalida */
+
+/* Variables de Colores */
+:root{
+    --orange-etb: #F36F31;
+    --bgray-etb: #d8dde6;
+    --gray-etb: #f4f6f9;
+    --withe-etb: #fff;
+    --bblue-etb: #0070d2;
+    --pblue-etb: #54698d;
+    --black-etb: #000 ;
+    --b2gray-etb: #969492;
+    --purpple-etb:  #a31aff;
+    --bkpurpple-etb:  hsl(277, 100%, 94%);
+    --bkblue-etb: #ebf6ff;
+}
+/* Variables de Colores */
+
+/* Cuerpo del Escenario */
+body{
+    overflow: hidden;
+    z-index: 100;
+}
+/* Cuerpo del Escenario */
+
+/* Contenedor General del Primer Modal */
+.tip{
+    position: relative;
+    left: 550px;
+    bottom: 620px;
+    background-color: var(--withe-etb);
+    z-index: 1060;
+    border: 1px solid var(--b2gray-etb);
+    width: 800px;
+    border-radius: 5px;
+}
+.tip img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    position: relative;
+    left: 775px;
+    bottom: 35px;
+    cursor: pointer;
+    z-index: 1060;
+}
+.modal-header{
+    height: 10px;
+}
+.modal-header h3{
+    font-family: 'Poppins';
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 35px;
+}
+.lin{
+    border: 1px solid var(--bgray-etb);
+}
+.modal-body{
+    height: 220px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.modal-body p{
+    position: relative;
+    right: 150px;
+    top: 20px;
+}
+.eli{
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.cas{
+    position: relative;
+    right: 81px;
+}
+.sop{
+    position: relative;
+    top: 25px;
+    right: 50px;
+}
+.modal-footer{
+    background-color: var(--bgray-etb);
+    height: 70px;
+    text-align: right;
+}
+.bot{
+    position: relative;
+    right: 15px;
+    top: 15px;
+    font-family: 'Poppins';
+}
+#can{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+#can2{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    position: relative;
+    right: 230px;
+}
+#sig{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border: 1px solid var(--bblue-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+/* Contenedor General del Primer Modal */
+
+/* Contenedor General del Segundo Modal */
+.tip2{
+    position: relative;
+    left: 400px;
+    bottom: 840px;
+    background-color: var(--withe-etb);
+    z-index: 1060;
+    border: 1px solid var(--b2gray-etb);
+    width: 800px;
+    border-radius: 5px;
+}
+.tip2 img{
+    width: 25px;
+    height: 25px;
+}
+#equis{
+    position: relative;
+    left: 775px;
+    bottom: 35px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    z-index: 2060;
+}
+.modal-header2{
+    height: 10px;
+}
+.modal-header2 h3{
+    font-family: 'Poppins';
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 35px;
+}
+.li{
+    border: 1px solid var(--withe-etb);
+    margin-bottom: 10px;
+}
+#spa{
+    margin-top: 7.5px;    
+}
+#spa2{
+    margin-top: 2px;    
+}
+#spa3{
+    margin-top: 9px;    
+}
+#spa4{
+    margin-top: 7px;    
+}
+#spa5{
+    margin-bottom: 45px;    
+}
+#spa6{
+    margin-bottom: 35px;    
+}
+#spa7{
+    margin-bottom: 41px;    
+}
+.modal-body2{
+    height: 680px;
+    font-family: 'Poppins';
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.modal-body2 span{
+    color: red;
+}
+.eli{
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.cas{
+    position: relative;
+    right: 81px;
+}
+.sop{
+    position: relative;
+    top: 25px;
+    right: 50px;
+}
+.modal-footer2{
+    background-color: var(--bgray-etb);
+    height: 70px;
+    text-align: center;
+    z-index: 1060;
+}
+.bot2{
+    position: relative;
+    right: 15px;
+    top: 15px;
+}
+#can{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 35px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+#sig{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border: 1px solid var(--bblue-etb);
+    border-radius: 5px;
+    height: 35px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+/* Contenedor General del Segundo Modal */
+
+/* Contenedor General del Tercer Modal */
+.tip3{
+    position: relative;
+    left: 1056px;
+    bottom: 840px;
+    background-color: var(--bgray-etb);
+    z-index: 1060;
+    border: 1px solid var(--b2gray-etb);
+    width: 595px;
+    border-radius: 5px;
+}
+#equis2{
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    position: relative;
+    left: 570px;
+    bottom: 45px;
+    cursor: pointer;
+    z-index: 1060;
+}
+.modal-header3{
+    height: 140px;
+}
+.mh1{
+    margin-top: 15px;
+}
+.mh1 img{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    right: 5px;
+}
+.mh{
+    display: flex;
+    font-family: 'Poppins';
+    justify-content: space-evenly;
+    font-size: 12px;
+    position: relative;
+    bottom: 60px;
+    right: 60px;
+}
+#mh1{
+    position: relative;
+    right: 11px;
+    bottom: 15px;
+}
+#mh2{
+    position: relative;
+    left: 6px;
+    bottom: 15px;
+}
+#mh3{
+    position: relative;
+    right: 31px;
+    color: var(--bblue-etb);   
+    bottom: 15px; 
+}
+.modal-header3 h1{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 22px;
+    position: relative;
+    text-align: center;
+    bottom: 65px;
+    right: 40px;
+}
+.lin{
+    border: 1px solid var(--bgray-etb);
+}
+.modal-body3{
+    height: 520px;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: var(--withe-etb);
+}
+.modal-body3 p{
+    font-size: 16px;
+    text-align: start;
+    margin-left: 10px;
+    padding: 25px;
+}
+.bos{
+    height: 180px;
+    width: 510px;
+    border: 1px solid var(--bgray-etb);
+    margin-left: 35px;
+}
+.bos2{
+    position: relative;
+    top: 110px;
+    margin-left: 15px;
+}
+#bo{
+    font-size: 12px;
+    position: relative;
+    bottom: 35px;
+}
+.bos button{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    margin-top: 5px;
+}
+.bos img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 2px;
+}
+.eli{
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.cas{
+    position: relative;
+    right: 81px;
+}
+.sop{
+    position: relative;
+    top: 25px;
+    right: 50px;
+}
+.modal-footer3{
+    background-color: var(--bgray-etb);
+    height: 70px;
+    text-align: right;
+    background-color: var(--withe-etb);
+}
+.bot{
+    position: relative;
+    right: 15px;
+    top: 15px;
+    font-family: 'Poppins';
+}
+#can{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+#sig{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border: 1px solid var(--bblue-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+/* Contenedor General del Tercer Modal */
+
+/* Contenedor Contenedor Tres del Caso */
+.p4{
+    display: flex;
+    position: relative;
+    left: 540px;
+    margin-left: 25px;
+}
+#sec39{
+    margin-left: 210px;
+}
+#sec{
+    position: relative;
+    left: 3px;
+}
+#im{
+    position: relative;
+    right: 30px;
+}
+#im2{
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+}
+#im3{
+    position: relative;
+    right: 30px;
+    bottom: 135px;
+}
+#not{
+    margin-left: 45px;
+}
+#sec2{
+    padding-bottom: 26px;
+}
+.line6{
+    border-top: 4px solid var(--bblue-etb);
+    width: 7%;
+    position: relative;
+    top: 7px;
+    left: 15px;
+}
+.line2{
+    background-color: var(--black-etb);
+    height: 1px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 95%
+}
+.p5{
+    background-color: var(--b3gray-etb);
+    display: flex;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 94.2%;
+    border-radius: 5px;
+}
+.p5 p {
+    margin-left: 15px;
+}
+.p5 img{
+    width: 15px;
+    height: 15px;
+    margin: 0 25px;
+    position: relative;
+    top: 20px;
+}
+.tab{
+    display: flex;
+    width: 400px;
+}
+.tab-one{
+    margin-left: 55px;
+    margin-top: 25px;
+    text-align: justify;
+}
+#est{
+    position: relative;
+    right: 7px;
+}
+#rd{
+    color: var(--red-etb);
+}
+.bor2{
+    padding-bottom: 10px;
+}
+.bor3{
+    display: flex;
+}
+.bor input{
+    height: 28px; 
+    width: 310px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor22 input{
+    height: 28px; 
+    width: 310px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor222 input{
+    height: 28px; 
+    width: 310px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor3 input{
+    height: 32px; 
+    width: 150px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor33 input{
+    height: 32px; 
+    width: 150px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+#fe{
+    margin-left: 6px;
+}
+#ho{
+    margin-left: 105px;
+}
+#calen{
+    height: 34px; 
+    width: 312px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px; 
+}
+#checked{
+    height: 15px;
+    width: 15px;
+}
+.bor select{
+    height: 34px; 
+    width: 316px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor img{
+    width: 15px;
+    height: 15px; 
+    cursor: pointer;
+}
+.bor22 select{
+    height: 34px; 
+    width: 316px;
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    position: relative;
+    left: 5px;
+}
+.bor22 img{
+    width: 15px;
+    height: 15px; 
+    cursor: pointer;
+}
+.tab-two{
+    margin-left: 40px;
+    margin-top: 25px;
+    text-align: justify;
+}
+.tab-three{
+    margin-left: 60px;
+    margin-top: 25px;
+    text-align: justify;
+}
+#asu{
+    width: 665px;
+}
+#des{
+    width: 670px;
+    font-family: 'Poppins';
+    height: 60px;
+}
+.p17{
+    background-color: var(--b3gray-etb);
+    display: flex;
+    margin-top: 25px;
+    width: 104%;
+    position: relative;
+    right: 25px;
+    border-radius: 5px;
+}
+.p17 img{
+    width: 15px;
+    height: 15px;
+    margin: 0 25px;
+    position: relative;
+    top: 20px;
+}
+.p18{
+    background-color: var(--b3gray-etb);
+    display: flex;
+    margin-top: 25px;
+    width: 102%;
+    position: relative;
+    right: 30px;
+    border-radius: 5px;
+}
+.p18 img{
+    width: 15px;
+    height: 15px;
+    margin: 0 25px;
+    position: relative;
+    top: 20px;
+}
+.p19{
+   display: flex; 
+   position: relative;
+   top: 285px;
+   height: 85px;
+   background-color: var(--b3gray-etb);
+   border-top: 1px solid var(--b2gray-etb);
+   border-radius: 0 0 5px 5px;
+}
+.p19 button{
+    height: 35px;
+    width: 85px;
+    position: relative;
+    top: 25px;
+    left: 620px;
+}
+#cancel{
+    color: var(--bblue-etb);
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+#save{
+    color: var(--withe-etb);
+    background-color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 1060;
+}
+#invi{
+    color: transparent;
+}
+#invi2{
+    border: var(--withe-etb);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+    z-index: 1050; /* Debe estar detrás del .tip pero delante del contenido */
+    display: none; /* Inicialmente oculto */
+}
+/* Contenedor Contenedor Tres del Caso */
+
+/* Contenedor General del Cuatro Modal */
+.tip4{
+    position: relative;
+    left: 1270px;
+    bottom: 698px;
+    background-color: var(--withe-etb);
+    z-index: 1060;
+    border: 1px solid var(--b2gray-etb);
+    width: 600px;
+    border-radius: 5px 5px 0 0;
+}
+.modal-header4{
+    height: 65px;
+}
+.modal-header4 h3{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.modal-header4 img{
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.head{
+    display: flex;
+}
+.but{
+    display: flex;
+    position: relative;
+    left: 470px;
+    bottom: 60px;
+}
+.but img{
+    width: 10px;
+    height: 10px;
+}
+.lin{
+    border: 1px solid var(--bgray-etb);
+}
+#lb{
+    border: 1px solid var(--bblue-etb);
+    background-color: var(--bblue-etb);
+}
+.modal-body4{
+    height: 420px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.modal-body4 p{
+    position: relative;
+    right: 150px;
+    top: 20px;
+}
+.corp{
+    display: flex;
+    position: relative;
+    left: 175px;
+    bottom: 15px;
+}
+.corp img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 33px;
+}
+#corp2{
+    margin-left: 155px;
+} 
+#aba{
+    position: relative;
+    top: 18px;
+}
+.corp3{
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+.corp3 p{
+    position: relative;
+    right: 40px;
+    top: -5px;
+}
+.corp3 button{
+    width: 105px;
+    height: 35px;
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--bgray-etb);
+    border-radius: 5px;
+}
+.corp3 img{
+    width: 25px;
+    height: 25px;
+}
+.corp4{
+    background-color: var(--bgray-etb);
+}
+.act button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--withe-etb);
+    border: 1px solid var(--b2gray-etb);
+    position: relative;
+    top: 20px;
+    right: 120px;
+}
+.act img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 2px;
+}
+.eli{
+    position: relative;
+    top: 30px;
+    left: 0px;
+}
+.eli textarea{
+    width: 590px;
+    height: 240px;
+    border: solid transparent;
+    border-top: 1px solid var(--bgray-etb);
+    font-family: 'Poppins';
+}
+.cas{
+    position: relative;
+    right: 81px;
+}
+.sop{
+    position: relative;
+    top: 25px;
+    right: 50px;
+}
+.modal-footer4{
+    background-color: var(--bgray-etb);
+    height: 70px;
+    text-align: right;
+}
+.bot{
+    position: relative;
+    right: 15px;
+    top: 15px;
+    font-family: 'Poppins';
+}
+#can{
+    background-color: var(--withe-etb);
+    color: var(--bblue-etb);
+    border: 1px solid var(--b2gray-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+#sig{
+    background-color: var(--bblue-etb);
+    color: var(--withe-etb);
+    border: 1px solid var(--bblue-etb);
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+#cur{
+    cursor: pointer;
+}
+/* Contenedor General del Cuatro Modal */
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 767px) {
+    body {
+        overflow: auto; /* Permite el scroll en pantallas pequeñas */
+    }
+
+    .tip, .tip2, .tip3, .tip4 {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tip img, .tip2 img, #equis, #equis2 {
+        width: 20px;
+        height: 20px;
+        left: auto;
+        bottom: auto;
+        position: absolute;
+    }
+
+    .modal-header, .modal-header2, .modal-header3, .modal-header4 {
+        height: auto;
+    }
+
+    .modal-body, .modal-body2, .modal-body3, .modal-body4 {
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .modal-body p {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .bot, .bot2 {
+        position: static;
+        right: auto;
+        top: auto;
+    }
+
+    #can, #can2, #sig {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .p4 {
+        display: block;
+        margin: 0;
+    }
+
+    .p5, .p17, .p18 {
+        width: 100%;
+    }
+
+    .tab, .tab-one, .tab-two, .tab-three {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bor input, .bor select {
+        width: 100%;
+    }
+
+    .bos, .bos2 {
+        width: 100%;
+    }
+}
+
+/* Media Query para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tip, .tip2, .tip3, .tip4 {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .tip img, .tip2 img, #equis, #equis2 {
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal-body, .modal-body2, .modal-body3, .modal-body4 {
+        height: auto;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .modal-body p {
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    #can, #can2, #sig {
+        width: auto;
+    }
+
+    .p4 {
+        display: flex;
+        margin: 0;
+    }
+
+    .p5, .p17, .p18 {
+        width: 90%;
+    }
+
+    .tab, .tab-one, .tab-two, .tab-three {
+        width: 90%;
+    }
+}

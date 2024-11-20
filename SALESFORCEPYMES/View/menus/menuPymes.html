@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/logo.png">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Gestor de Tipificaciones - Simulador Aula</title>
+</head>
+<body>
+
+    <div class="contenedor">
+            <div class="header">
+                <img src="../images/icons/speaker.png" alt="">
+                <p>Presiona sobre el icono para escuchar las indicaciones ;)</p>
+            </div>
+        
+    <div class="gestor" style="margin-top: 150px;">
+        
+        <div class="gestor-tittle">
+            <h2>Menu de Casos</h2>
+        </div>
+
+        <div class="gestor-body">
+        <div class="table-body">
+            <table>
+                <tbody>
+                    <tr id="onee">
+                        <th class="one-th" style="border-radius: 10px 0px 0px 0px;">Casos</th>
+                        <th>Estados</th>
+                        <th class="two-th" style="border-radius: 0px 10px 0px 0px;">Escucha</th>
+                    </tr>
+                </tbody>
+                <tbody id="simulator">
+
+                    <tr id="es2">
+                        <td id="es2" class="one-td" style="cursor: pointer;" onclick="solgen();">CONOCE SALESFORCE(PYMES)</td>
+                        <td id="es2" class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td id="es2" class="two-td actions2">                            
+                            <img id="es13" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu', 'img_editar_contac', 2, 7)"><img id="es14" style="display: none;" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu', 'img_editar_contac', 2, 7)">
+                            <audio id="au_menu" class="audio" style="display: none;">
+                                <source type="audio/wav" src="../../Model/audio/gsp1.mp3">
+                            </audio>
+                        </td></td>
+                    </tr>
+
+                    <tr id="esno1" style="opacity: 35%; display: none;">
+                        <td class="one-td">CONOCE SALESFORCEPYMES</td>
+                        <td class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td class="two-td actions2">                            
+                            <a><img src="../images/icons/speaker.png" alt=""></a>
+                        </td></td>
+                    </tr>
+
+                    <tr id="four" style="position: relative; left: 30px; display: none;">
+                        <td id="es2" class="one-td" style="border-radius: 20px 0px 0px 0px;">DETALLE DEL CASO</td>
+                        <td id="es2" class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td id="es2" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                            <a href="../casesPymes/finalPymes/profilePymes.html"><img src="../images/icons/door.png" alt=""></a>
+                        </td>
+                        </a></td>
+                    </tr>
+
+                    <tr id="four" style="position: relative; left: 30px; display: none;">
+                        <td id="es2" class="one-td" style="border-radius: 0px 0px 0px 20px;">NOTAS</td>
+                        <td id="es2" class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td id="es2" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                            <a href="../casesPymes/notesPymes/finalPymes.html"><img src="../images/icons/door.png" alt=""></a>
+                        </td>
+                        </a></td>
+                    </tr>
+
+                    <tr id="es3">
+                        <td id="es3" class="one-td" style="cursor: pointer; border-radius: 0px 0px 0px 20px;" onclick="solftth();">TIPIFICACION</td>
+                        <td id="es3" class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td id="es3" class="two-td actions2" style="border-radius: 0px 0px 20px 0px;">                            
+                            <img id="es15" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)"><img id="es16" style="display: none;" src="../images/icons/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_menu2', 'img_editar_contac', 2, 7)">
+                            <audio id="au_menu2" class="audio" style="display: none;">
+                                <source type="audio/wav" src="../../Model/audio/gsp2.mp3">
+                            </audio>
+                        </td>
+                        </a></td>
+                    </tr>
+
+                    <tr id="esno3" style="opacity: 35%; display: none;">
+                        <td class="one-td" style="cursor: pointer;">TIPIFICACIONES</td>
+                        <td class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td class="two-td actions2">                            
+                            <a><img src="../images/icons/speaker.png" alt=""></a>
+                        </td></td>
+                    </tr>
+
+                    <tr id="three" style="position: relative; left: 30px; display: none;">
+                        <td id="es3" class="one-td" style="border-radius: 20px 0px 0px 20px;">TIPIFICACION DEL CASO (GESTION INICIAL)</td>
+                        <td id="es3" class="com-status">
+                            <div class="status status-co">
+                                <span></span>
+                                <p>En Testing</p>
+                            </div>
+                        </td>
+                        <td id="es3" class="two-td actions3" style="border-radius: 0px 20px 20px 0px;">                            
+                            <a href="../casesPymes/tipifPymes/profilePymes.html"><img src="../images/icons/door.png" alt=""></a>
+                        </td>
+                        </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <button class="pasodos2" onclick=" location.href = '../loginPymes/login.html' ">VOLVER</button>
+
+        <!-- Modal mensaje de error -->
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-abby" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mas">INFORMACIÓN</h5>
+                </div>
+                <div class="modal-body">
+                <p style="text-align: center;">Ten en cuenta, que este menu de ordenes aplica unica y exclusivamente para este simulador, en el portar real esto no se vera asi</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal mensaje error -->
+
+        <!-- Modal Password incorrecta -->
+        <div class="modal modal-susc" tabindex="-1" id="ups" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ADVERTENCIA</h5>
+                    </div>
+                    <div class="confirmacion">
+                        <br>
+                        <p style="margin: 5px 5px 20px 5px;">Parece que estas realizando el simulador por fuera de la ESCULA ETB, te recomendamos hacerlo por medio de la plataforma, 
+                        para evitar incidentes innesesarios.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Password incorrecta -->
+
+        <!-- modal loading -->
+        <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">PROCESANDO TU PETICIÓN</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="con-spiner">
+                        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    </div>
+                    <div class="text-spiner"><p>Por favor no cierre la pagina</p></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- modal loading -->
+
+        <div class="alert-flotante" id="alert-flotante" style="bottom: 50px;">
+            <div class="etb-flotant etb-flotant-login" id="etb-flotant" style="bottom: 50px;">
+                <img src="../images/icons/ETB.svg" alt="">
+            </div>
+            <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="bottom: 50px;">
+                <p id="text-msg-hab">
+                    <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="../bootstrap/jquery.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/typed.js"></script>
+    <script src="../../Controller/main/menu.js"></script>
+    <script src="../../Controller/main/hablador.js"></script>
+    <script>
+        $( document ).ready(function() {
+            habladorText('Selecciona uno de los Casos, clickeando directamente en el nombre de la respectiva tipificacion a realizar, si nesecitas mas informacion, clickea en el icono de la bocina.')
+        });
+        setTimeout(() => {
+            $('#alert-flotante').css('display','none')
+        }, "200000");
+    </script>
+
+</html>

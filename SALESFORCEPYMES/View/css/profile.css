@@ -1,0 +1,584 @@
+    /* Fuente Perzonalida */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+    /* Fuente Perzonalida */
+
+    /* Variables de Colores */
+    :root{
+        --orange-etb: #F36F31;
+        --bgray-etb: #d8dde6;
+        --gray-etb: #f4f6f9;
+        --withe-etb: #fff;
+        --bblue-etb: #0070d2;
+        --pblue-etb: #54698d;
+        --black-etb: #000 ;
+        --b2gray-etb: #969492;
+        --b3gray-etb: #f7f7f7;
+        --purpple-etb:  #a31aff;
+        --yelow-etb: #fff6c2;
+    }
+    /* Variables de Colores */
+
+    /* Contenedor Superior del Perfil */
+    .top-content{
+        display: flex;
+        width: 100%;
+        height: 215px;
+        background-color: var(--b3gray-etb);
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #por{
+        width: 55px;
+        height: 55px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .content-1{
+        font-family: 'Poppins';
+        margin-left: 25px;
+    }
+    .content-1 h3{
+        width: 350px;
+    }
+    .content-2{
+        display: flex;
+        position: relative;
+        top: 70px;
+        right: 125px;
+    }
+    .content-2 img{
+        width: 15px;
+        height: 15px;
+        justify-content: space-between;
+    }
+    .content-2 button{
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        position: relative;
+        bottom: 5px;
+    }
+    #pin{
+        margin-right: 15px;
+    }
+    .content-3{
+        display: flex;
+        position: relative;
+        top: 90px;
+        right: 155px;
+    }
+    .content-3 button{
+        width: 150px;
+        height: 30px;
+        position: relative;
+        left: 1070px;
+        bottom: 80px;
+        background-color: var(--withe-etb);
+        border: 1px solid var(--b2gray-etb);
+        color: var(--bblue-etb);
+    }
+    #arro{
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: 405px;
+        top: 4px;
+        animation: shake 2s infinite;
+    }
+    @keyframes shake {
+    
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    
+    }
+    #nt{
+        cursor: pointer;
+        background-color: var(--bblue-etb);
+        color: var(--withe-etb);
+    }
+    .content-4{
+        display: flex;
+        position: relative;
+        top: 120px;
+        left: 35px;
+    }
+    .content-4 input{
+        width: 250px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    .content-4 button{
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        background-color: var(--withe-etb);
+        border: 1px solid var(--b2gray-etb);
+        margin-top: 5px;
+    }
+    .content-4 img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        right: 2px;
+    }
+    #embu{
+        position: relative;
+        right: 16px;
+    }
+    #text{
+        font-family: 'Poppins';
+        font-size: 12px;
+        width: 350px;
+        position: relative;
+        top: 95px;
+        right: 860px;
+    }
+    .line3{
+        border-top: 1px solid var(--bgray-etb);
+        position: relative;
+        top: 240px;
+    }
+    .content-5{
+        display: flex;
+        position: relative;
+        right: 1740px;
+        top: 190px;
+    }
+    .content-5 input{
+        position: relative;
+        bottom: 95px;
+    }
+    .content-5 img{
+        width: 15px;
+        height: 15px;
+        border-right: 1px solid var(--bgray-etb);
+        padding-right: 5px;
+        position: relative;
+        top: 5px;
+    }
+    #a1{
+        position: relative;
+        right: 10px;
+    }
+    #t2{
+        position: relative;
+        right: 20px;
+    }
+    #a2{
+        position: relative;
+        right: 80px;
+    }
+    #t3{
+        position: relative;
+        right: 90px;
+    }
+    #a3{
+        position: relative;
+        right: 35px;
+    }
+    #t4{
+        position: relative;
+        right: 45px;
+    }
+    #a4{
+        position: relative;
+        right: 130px;
+    }
+    #t5{
+        position: relative;
+        right: 140px;
+    }
+    #a5{
+        position: relative;
+        right: 105px;
+    }
+    #t6{
+        position: relative;
+        right: 115px;
+    }
+    #a6{
+        position: relative;
+        right: 190px;
+    }
+    #t7{
+        position: relative;
+        right: 200px;
+    }
+    #a7{
+        position: relative;
+        right: 330px;
+    }
+    #t8{
+        position: relative;
+        right: 340px;
+    }
+    #a8{
+        position: relative;
+        right: 385px;
+    }
+    #t9{
+        position: relative;
+        right: 395px;
+    }
+    #a9{
+        position: relative;
+        right: 560px;
+    }
+    #t10{
+        position: relative;
+        right: 570px;
+    }
+    #a10{
+        position: relative;
+        right: 730px;
+    }
+    .content-5 span{
+        width: 200px;
+        font-family: 'Poppins';
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    /* Contenedor Superior del Perfil */
+
+    /* Contenedor Central del Perfil */
+    .cen-content{
+        overflow-y: scroll;
+    }
+    .cen-content table{
+        font-family: 'Poppins';
+        width: 100%;
+        height: 600px;
+        font-size: 16px;
+        border-collapse: collapse;
+    }
+    .cen-content table td{
+        border-bottom: 1px solid var(--b2gray-etb);
+    }
+    .cen-content table img{
+        width: 10px;
+        height: 10px; 
+        position: relative;
+        left: 65px;
+    }
+    #num{
+        width: 40px;
+        position: relative;
+        left: 60px;
+    }
+    #box{
+        width: 40px;
+        position: relative;
+        left: 74px;
+    }
+    #cs{
+        position: relative;
+        left: 67px;
+    }
+    #tp{
+        position: relative;
+        right: 35px;    
+    }
+    #na{
+        position: relative;
+        right: 175px;    
+        color: var(--bblue-etb);
+    }
+    #ident{
+        width: 40px;
+        position: relative;
+        right: 50px;
+        color: var(--bblue-etb);
+        text-decoration: none;
+    }
+    #pqr{
+        width: 190px;
+        position: relative;
+        left: 15px;
+        font-size: 12px;
+        color: var(--bblue-etb);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #sta{
+        position: relative;
+        left: 65px;
+    }
+    #feh{
+        position: relative;
+        left: 15px;
+        font-size: 14px;
+    }
+    #hou{
+        position: relative;
+        right: 30px;
+    }
+    #nam{
+        position: relative;
+        right: 125px;
+    }
+    /* Contenedor Central del Perfil */
+    .bor22 {
+        display: flex;
+        background-color: var(--yelow-etb);
+        width: 330px;
+    }
+    .bor222 {
+        display: flex;
+        background-color: var(--yelow-etb);
+    }
+    .bor33{
+        display: flex;
+        background-color: var(--yelow-etb);
+    }
+
+    /* Media Queries para Pantallas de Móviles y Tabletas */
+
+/* Para pantallas de hasta 768px (tabletas en orientación vertical y móviles) */
+@media (max-width: 768px) {
+    /* Contenedor Superior del Perfil */
+    .top-content {
+        flex-direction: column;
+        height: auto; /* Ajusta la altura del contenedor */
+        overflow: visible; /* Permite el desbordamiento para mejor visibilidad en pantallas pequeñas */
+    }
+
+    #por {
+        width: 45px; /* Ajusta el tamaño del perfil */
+        height: 45px;
+        margin-left: 15px; /* Ajusta el margen */
+        margin-top: 10px;
+    }
+
+    .content-1 {
+        margin-left: 15px; /* Ajusta el margen para mejor ajuste en pantallas pequeñas */
+    }
+
+    .content-1 h3 {
+        width: auto; /* Ajusta el ancho para que se ajuste al contenido */
+    }
+
+    .content-2 {
+        flex-direction: column; /* Cambia la dirección del contenido para pantallas más pequeñas */
+        align-items: flex-start;
+        right: 0;
+        top: 0;
+    }
+
+    .content-2 img,
+    .content-2 button {
+        width: 25px; /* Ajusta el tamaño de las imágenes y botones */
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .content-3 {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        right: 0;
+    }
+
+    .content-3 button {
+        width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+        height: auto;
+        margin: 10px 0; /* Ajusta el margen */
+    }
+
+    #arro {
+        width: 30px;
+        height: 30px;
+        left: 0;
+        animation: shake 1s infinite; /* Reduce la duración de la animación para pantallas pequeñas */
+    }
+
+    #text {
+        font-size: 10px;
+        width: auto;
+        right: 0;
+        top: 80px;
+    }
+
+    .line3 {
+        border-top: 1px solid var(--bgray-etb);
+        top: auto; /* Ajusta la posición para pantallas pequeñas */
+    }
+
+    .content-4 {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        left: 0;
+    }
+
+    .content-4 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content-4 button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content-4 img {
+        width: 15px;
+        height: 15px;
+        position: static;
+    }
+
+    .content-5 {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        right: 0;
+    }
+
+    .content-5 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content-5 img {
+        width: 15px;
+        height: 15px;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .content-5 span {
+        width: 100%;
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .cen-content table {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de la tabla */
+    }
+
+    .cen-content table td {
+        padding: 5px; /* Añade un poco de padding para mejorar la legibilidad en pantallas pequeñas */
+    }
+
+    .cen-content table img {
+        width: 10px;
+        height: 10px;
+        left: 0;
+    }
+
+    #num, #box, #cs, #tp, #na, #ident, #pqr, #sta, #feh, #hou, #nam {
+        position: static; /* Ajusta la posición para que se adapte mejor a pantallas pequeñas */
+        display: block; /* Hace que los elementos se apilen verticalmente */
+        margin: 5px 0;
+    }
+}
+
+/* Para pantallas de hasta 1024px (tabletas en orientación horizontal y dispositivos pequeños) */
+@media (max-width: 1024px) {
+    /* Contenedor Superior del Perfil */
+    .top-content {
+        height: auto; /* Ajusta la altura del contenedor */
+    }
+
+    #por {
+        width: 50px; /* Ajusta el tamaño del perfil */
+        height: 50px;
+        margin-left: 20px; /* Ajusta el margen */
+    }
+
+    .content-1 {
+        margin-left: 20px; /* Ajusta el margen */
+    }
+
+    .content-1 h3 {
+        width: auto; /* Ajusta el ancho para que se ajuste al contenido */
+    }
+
+    .content-2 {
+        right: 50px; /* Ajusta el margen derecho */
+        top: 50px; /* Ajusta el margen superior */
+    }
+
+    .content-2 img,
+    .content-2 button {
+        width: 20px; /* Ajusta el tamaño de las imágenes y botones */
+        height: 20px;
+    }
+
+    .content-3 {
+        right: 50px; /* Ajusta el margen derecho */
+        top: 70px; /* Ajusta el margen superior */
+    }
+
+    .content-3 button {
+        width: 120px; /* Ajusta el tamaño del botón */
+        height: 30px;
+        margin: 5px 0; /* Ajusta el margen */
+    }
+
+    #arro {
+        width: 40px;
+        height: 40px;
+        left: 300px;
+    }
+
+    #text {
+        font-size: 12px;
+        width: 300px;
+        right: 400px;
+        top: 70px;
+    }
+
+    .line3 {
+        border-top: 1px solid var(--bgray-etb);
+        top: 220px; /* Ajusta la posición */
+    }
+
+    .content-4 {
+        top: 100px;
+        left: 20px;
+    }
+
+    .content-4 input {
+        width: 200px; /* Ajusta el ancho de los campos de entrada */
+    }
+
+    .content-4 button {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+
+    .content-4 img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .content-5 {
+        right: 1000px; /* Ajusta el margen derecho */
+        top: 180px; /* Ajusta el margen superior */
+    }
+
+    .content-5 input {
+        width: 200px; /* Ajusta el ancho de los campos de entrada */
+    }
+
+    .content-5 img {
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    .content-5 span {
+        width: 180px; /* Ajusta el ancho del texto */
+        font-size: 14px;
+    }
+
+    .cen-content table {
+        font-size: 15px; /* Ajusta el tamaño de la fuente de la tabla */
+    }
+
+    .cen-content table td {
+        padding: 8px; /* Añade un poco de padding para mejorar la legibilidad */
+    }
+}
