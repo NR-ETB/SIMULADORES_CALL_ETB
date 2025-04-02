@@ -22,412 +22,866 @@
             <h2>Menu de Soluciones</h2>
         </div>
 
-        <div class="gestor-body">
-        <div class="table-body">
-            <table>
-                <tbody>
-                    <tr id="onee">
-                        <th class="one-th" style="border-radius: 10px 0px 0px 0px;">Soluciones</th>
-                        <th>Estados</th>
-                        <th class="two-th" style="border-radius: 0px 10px 0px 0px;">Escucha</th>
-                    </tr>
-                </tbody>
+        <div id="menu1" class="gestor-body">
+            <div class="table-body">
+                <table>
+                    <tbody>
+                        <tr id="onee">
+                            <th class="one-th" style="border-radius: 10px 0px 0px 0px;">Tipo de Soluciones</th>
+                            <th>Estados</th>
+                            <th class="two-th" style="border-radius: 0px 10px 0px 0px;">Enlace</th>
+                        </tr>
+                    </tbody>
 
-                <tbody id="simulator">
+                    <tbody id="simulator">
 
-                    <tr id="es2">
-                        <td id="es2" class="one-td" style="cursor: pointer;" onclick="solgen()">ACTIVIDADES GENERALES</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions2">                            
-                            <img id="es13" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es14" style="display: none;" src="../../images/speaker.png" alt="">
-                            <audio id="au_datos_cliente" class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
-                            </audio>
-                        </td></td>
-                    </tr>
-
-                    <tr id="esno1" style="opacity: 35%; display: none;">
-                        <td class="one-td">ACTIVIDADES GENERALES</td>
-                        <td class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td class="two-td actions2">                            
-                            <a><img src="../../images/speaker2.png" alt=""></a>
-                        </td></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td" style="border-radius: 20px 0px 0px 0px;">FALLA MASIVA</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
-                            <a href="../portal/FALLA/portalFALLA.php"><img src="../../images/www.png" alt=""></a>
-                        </td></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 1</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3">                            
-                            <a href="../portal/SVAS3/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 2</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3">                            
-                            <a href="../portal/SVAS33/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 3</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3">                            
-                            <a href="../portal/SVAS333/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td">LEY 2300 DE 2023</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3">                            
-                            <a href="../portal/SVAS6/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="four" style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td">OTP EN PQR</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3">                            
-                            <a href="../portal/SVAS5/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="four"  style="position: relative; left: 30px; display: none;">
-                        <td id="es2" class="one-td" style="border-radius: 0px 0px 0px 20px;">VISITA ABIERTA</td>
-                        <td id="es2" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es2" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
-                            <a href="../portal/VISITA/portalVISITA.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="es1">
-                        <td id="es1" class="one-td" style="cursor: pointer;" onclick="solfttc();">SOLUCION FTTC</td>
-                        <td id="es1" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es1" class="two-td actions2">                            
-                            <img id="es11" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente2', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es12" style="display: none;" src="../../images/speaker.png" alt="">
-                            <audio id="au_datos_cliente2" class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs2_1.mp3">
-                            </audio>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="esno2" style="opacity: 35%; display: none;">
-                        <td class="one-td">SOLUCION FTTC</td>
-                        <td class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td class="two-td actions2">                            
-                            <a><img src="../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)"></a>
-                            <audio id="au_datos_cliente" class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
-                            </audio>
-                        </td></td>
-                    </tr>
-
-                    <tr id="twoo" style="position: relative; left: 30px; display: none;">
-                        <td id="es1" class="one-td" style="border-radius: 20px 0px 0px 0px;">NO NAVEGA/NO CONECTA (SOLUCIONADO)</td>
-                        <td id="es1" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es1" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
-                            <a href="../portal/FTTC/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="twoo" style="position: relative; left: 30px; display: none;">
-                        <td id="es1" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTC (NO SOLUCIONADO)</td>
-                        <td id="es1" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es1" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
-                            <a href="../portal/FTTCNO/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="es3">
-                        <td id="es3" class="one-td" style="cursor: pointer;" onclick="solftth();">SOLUCION FTTH</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions2">                                                      
-                            <img id="es1" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente3', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es16" style="display: none;" src="../../images/speaker.png" alt="">
-                            <audio id="au_datos_cliente3" class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs3.mp3">
-                            </audio>
+                        <tr id="es2">
+                            <td id="es2" class="one-td" style="cursor: pointer;">SOPORTE</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td">                            
+                                <img onclick="menu_1();" style="cursor: pointer; width: 40px;" src="../../images/www.png" alt="">
                             </td></td>
-                        </td>
-                        </a></td>
-                    </tr>
+                        </tr>
 
-                    <tr id="esno3" style="opacity: 35%; display: none;">
-                        <td class="one-td" style="border-radius: 0px 0px 0px 0px; cursor: pointer;">SOLUCION FTTH</td>
-                        <td class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td class="two-td actions2">                            
-                            <a><img src="../../images/speaker2.png" alt=""></a>
-                        </td></td>
-                    </tr>
+                        <tr id="es1">
+                            <td id="es1" class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;">RETENCION</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-proc">
+                                    <span></span>
+                                    <p>No Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td" style="width: 40px; border-radius: 0px 0px 10px 0px; cursor: pointer;">                            
+                                <img onclick="menu_2();" style="width: 40px;" src="../../images/www.png" alt="">
+                            </td>
+                            </a></td>
+                        </tr>
 
-                    <tr id="three" style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td" style="border-radius: 20px 0px 0px 0px;">INTERMITENCIA-F (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
-                            <a href="../portal/FTTH/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-                    <tr id="three"  style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td">AUSENCIA DE SEÑAL TOTAL-F (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3">                            
-                            <a href="../portal/FTTH2/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+        <div id="menu2" class="gestor-body" style="display: none;">
+            <div class="table-body">
+                <table>
+                    <tbody>
+                        <tr id="onee">
+                            <th class="one-th" style="border-radius: 10px 0px 0px 0px;">Soluciones</th>
+                            <th>Estados</th>
+                            <th class="two-th" style="border-radius: 0px 10px 0px 0px;">Escucha</th>
+                        </tr>
+                    </tbody>
 
-                    <tr id="three"  style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td">SIN TONO-F (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3">                            
-                            <a href="../portal/FTTH3/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+                    <tbody id="simulator">
 
-                    <tr id="three"  style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td">LENTITUD-F (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3">                            
-                            <a href="../portal/FTTH4/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="three"  style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td">NINGUN DISPOSITIVO WIFI-F (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3">                            
-                            <a href="../portal/FTTH5/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="three"  style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td">CASO PBX (SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3">                            
-                            <a href="../portal/FTTH6/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="three" style="position: relative; left: 30px; display: none;">
-                        <td id="es3" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTH (NO SOLUCIONADO)</td>
-                        <td id="es3" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es3" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
-                            <a href="../portal/FTTHNO/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
-
-                    <tr id="es4">
-                        <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;" onclick="solsvas();">TRAMITES</td>
-                        <td id="es4" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es4" class="two-td actions2" style="border-radius: 0px 0px 10px 0px;">                            
-                            <img id="es17" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente4', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es18" style="display: none;" src="../../images/speaker.png" alt="">
-                            <audio id="au_datos_cliente4" class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs4.mp3">
-                            </audio>
+                        <tr id="es2">
+                            <td id="es2" class="one-td" style="cursor: pointer;" onclick="solgen()">ACTIVIDADES GENERALES</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions2">                            
+                                <img id="es13" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es14" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
+                                </audio>
                             </td></td>
-                        </td>
-                        </a></td>
-                    </tr>
+                        </tr>
 
-                    <tr id="esno4" style="opacity: 35%; display: none;">
-                        <td class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;">TRAMITES</td>
-                        <td class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td class="two-td actions2">                            
-                            <a><img src="../../images/speaker2.png" alt=""></a>
-                        </td></td>
-                    </tr>
+                        <tr id="esno1" style="opacity: 35%; display: none;">
+                            <td class="one-td">ACTIVIDADES GENERALES</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
 
-                    <tr id="five" style="position: relative; left: 30px; display: none;">
-                        <td id="es4" class="one-td" style="border-radius: 20px 0px 0px 0px;">ADICIÓN</td>
-                        <td id="es4" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es4" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
-                            <a href="../portal/SVAS/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td" style="border-radius: 20px 0px 0px 0px;">FALLA MASIVA</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FALLA/portalFALLA.php"><img src="../../images/www.png" alt=""></a>
+                            </td></td>
+                        </tr>
 
-                    <tr id="five" style="position: relative; left: 30px; display: none;">
-                        <td id="es4" class="one-td">RETIRO</td>
-                        <td id="es4" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es4" class="two-td actions3">                            
-                            <a href="../portal/SVAS2/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 1</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS3/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
 
-                    <tr id="five" style="position: relative; left: 30px; display: none;">
-                        <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 20px;">CAMBIO DE PLAN</td>
-                        <td id="es4" class="com-status">
-                            <div class="status status-com">
-                                <span></span>
-                                <p>Disponible</p>
-                            </div>
-                        </td>
-                        <td id="es4" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
-                            <a href="../portal/SVAS4/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
-                        </td>
-                        </a></td>
-                    </tr>
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 2</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS33/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
 
-                </tbody>
-            </table>
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 3</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS333/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">LEY 2300 DE 2023</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS6/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">OTP EN PQR</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS5/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four"  style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td" style="border-radius: 0px 0px 0px 20px;">VISITA ABIERTA</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/VISITA/portalVISITA.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es1">
+                            <td id="es1" class="one-td" style="cursor: pointer;" onclick="solfttc();">SOLUCION FTTC</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions2">                            
+                                <img id="es11" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente2', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es12" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente2" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs2_1.mp3">
+                                </audio>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno2" style="opacity: 35%; display: none;">
+                            <td class="one-td">SOLUCION FTTC</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)"></a>
+                                <audio id="au_datos_cliente" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
+                                </audio>
+                            </td></td>
+                        </tr>
+
+                        <tr id="twoo" style="position: relative; left: 30px; display: none;">
+                            <td id="es1" class="one-td" style="border-radius: 20px 0px 0px 0px;">NO NAVEGA/NO CONECTA (SOLUCIONADO)</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FTTC/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="twoo" style="position: relative; left: 30px; display: none;">
+                            <td id="es1" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTC (NO SOLUCIONADO)</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/FTTCNO/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es3">
+                            <td id="es3" class="one-td" style="cursor: pointer;" onclick="solftth();">SOLUCION FTTH</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions2">                                                      
+                                <img id="es1" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente3', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es16" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente3" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs3.mp3">
+                                </audio>
+                                </td></td>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno3" style="opacity: 35%; display: none;">
+                            <td class="one-td" style="border-radius: 0px 0px 0px 0px; cursor: pointer;">SOLUCION FTTH</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="three" style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td" style="border-radius: 20px 0px 0px 0px;">INTERMITENCIA-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FTTH/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">AUSENCIA DE SEÑAL TOTAL-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH2/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">SIN TONO-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH3/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">LENTITUD-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH4/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">NINGUN DISPOSITIVO WIFI-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH5/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">CASO PBX (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH6/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three" style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTH (NO SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/FTTHNO/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es4">
+                            <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;" onclick="solsvas();">TRAMITES</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions2" style="border-radius: 0px 0px 10px 0px;">                            
+                                <img id="es17" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente4', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es18" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente4" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs4.mp3">
+                                </audio>
+                                </td></td>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno4" style="opacity: 35%; display: none;">
+                            <td class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;">TRAMITES</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td" style="border-radius: 20px 0px 0px 0px;">ADICIÓN</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/SVAS/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td">RETIRO</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3">                            
+                                <a href="../portal/SVAS2/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 20px;">CAMBIO DE PLAN</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/SVAS4/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+        <div id="menu3" class="gestor-body" style="display: none;">
+            <div class="table-body">
+                <table>
+                    <tbody>
+                        <tr id="onee">
+                            <th class="one-th" style="border-radius: 10px 0px 0px 0px;">Soluciones</th>
+                            <th>Estados</th>
+                            <th class="two-th" style="border-radius: 0px 10px 0px 0px;">Escucha</th>
+                        </tr>
+                    </tbody>
+
+                    <tbody id="simulator">
+
+                        <tr id="es2">
+                            <td id="es2" class="one-td" style="cursor: pointer;" onclick="solgen()">ACTIVIDADES GENERALES</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions2">                            
+                                <img id="es13" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es14" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
+                                </audio>
+                            </td></td>
+                        </tr>
+
+                        <tr id="esno1" style="opacity: 35%; display: none;">
+                            <td class="one-td">ACTIVIDADES GENERALES</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td" style="border-radius: 20px 0px 0px 0px;">FALLA MASIVA</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FALLA/portalFALLA.php"><img src="../../images/www.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 1</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS3/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 2</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS33/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">INFRAESTRUCTURA DE ACCESO 3</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS333/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">LEY 2300 DE 2023</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS6/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four" style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td">OTP EN PQR</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3">                            
+                                <a href="../portal/SVAS5/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="four"  style="position: relative; left: 30px; display: none;">
+                            <td id="es2" class="one-td" style="border-radius: 0px 0px 0px 20px;">VISITA ABIERTA</td>
+                            <td id="es2" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es2" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/VISITA/portalVISITA.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es1">
+                            <td id="es1" class="one-td" style="cursor: pointer;" onclick="solfttc();">SOLUCION FTTC</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions2">                            
+                                <img id="es11" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente2', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es12" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente2" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs2_1.mp3">
+                                </audio>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno2" style="opacity: 35%; display: none;">
+                            <td class="one-td">SOLUCION FTTC</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)"></a>
+                                <audio id="au_datos_cliente" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs1.mp3">
+                                </audio>
+                            </td></td>
+                        </tr>
+
+                        <tr id="twoo" style="position: relative; left: 30px; display: none;">
+                            <td id="es1" class="one-td" style="border-radius: 20px 0px 0px 0px;">NO NAVEGA/NO CONECTA (SOLUCIONADO)</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FTTC/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="twoo" style="position: relative; left: 30px; display: none;">
+                            <td id="es1" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTC (NO SOLUCIONADO)</td>
+                            <td id="es1" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es1" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/FTTCNO/portalFTTC.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es3">
+                            <td id="es3" class="one-td" style="cursor: pointer;" onclick="solftth();">SOLUCION FTTH</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions2">                                                      
+                                <img id="es1" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente3', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es16" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente3" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs3.mp3">
+                                </audio>
+                                </td></td>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno3" style="opacity: 35%; display: none;">
+                            <td class="one-td" style="border-radius: 0px 0px 0px 0px; cursor: pointer;">SOLUCION FTTH</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="three" style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td" style="border-radius: 20px 0px 0px 0px;">INTERMITENCIA-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/FTTH/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">AUSENCIA DE SEÑAL TOTAL-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH2/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">SIN TONO-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH3/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">LENTITUD-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH4/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">NINGUN DISPOSITIVO WIFI-F (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH5/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three"  style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td">CASO PBX (SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3">                            
+                                <a href="../portal/FTTH6/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="three" style="position: relative; left: 30px; display: none;">
+                            <td id="es3" class="one-td" style="border-radius: 0px 0px 0px 20px;">SOLUCION FTTH (NO SOLUCIONADO)</td>
+                            <td id="es3" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es3" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/FTTHNO/portalFTTH.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="es4">
+                            <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;" onclick="solsvas();">TRAMITES</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions2" style="border-radius: 0px 0px 10px 0px;">                            
+                                <img id="es17" alt="parlante-audio-etb" class="img-audio" onclick="alertAudio('au_datos_cliente4', 'img_datos_cliente', 2, 0)" src="../../images/speaker2.png" alt=""><img id="es18" style="display: none;" src="../../images/speaker.png" alt="">
+                                <audio id="au_datos_cliente4" class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../Model/audioSuma/audio_com/gcs4.mp3">
+                                </audio>
+                                </td></td>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="esno4" style="opacity: 35%; display: none;">
+                            <td class="one-td" style="border-radius: 0px 0px 0px 10px; cursor: pointer;">TRAMITES</td>
+                            <td class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td class="two-td actions2">                            
+                                <a><img src="../../images/speaker2.png" alt=""></a>
+                            </td></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td" style="border-radius: 20px 0px 0px 0px;">ADICIÓN</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3" style="border-radius: 0px 20px 0px 0px;">                            
+                                <a href="../portal/SVAS/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td">RETIRO</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3">                            
+                                <a href="../portal/SVAS2/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                        <tr id="five" style="position: relative; left: 30px; display: none;">
+                            <td id="es4" class="one-td" style="border-radius: 0px 0px 0px 20px;">CAMBIO DE PLAN</td>
+                            <td id="es4" class="com-status">
+                                <div class="status status-com">
+                                    <span></span>
+                                    <p>Disponible</p>
+                                </div>
+                            </td>
+                            <td id="es4" class="two-td actions3" style="border-radius: 0px 0px 20px 0px;">                            
+                                <a href="../portal/SVAS4/portalSVAS.php"><img src="../../images/www.png" alt=""></a>
+                            </td>
+                            </a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+        <button type="button" onclick="menu_3();" class="btn-ont-sopo btn btn-primary" style="width: 190px; border-radius: 15px; position: relative; left: 870px; top: 100px;"><< ANTERIOR</button>
 
         <!-- Modal mensaje de error -->
         <div class="modal modal-success-sim" tabindex="-1" id="modal-abby" data-bs-backdrop="static" data-bs-keyboard="false">

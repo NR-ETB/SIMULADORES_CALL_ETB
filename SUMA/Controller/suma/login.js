@@ -24,7 +24,7 @@ function verificarUser(){
 function gred() {
     let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
     width=0,height=0,left=-1020,top=-1000`;
-    open('../../../Model/documents/manSuma.pdf', 'manual', params);
+    open('Model/documents/manSuma.pdf', 'manual', params);
 }
 
 document.getElementById('btn-sub-login').addEventListener('click', event=>{

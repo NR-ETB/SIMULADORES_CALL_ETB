@@ -440,3 +440,19 @@ function lf4() {
     $('#df-41').css('display','block')
 }
 
+function menu_1() {
+    $('#menu1').css('display','none')
+    $('#menu2').css('display','block')    
+}
+
+function menu_2() {
+    $('#menu1').css('display','none')
+    $('#menu3').css('display','block')        
+}
+
+function menu_3() {
+    $('#menu2').css('display','none')
+    $('#menu3').css('display','none')
+    $('#menu1').css('display','block')        
+}
+
