@@ -653,7 +653,7 @@
     </div>
 
         <!-- Modal mensaje de bienvenida -->
-        <div class="modal modal-success-sim" tabindex="-1" id="modal-fase">
+        <div class="modal modal-success-sim" tabindex="-1" id="modal-fase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -663,12 +663,29 @@
                 <p>Al escenario de SOLUCION FTTH del simulador SUMA, sigue las indicaciones y aprende en el proceso</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Numero de Conexion: 6012014935 <br> Cuenta Facturacion: 4444');">ACEPTAR</button>
+                <button type="button" class="btn btn-secondary" onclick="dates(),habladorText('Da click en el boton Despues');"">ACEPTAR</button>
                 </div>
             </div>
             </div>
         </div>
-        <!-- Modal mensaje error -->
+        <!-- Modal mensaje de bienvenida -->
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-dates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mas">Actualizacion de Datos</h5>
+                </div>
+                <div class="modal-body">
+                <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
+                </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: CLAID MUSS <br> Numero de Documento: CC 1000842659 <br> Numero de Conexion: 6012014935 <br> Cuenta Facturacion: 4444');">Despues</button>
+                </div>
+            </div>
+            </div>
+    </div>
 
     <div class="modal modal-success-sim" tabindex="-1" id="modal-masivo">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

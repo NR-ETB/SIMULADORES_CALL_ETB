@@ -63,62 +63,78 @@ function desaparecerHablador(){
     }, 2000);
 }
 function ocultarHablador(){
-    $('#alert-flotante').removeClass("etb-flotant-active");
-    $('#alert-flotante2').removeClass("etb-flotant-active");
-}
-function hablador(array, textE){
-    // clearInterval(efectuarTexto);
-    $('#text-msg-hab').empty();
-    $('#alert-flotante').addClass("etb-flotant-active");
+    $('#alert-flotante').removeClass("etb-flotant-active").hide();
+    $('#alert-flotante2').removeClass("etb-flotant-active").hide();
+    $('#text-msg-hab').html(''); // Borra completamente el contenido
 
-    document.getElementById('mensaje-parlante').style.display = "block";
-    $('#mensaje-parlante').addClass('msg-waite');
+    if (window.typedInstance) {
+        window.typedInstance.destroy();
+    }
+}
+/*
+function hablador(array, textE) {
+    // clearInterval(efectuarTexto); // (Si estaba en uso, se descomenta para detener un intervalo previo)
+    
+    // $('#text-msg-hab').empty(); // Borra el contenido previo del elemento con id "text-msg-hab"
+    // $('#alert-flotante').addClass("etb-flotant-active"); // Agrega la clase para activar el hablador
+
+    // document.getElementById('mensaje-parlante').style.display = "block"; // Muestra el elemento "mensaje-parlante"
+    // $('#mensaje-parlante').addClass('msg-waite'); // Agrega la clase para mostrar animación de espera
+
+    /*
+    // Temporizador para simular una espera antes de mostrar el texto
     efectuarTexto = setTimeout(() => {
-        $('#mensaje-parlante').removeClass('msg-waite');
-        let textoFinal = dividirText(audios[array][textE])
+        $('#mensaje-parlante').removeClass('msg-waite'); // Elimina la animación de espera
+        let textoFinal = dividirText(audios[array][textE]); // Divide el texto del audio seleccionado
 
         var typed = new Typed('#text-msg-hab', {
-            strings: textoFinal,
-            typeSpeed: 30,
+            strings: textoFinal, // Texto a mostrar
+            typeSpeed: 30, // Velocidad de escritura
         });
     }, 700);
-}
+    */
+//}
 
-function habladorText(text){
-    $('#text-msg-hab').empty();
-    $('#alert-flotante').addClass("etb-flotant-active");
+function habladorText(text) {
+
+    if (window.typedInstance) {
+        window.typedInstance.destroy();
+    }
+    // Muestra el hablador
+    $('#alert-flotante').addClass("etb-flotant-active").show();
     document.getElementById('mensaje-parlante').style.display = "block";
     $('#mensaje-parlante').addClass('msg-waite');
-
+    
     setTimeout(() => {
         $('#mensaje-parlante').removeClass('msg-waite');
-        let textoFinal = dividirText(text)
+        let textoFinal = dividirText(text);
         console.log(textoFinal);
-
-        var typed = new Typed('#text-msg-hab', {
+        
+        // Guarda la instancia de Typed para poder destruirla después
+        window.typedInstance = new Typed('#text-msg-hab', {
             strings: textoFinal,
             typeSpeed: 120,
         });
     }, 700);
 }
 
-function habladorText2(text){
-    $('#text-msg-hab2').empty();
-    $('#alert-flotante2').addClass("etb-flotant-active");
+function habladorText2(text) {
+   // Muestra el hablador
+    $('#alert-flotante2').addClass("etb-flotant-active").show();
     document.getElementById('mensaje-parlante2').style.display = "block";
     $('#mensaje-parlante2').addClass('msg-waite');
 
     setTimeout(() => {
         $('#mensaje-parlante2').removeClass('msg-waite');
-        let textoFinal = dividirText2(text)
+        let textoFinal = dividirText2(text);
         console.log(textoFinal);
 
-        var typed = new Typed('#text-msg-hab2', {
+        // Guarda la referencia a la instancia de Typed para poder destruirla después
+        window.typedInstance2 = new Typed('#text-msg-hab2', {
             strings: textoFinal,
             typeSpeed: 1,
         });
     }, 700);
-
 }
 
 function cambioParlanteE(idimg){
@@ -443,16 +459,19 @@ function lf4() {
 function menu_1() {
     $('#menu1').css('display','none')
     $('#menu2').css('display','block')    
+    $('#rett').css('display','block')    
 }
 
 function menu_2() {
     $('#menu1').css('display','none')
-    $('#menu3').css('display','block')        
+    $('#menu3').css('display','block')
+    $('#rett').css('display','block')            
 }
 
 function menu_3() {
     $('#menu2').css('display','none')
     $('#menu3').css('display','none')
-    $('#menu1').css('display','block')        
+    $('#menu1').css('display','block')
+    $('#rett').css('display','none')            
 }
 

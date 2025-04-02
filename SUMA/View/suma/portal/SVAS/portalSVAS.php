@@ -515,8 +515,8 @@
         </div>
     </div>
 
-        <!-- Modal mensaje de bienvenida -->
-        <div class="modal modal-success-sim" tabindex="-1" id="modal-fase">
+    <!-- Modal mensaje de bienvenida -->
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-fase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -526,12 +526,29 @@
                 <p>En el escenario de ADICIÓN (SVAS) del simulador SUMA, hacer caso omiso a las siguientes indicaciones y aprende en el proceso</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Numero de Conexion: 6012065894 <br> Cuenta Facturacion: 5555');">ACEPTAR</button>
+                <button type="button" class="btn btn-secondary" onclick="dates(),habladorText('Da click en el boton Despues');"">ACEPTAR</button>
                 </div>
             </div>
             </div>
-        </div>
-        <!-- Modal mensaje error -->
+    </div>
+    <!-- Modal mensaje de bienvenida -->
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-dates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mas">Actualizacion de Datos</h5>
+                </div>
+                <div class="modal-body">
+                <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
+                </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: NATALIA FERNANDES <br> Numero de Documento: CC 1000958632 <br> Numero de Conexion: 6012065894 <br> Cuenta Facturacion: 5555');">Despues</button>
+                </div>
+            </div>
+            </div>
+    </div>
 
     <div class="modal modal-success-sim" tabindex="-1" id="modal-masivo">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -1038,10 +1055,6 @@
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/SVAS/portalSVAS.js"></script>
     <script src="../../../../Controller/security/SVAS/anti-cheat-svas.js"></script>
-
-    <script>
-        habladorText('Cliente: NATALIA FERNANDES <br> Tipo de Documento: CC <br> Numero de Documento: 1000958632')
-    </script>
 
 </body>
 </html>

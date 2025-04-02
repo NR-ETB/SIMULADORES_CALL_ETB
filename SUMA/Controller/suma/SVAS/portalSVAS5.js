@@ -2,6 +2,13 @@ $( document ).ready(function() {
     $('#modal-fase').modal('toggle')
 });
 
+function dates(){
+
+    $('#modal-fase').modal('hide')
+    $('#modal-dates').modal('toggle')
+
+}
+
 var s = false;
 
 function btn_search() {

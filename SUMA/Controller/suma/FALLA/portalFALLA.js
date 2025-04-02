@@ -2,6 +2,13 @@ $( document ).ready(function() {
     $('#modal-fase').modal('toggle')
 });
 
+function dates(){
+
+    $('#modal-fase').modal('hide')
+    $('#modal-dates').modal('toggle')
+
+}
+
 let search = document.getElementById('search');
 search.addEventListener('click', () =>{
     console.log('si');
@@ -92,6 +99,16 @@ setTimeout(() => {
         $('#modal-loading').modal('hide')
     });
   }, "4000");
+}
+
+function btn_vis() {
+    $('#modal-loading').modal('toggle')
+    setTimeout(() => {
+        $( document ).ready(function() {
+            $('#modal-pqr').modal('toggle')
+            $('#modal-loading').modal('hide')
+        });
+      }, "4000");
 }
 
 function btn_visita() {

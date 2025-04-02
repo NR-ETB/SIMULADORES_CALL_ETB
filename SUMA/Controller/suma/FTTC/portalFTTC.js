@@ -2,6 +2,13 @@ $( document ).ready(function() {
     $('#modal-fase').modal('toggle')
 });
 
+function dates(){
+
+    $('#modal-fase').modal('hide')
+    $('#modal-dates').modal('toggle')
+
+}
+
 let search = document.getElementById('search');
 search.addEventListener('click', () =>{
     console.log('si');
