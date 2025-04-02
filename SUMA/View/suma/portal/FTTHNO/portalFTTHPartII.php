@@ -88,7 +88,7 @@
                             </audio>
                         </div>
                     
-                        <div class="body-items-inf" style="height: 290px;">
+                        <div class="body-items-inf" style="height: 330px;">
                             <div class="content-info" id="con-sopo-inter">
                             
                                                 <div class='content-item-info item-1' style="position: relative; bottom: 3px; width: 220px;">

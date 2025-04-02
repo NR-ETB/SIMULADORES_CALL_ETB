@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/portal.css">
-    <link rel="stylesheet" href="../../css/portal2.css">
-    <link rel="stylesheet" href="../../../css/mainSuma.css">
     <link rel="stylesheet" href="../../css/soporte.css">
+    <link rel="stylesheet" href="../../../css/mainSuma.css">
     <link rel="stylesheet" href="../../../bootstrap/bootstrap.min.css">
     <link href="../../../fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="../../../fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
@@ -71,8 +70,8 @@
                         <button>Tramites</button>
                         <button onclick="btn_vis();">PQR</button>
                         <button>Factuaracion y Envio</button>
-                        <button onclick="detail();" style="background-color: #084d6f;">Detalle</button>
-                        <button>Retenciones</button>
+                        <button onclick="detail();">Detalle</button>
+                        <button onclick="btn_ret(),habladorText('Aqui podras apreciar todas las retenciones ligadas al cliente en cuestion, da click en el boton INICIAR RETENCION para continuar');" style="background-color: #084d6f;">Retenciones</button>
                         <button class="int">Interacciones</button>
                         </div>
                     </div>
@@ -93,21 +92,21 @@
                             <div class="content-info" id="con-sopo-inter">
                             
                                                 <div class='content-item-info item-1' style="position: relative; bottom: 3px; width: 220px;">
-                                                <label>Nombre:</label> <span>NATALIA FERNANDES</span><br>
-                                                <label>Tipo de Documento:</label> <span>CC</span><br>
-                                                <label>Numero de Documento:</label> <span>1000958632</span><br>
-                                                <label>Email:</label> <span>natf@email.com</span><br>
-                                                <label>Telefono Fijo:</label> <span>6012065894</span><br>
-                                                <label>Usuario MiETB:</label> <span></span><br>
-                                                <label>Tipo de Atencion:</label> <span>G</span><br>
-                                                <button>Documentos Cliente</button>
+                                                <label>Nombre:</label> <span>HERNAN CAPEIRO</span><br>
+                                                <label>Tipo de Documento:</label> <span>PASAPORTE</span><br>
+                                                <label>Numero de Documento:</label> <span>1000634251</span><br>
+                                                <label>Email:</label> <span>hcpe@email.com</span><br>
+                                                <label>Telefono Fijo:</label> <span>6017829304</span><br>
+                                                <label>Usuario MiETB:</label> <span>hcpe@email.com</span><br>
+                                                <label>Tipo de Atencion:</label> <span>A</span><br>
+                                                <button style="font-size: 10px;">Documentos Cliente</button>
                                                 </div>
 
                                                 <div class='content-item-info item-2' style="position: relative; left: 250px; bottom: 30px;">
-                                                <label>Celular:</label> <span>3195216852</span><br>
-                                                <label>Departamento:</label> <span>ATLÁNTICO</span><br>
-                                                <label>Ciudad:</label> <span>BARRANQUILLA</span><br>
-                                                <label>Direccion:</label> <span>Calle 85A #23 c 28</span><br>
+                                                <label>Celular:</label> <span>3176251432</span><br>
+                                                <label>Departamento:</label> <span>BOGOTA</span><br>
+                                                <label>Ciudad:</label> <span>BOGOTA D.C</span><br>
+                                                <label>Direccion:</label> <span>Calle 172 #16 a 24</span><br>
                                                 <label>Campaña Activa:</label> <span></span><br>
                                                 <label>Codigo LISIM:</label> <span>NO</span><br>
                                                 </div>
@@ -131,9 +130,9 @@
                                                 </div>
                             </div>
                         </div>
-                    </div>
+                </div>
 
-                    <div id="table" class="items-info items-sopor item-produc">
+                    <div id="table" class="items-info items-sopor item-produc" style="display: none;">
                         <div class="cabecera">
                             <h5>Productos</h5>
                             <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_productos" onclick="alertAudio('au_productos', 'img_productos', 2, 1)">
@@ -163,16 +162,16 @@
                                             <th>Pérdida/Robo</th>
                                             <th>Nivel Riesgo</th>
                                         </tr>
-                                        <tbody onclick="tabac1(),tabac2();">
+                                        <tbody onclick="tabac(),tabac2(),habladorText('En el menu de opciones, ubicado en el lado derecho de la pantalla deberas seleccionar el apartado de RETENCIONES');">
 
                                         <tr>
                                         <td>PORTALFIJA</td>
                                         <td></td>
-                                        <td>3PLAY 30M SILVER 1</td>
-                                        <td>3PLAY 30M SILVER 1</td>
-                                        <td>6012065894</td>
-                                        <td>5555</td>
-                                        <td>Calle 85A #23 c 28</td>
+                                        <td>DUO 700M HOG</td>
+                                        <td>DUO 700M HOG</td>
+                                        <td>6017829304</td>
+                                        <td>7777</td>
+                                        <td>Calle 172 #16 a 24</td>
                                         <td>6</td>
                                         <td>FTTH</td>
                                         <td></td>
@@ -183,7 +182,26 @@
                                         <td><div class='semaforo semaforo-g'></div></td>
                                         <td><div class='semaforo semaforo-error'></div></td>
                                         </tr>
-                                        
+
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Inactivo</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><div class='semaforo semaforo-co'></div></td>
+                                        </tr>
+
                                         </tbody>
                                         
                                     </table>
@@ -192,13 +210,13 @@
                         </div>
                     </div>
 
-                    <div id="eyes" class="content-soport-fact">
+                    <div id="eyes" class="content-soport-fact" style="display: none;">
                         <div class="items-info items-sopor content-soport ">
                             <div class="cabecera">
                                 <h5>Soporte Técnico</h5>
                                 <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_soporte" onclick="alertAudio('au_soporte', 'img_soporte', 2, 2)">
                                 <audio id="au_soporte" controls class="audio" style="display: none;">
-                                    <source type="audio/wav" src="../../../../Model/audioSuma/audio/soporte/au_general_sf.mp3">
+                                    <source type="audio/wav" src="../../../../Model/audioSuma/audio_com/gcs5.mp3">
                                 </audio>
                             </div>
                             <div class="body-items-inf">
@@ -208,45 +226,41 @@
                                             <label>Central:</label> <span>SANTA INES</span><br>
                                             <label>Equipo:</label> <span>BOSIZTC60104003</span><br>
                                             <label>Molécula:</label> <span>N4CU07_E15</span><br>
-                                            <label>Falla Masiva:</label> <span></span> <br>
+                                            <label>Falla Masiva:</label>
                                             </div>
 
                                             <div class='content-item-info'>
                                             <label>Visita Abierta:</label><br>
-                                            <label>PQRs Falla Técnica:</label> <span>1</span> <i class='fa-solid fa-eye eye-color' onclick="btn_falla(); habladorText('Aqui podras apreciar que la gestion a quedado realizada y que la PQR, seguira abierta por las proximas 48 horas');"></i><br>
-                                            <label>Reportar Falla:</label> <br>
-                                        </div>  
+                                            <label>PQRs Falla Técnica:</label> <span>0</span> <i class='fa-solid fa-eye eye-color'></i><br>
+                                            <label>Reportar Falla:</label> <span></span> <i class='fa-solid fa-eye eye-color'></i><br>
+                                        </div>   
                                             
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
-                        <div class="items-info items-sopor content-fact" id="df">
+                        <div class="items-info items-sopor content-fact" id="df" style="display: none;">
                             <div class="cabecera">
                                 <h5> 
                                 Datos Facturación</h5>
                                 <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_fact" onclick="alertAudio('au_datos_fact', 'img_datos_fact', 2, 3)">
-                            
-
                                 <audio id="au_datos_fact" controls class="audio" style="display: none;">
-
                                     <source type="audio/wav" src="../../../../Model/audioSuma/audio/soporte/au_datos_fact.mp3">
-
                                 </audio>
                             </div>
                             <div class="body-items-inf">
                                 <div class="content-fact-fac" id="con-sopo-inter">
 
                                             <div class='content-item-info item-1'>
-                                            <label>Cuenta Facturacion:</label> <span>5555</span><br>
+                                            <label>Cuenta Facturacion:</label> <span>7777</span><br>
                                             <label>Estado Cta Facturacion:</label> <span>Activo</span><br>
-                                            <label>Ciclo:</label> <span>64</span><br>
-                                            <label>Dirección Facturación:</label> <span>Calle 85A #23 c 28</span><br>
+                                            <label>Ciclo:</label> <span>12</span><br>
+                                            <label>Dirección Facturación:</label> <span>Calle 172 #16 a 24</span><br>
                                             <label>Tipo Factura:</label> <span>Detallada</span><br>
                                             <label>Tipo de Envío:</label> <span>Virtual</span><br>
                                             <label>Tipo de Entrega:</label> <span>Correo Electronico</span><br>
-                                            <label>Email Facturación:</label> <span>natf@email.com</span><br>
-                                            <label>Pago Recurrente:</label> <span>No</span><br>
+                                            <label>Email Facturación:</label> <span>hcpe@email.com</span><br>
+                                            <label>Pago Recurrente:</label> <span>Si</span><br>
                                             <label>Jerarquía Facturación:</label> <span>Hijo</span><br>
                                             <label>Cuenta Padre:</label> <span></span><br>
                                             <label>Mensaje Variación Factura:</label> <span></span><br>
@@ -254,16 +268,16 @@
 
                                             <div class='content-item-info item-2'>
                                             <label>Frecuencia:</label> <span>Mensual</span><br>
-                                            <label>Departamento:</label> <span>Atlántico</span><br>
-                                            <label>Ciudad:</label> <span>Barranquilla</span><br>
-                                            <label>Barrio:</label> <span>000004</span><br>
+                                            <label>Departamento:</label> <span>Bogota</span><br>
+                                            <label>Ciudad:</label> <span>Bogota D.C</span><br>
+                                            <label>Barrio:</label> <span>00007</span><br>
                                             <label>Estrato:</label> <span>6</span><br>
                                             </div>
 
                                             <div class='content-item-info item-3'>
                                             <label>Mora:</label> <span>No</span><br>
                                             <label>Día de Corte:</label> <span>0</span><br>
-                                            <label>Cliente Migrado :</label> <span>Si</span><br>
+                                            <label>Cliente Migrado :</label> <span>No</span><br>
                                             </div>
 
                                             <div class='content-item-info item-4'>
@@ -287,6 +301,151 @@
         </div>
     </div>
     <!-- ================================ MODALES ==================================================== -->
+    <div class="modal fade" id="modal-visita"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CREANDO PQR DE INFORMACIÓN
+
+                        <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_creacion_pqr" onclick="alertAudio('au_creacion_pqr', 'img_creacion_pqr', 2, 4)">
+                            
+
+                        <audio id="au_creacion_pqr" controls class="audio" style="display: none;">
+
+                            <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_crecion_pqr.mp3">
+
+                        </audio>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="descrip-pqr">
+                        <label for="">Id PQR</label>
+                    </div>
+                    <div class="content-modal">
+                        <form>
+                            <label for="">Clase</label>
+                            <span>
+                                <select name="clase" id="">
+                                    <option value="0"></option>
+                                    <option value="1">ASEGURAMIENTO DE CANALES</option>
+                                    <option value="2">PETICIÓN</option>
+                                    <option value="3">QUEJAS</option>
+                                    <option value="4">RECUERSOS</option>
+                                    <option value="5">RESOLUCIÓN</option>
+                                    <option value="6">SOLICITUDES IAS</option>
+                                </select>
+                            </span>
+
+                            <label for="">Motivo</label>
+                            <span>
+                                <select name="motivo" id="">
+                                    <option value="0"></option>
+                                    <option value="1">FALLA TECNICA</option>
+                                </select>
+                            </span>
+
+                            <label for="">Relación PQR</label>
+                            <span><input type="text" name="relacion" id="inputValor" value="" disabled></span>
+                            <span class="select-relacion">
+                                <select name="producto" id="prod" onchange="pro();">
+                                    <option value="0"></option>
+                                    <option value="1">PRODUCTO</option>
+                                </select>
+                            </span>
+
+                            <label for="">Causal</label>
+                            <span>
+                                <select name="causal" id="">
+                                    <option value="0"></option>
+                                    <option value="1">BAJA CALIDAD DEL SERVICIO</option>
+                                    <option value="2">FALLA CPE</option>
+                                    <option value="3">FALLA INTERNET</option>
+                                    <option value="4">FALLA WIFI</option>
+                                    <option value="5">GESTIÓN PROACTIVA</option>
+                                    <option value="6">SIN DATOS</option>
+                                </select>
+                            </span>
+
+                            <label for="">Sintoma</label>
+                            <span>
+                                <select name="sintoma" id="">
+                                    <option value="0"></option>
+                                    <option value="1">PROBLEMA EQUIPO DEL CLIENTE</option>
+                                    <option value="2">SIN SERVICIO -F</option>
+                                </select>
+                            </span>
+
+                            <label for="">Descripcion</label>
+                            <textarea name="descripcion" id="" cols="30" rows="3"></textarea>
+
+                            <label for="">CUN
+                                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_solicitante" onclick="alertAudio('au_solicitante', 'img_solicitante', 2, 5)">
+                                <audio id="au_solicitante" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_solicitante.mp3">
+                                </audio>
+                            </label>
+                            <select name="solicitante" id="search-soli" readonly="readonly" class="solicitante-search" style="background-color: #c0c0c0;">
+                                <option id="cun-rel" value="1">6250124658754201</option>
+                            </select>
+                            <button type="button" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                            <div class="table-search" style="display: none;" id="table_search">
+                                <div class="content-table-search">
+                                    <div class="barra-busqueda">
+                                        <label for="buscar">Buscar:</label>
+                                        <input type="text" id="buscar" name="buscar">
+                                        <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_solicitante_tb" onclick="alertAudio('au_solicitante_tb', 'img_solicitante_tb', 2, 6)">
+                                
+
+                                            <audio id="au_solicitante_tb" controls class="audio" style="display: none;">
+
+                                                <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_solicitante_tb.mp3">
+
+                                            </audio>
+                                    </div>
+                                    <div class="con-table">
+                                        <table class="table-general table-sopor">
+                                            <tr>
+                                                <th>Solicitante</th>
+                                                <th>Numero Documento</th>
+                                                <th>Tipo Documento</th>
+                                                <th>Telefono Solicitante</th>
+                                                <th>Celular</th>
+                                                <th>Email</th>
+                                                <th>Dirección</th>
+                                                <th>Acción</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><a href="">Editar</a></td>     
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <input value="Crear" onclick="location.href = './pqr.php'" class="crear-pqr">
+                            <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_solicitante_fn" onclick="alertAudio('au_solicitante_fn', 'img_solicitante_fn', 2, 8)">       
+
+                            <audio id="au_solicitante_fn" controls class="audio" style="display: none;">
+
+                                <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_solicitante_fn.mp3">
+
+                            </audio>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal-actualizar"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
@@ -354,7 +513,7 @@
         <div class="etb-flotant etb-flotant-login" id="etb-flotant">
             <img src="../../../images/ETB.svg" alt="">
         </div>
-        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante">
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante" style="width: 500px;">
             <p id="text-msg-hab">
                 <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
             </p>
@@ -376,22 +535,6 @@
             <div class="con-close-alert" onclick="ocultarHablador()" style="position: relative; right: 560px; bottom: 440px;">
                 <img src="../../../images/cross_small.svg" alt="">
             </div>
-    </div>
-
-    <div class="modal modal-success-sim" tabindex="-1" id="modal-fase1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title">ESCUELA ETB</h5>
-                </div>
-                <div class="modal-body">
-                <p>Has finalizado con exito el escenario INFRAESTRUCTURA DE ACCESO 3 del Simulador SUMA, recuerda que siempre esta a tu disposicion y cuentas con intentos ilimitados :)</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href ='../../menu/menuSUMA.html'">ACEPTAR</button>
-                </div>
-            </div>
-        </div>
     </div>
     
     <div class="modal fade" id="modal-falla"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -424,13 +567,15 @@
                                             <th>Resolucion 3</th>
                                             <th>Descripcion PQR</th>
                                         </tr>
+
                                         <tbody>
-                                            <tr id="abi2" onclick="tabac3(),tabac4();">
-                                            <td>MDM-PQR-3939241</td>
-                                            <td><script>document.write(`${month}/${day}/${year}`)</script> <span><script>document.write(`${hours}:${minutes}`)</script></span></td>
-                                            <td>ACCESS POINT</td>
-                                            <td>NO CONECTA/NO NAVEGA</td>
-                                            <td>ABIERTO</td>
+
+                                        <tr id="abi3" onclick="tabac5(),tabac6();">
+                                            <td>MDM-PQR-3939224</td>
+                                            <td>20/02/2024 8:46:00 AM</td>
+                                            <td>INTERNET</td>
+                                            <td>SIN SERVICIO -F</td>
+                                            <td>CERRADO</td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -440,9 +585,9 @@
                                             <td></td>
                                             </tr>
 
-                                            <tr id="df2" style="background-color: rgb(226 226 226); display: none;">
+                                            <tr id="df3" style="background-color: rgb(226 226 226); display: none;">
                                             <td>Detalle</td>
-                                            <td><i class='fa-solid fa-eye eye-color'></i></td>
+                                            <td><i class='fa-solid fa-eye eye-color' onclick="location.href='./pqrbaseFALLA.php'"></i></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -454,11 +599,13 @@
                                             <td></td>
                                             <td></td>
                                             </tr>
+
                                         </tbody>
+
                                     </table>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" onclick="btn_fase()">Aceptar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" onclick="btn_of()">Aceptar</button>
                                 </div>
                             </div>
                         </div>
@@ -501,22 +648,82 @@
         </div>
     </div>
 
+    <!-- Modal mensaje de bienvenida -->
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-fase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mas">Bienvenid@</h5>
+                </div>
+                <div class="modal-body">
+                <p>Al escenario de CREACION DE RETENCION del simulador SUMA, sigue las indicaciones y aprende en el proceso</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="dates();">ACEPTAR</button>
+                </div>
+            </div>
+            </div>
+    </div>
+    <!-- Modal mensaje de bienvenida -->
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-dates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mas">Actualizacion de Datos</h5>
+                </div>
+                <div class="modal-body">
+                <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
+                </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: PS 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">Despues</button>
+                </div>
+            </div>
+            </div>
+    </div>
+
     <div class="modal modal-success-sim" tabindex="-1" id="modal-masivo">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">INFROMACION DE LA FALLA MASIVA</h5>
+                    <h5 class="modal-title">INFORMACION DE LA FALLA MASIVA</h5>
                 </div>
                 <div class="modal-body">
-                    <h5 class="modal-title" style="color: #FF5C39; justify-content: start;">Libreto para Dirigirse al cliente:</h5>
+                    <div style="display: flex;">
+                        <h5 class="modal-title" style="color: #1285B6; justify-content: start;">CUN</h5>
+                        <p style="text-align: justify; color: #FF5C39">4347230001002018</p>
+                    </div>
                     <br>
-                    <p style="text-align: justify;">Apreciado cliente, en este momento presentamos una falla en el sector por lo que se pueden presentar ausencia o degradacion en sus servicios;
+                    <h5 class="modal-title" style="color: #1285B6; justify-content: start;">Guion al Cliente</h5>
+                    <p style="text-align: justify; color: #FF5C39">Apreciado cliente, en este momento presentamos una falla en el sector por lo que se pueden presentar ausencia o degradacion en sus servicios;
                     nuestro personal tecnico se encuentra en la labor de solucionar estos inconvenientes y se estima que todo se estabilizara el <script>document.write(`${month}/${day}/${year}`)</script>
                     a las <span><script>document.write(`${hours}:${minutes}`)</script></span>. De antemano le pedimos excusas por las molestias y te comunicaremos del avance de la solucion de la falla presentada.
                     </p>
+                    <br>
+                    <h5 class="modal-title" style="color: #1285B6; justify-content: start;">Informacion para el asesor</h5>
+                    <p style="text-align: justify; color: #FF5C39">
+                        Esta falla será recompensada simpre y cuando cumpla con las condiciones.
+                    </p>
                  </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="position: relative; right: 280px; left: 0;">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-cic">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="width: 600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">CICLOS Y CORTES DE FACTURACION</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="../../../images/images-suma/ciclo.png" alt="">
+                 </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="position: relative; right: 280px; left: 0;" onclick="cic2();">ACEPTAR</button>
                 </div>
             </div>
         </div>
@@ -526,8 +733,8 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <h5 class="modal-title">PQR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_contac', 'img_editar_contac', 2, 7)">
                         <audio id="au_editar_contac" controls class="audio" style="display: none;">
                             <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_editar_contac.mp3">
@@ -576,7 +783,118 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modal-ret"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_contac', 'img_editar_contac', 2, 7)">
+                    <audio id="au_editar_contac" controls class="audio" style="display: none;">
+                        <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_editar_contac.mp3">
+                    </audio>
+                    <h5 class="modal-title">RETENCIONES</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </h5>           
+                </div>
+                <div class="modal-body" style="overflow-x: hidden;">
+                    <p id="ayu5" style="position: relative; top: 15px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
+                    <p style="position: relative; bottom: 25px; left: 530px;">Buscar:<input style="width: 170px; margin-left: 10px;" type="text" placeholder="" disabled></p>
+                            
+                        <div class="table-product" id="con-sopo-inter">
+                                <div class="con-table2">
+                                    <table class="table-general table-sopor table-produc">
+                                        <tr>
+                                            <th>Fecha Creacion</th>
+                                            <th>ID</th>
+                                            <th>Estado</th>
+                                            <th>Accion</th>
+                                            <th>Estado Accion</th>
+                                            <th>Cuenta Facturacion</th>
+                                            <th>Numero Conexion</th>
+                                            <th>Tecnologia</th>
+                                            <th>Detalle</th>
+                                            <th>Retencion</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>20/02/2024 8:46:00 AM</td>
+                                                <td>RF-003575869</td>
+                                                <td>Suscriptor_No_Valido_Retirado</td>
+                                                <td>Downgrade oferta plan (captura sin promocion)</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/02/10, 12:24:09 pm</td>
+                                                <td>RF-003649582</td>
+                                                <td>Pendiente</td>
+                                                <td>Cesión de contrato</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/28, 10:11:13 am</td>
+                                                <td>RF-003936485</td>
+                                                <td>Suscriptor_No_Valido_Retenido</td>
+                                                <td>Resaltar beneficios</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/28, 09:18:18 am</td>
+                                                <td>RF-003091725</td>
+                                                <td>Suscriptor_No_Valido_Retenido</td>
+                                                <td>Resaltar beneficios</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/24, 10:20:13 am</td>
+                                                <td>RF-003523142</td>
+                                                <td>Suscriptor_No_Valido_Retirado</td>
+                                                <td>Suspensión voluntaria</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                        </tbody>                               
+                                    </table>
+
+                                    <p id="ayu3" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 1 al 5 de un total de 5 registros</p>
+                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1010px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
+                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1005px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 0 2px 2px 0; cursor: pointer;">Siguiente</button>
+
+                                    <div>
+                                        <button class="btn btn-secondary" style="margin-bottom: 10px; background-color: #20a4cb; border-color: #20a4cb; border-radius: 25px;" onclick="reten();">Iniciar Retencion</button>
+                                        <button class="btn btn-secondary" style="margin-bottom: 10px; background-color: #20a4cb; border-color: #20a4cb; border-radius: 25px;">Retencion Cerebro</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -605,26 +923,25 @@
                                 
                                     <div class='content-item-info item-1'>
                                     <br>
-                                    <label>Cuenta de Facturación</label> <span>5555</span><br>
+                                    <label>Cuenta de Facturación</label> <span>2222</span><br>
                                     <br><br>
-                                    <label>Ciudad Instalación</label> <span>Barranquilla</span><br>
-                                    <label>Estrato Instalación</label> <span>6</span><br>
+                                    <label>Ciudad Instalación</label> <span>Medellin</span><br>
+                                    <label>Estrato Instalación</label> <span>5</span><br>
                                     <label>Servicio Demostración</label> <span></span><br>
                                     <label>Accion Sugerida</label> <span></span><br>
                                     </div>
 
                                     <div class='content-item-info item-2'>
-                                    <label>Direccion Instalación</label> <span>Calle 85A #23 c 28</span><br><br>
-                                    <label>Localidad Instalación</label> <span>2</span><br>
+                                    <label>Direccion Instalación</label> <span>Calle 4D #45 a 28</span><br><br>
+                                    <label>Localidad Instalación</label> <span>16</span><br>
                                     <label>Segmento Servicio</label> <span>Hogares y Mipymes</span><br>
                                     <label>Nivel Riesgo</label> <span></span><br>
-                                    <label>Oferta Especia TV:</label> <span>No</span> 
+                                    <label>Oferta Especia TV:</label> <span>No</span><br> 
                                     </div>                          
 
                                     <div class='content-item-info item-2'>
-                                    <br>
                                     <label>Pais Instalación</label> <span>COLOMBIA</span><br>
-                                    <label>Departamento Instalación</label> <span>ATLÁNTICO</span><br>
+                                    <label>Departamento Instalación</label> <span>ANTIOQUIA</span><br>
                                     <label>Zona Instalación</label> <span></span><br>
                                     <label>Tecnologia</label> <span>FTTH</span><br>
                                     <label>Variable de Impacto</label> <span></span><br>
@@ -649,7 +966,7 @@
                             </div>
                         </div>
 
-                        <div style="position: relative; top: 40px;">
+                    <div style="position: relative; top: 40px;">
                                 <div class="table-solui"  id="table2" style="top: 215px; position: relative;">
                                     <table class="table-general table-sopor">
                                             <tr>
@@ -712,7 +1029,7 @@
                                                 <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5729" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Web Firehome</a></td>
                                             </tr>
                                             <tr class="row-bl" id="ayu16">
-                                                <td colspan="12" style="text-align: center;"><a onclick="habladorText2('La mejor forma de solucionar los problemas de lentitud, siempre sera por medio del cable, esta nos asegura una mejor gestion del problema, opacando todas las brechas posibles, a diferencia de la solucion wifi, en la cual esta no daria una solucion tan contundente.');" style="text-decoration: none; color: var(--orange-etb);;">Solucion Wifi / Cable</a></td>
+                                                <td colspan="12" style="text-align: center;"><a onclick="habladorText2('La mejor forma de solucionar los problemas de lentitud, siempre sera por medio del cable, esta nos asegura una mejor gestion del problema, opacando todas las brechas posibles, a diferencia de la solucion wifi, en la cual esta no daria una solucion tan contundente.');" style="text-decoration: none; color: var(--orange-etb);">Solucion Wifi / Cable</a></td>
                                             </tr>
                                             <tr id="ayu18">
                                                 <td colspan="12" style="text-align: center;"><a href="https://docs.google.com/presentation/d/e/2PACX-1vTHEli8MwkCovpdrRMcb59jZ3tTWuIlJ1_8mSulVsXfA3-U6gL6aPcw6DEiaBOLBw/embed?start=false&loop=false&delayms=3000&slide=id.p1" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Imagenes de los Dispositivos</a></td>
@@ -822,13 +1139,66 @@
 
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="position: relative;  width: 100px; left: 530px; bottom: 35px;">ACEPTAR</button>
                 </div>
-
-                </div>
              </div>
          </div>
     </div>
 
-    
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-ley" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LEY 2300 DERECHO A LA INTIMIDAD</h5>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: center;">
+                        Se requiere actualizar la información para la ley 2300
+                    </p>
+                 </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="border: none; border-radius: 20px; position: relative; left: 110px" onclick="ley();">No Registrar</button>
+                    <button type="button" class="btn btn-secondary" id="btn-modal-ps4error" style="background-color: #20a4cb; border: none; border-radius: 20px; position: relative; left: 110px;">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-ley2" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LEY 2300 DERECHO A LA INTIMIDAD</h5>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: center;">
+                        Recuerda actualizar la información para la ley 2300
+                    </p>
+                 </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="border: none; border-radius: 20px; position: relative; left: 110px" onclick="ley2();">No Registrar</button>
+                    <button type="button" class="btn btn-secondary" id="btn-modal-ps4error" style="background-color: #20a4cb; border: none; border-radius: 20px; position: relative; left: 110px;">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-ley3" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LEY 2300 DERECHO A LA INTIMIDAD</h5>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: center;">
+                        Recuerda que podras actualizar en cualquier momento la información, mientras tanto continuaremos contáctandote por los canales habituales
+                    </p>
+                 </div>
+                <div class="modal-footer" style="display: flex;">
+                    <button type="button" class="btn btn-secondary" id="btn-modal-ps4error" style="border: none; border-radius: 20px; position: relative; left: 0;" onclick="ley3(),habladorText('Selecciona el producto, actual del cliente para continuar');">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal-leyfase2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
@@ -925,7 +1295,7 @@
         </div>
     </div>
 
-                                    <!-- Modal Password incorrecta -->
+                    <!-- Modal Password incorrecta -->
                     <div class="modal modal-susc" tabindex="-1" id="ups" data-bs-backdrop="static" data-bs-keyboard="false">
                         <div class="modal-dialog modal-dialog-centered" >
                             <div class="modal-content">
@@ -934,7 +1304,7 @@
                                 </div>
                                 <div class="confirmacion">
                                     <br>
-                                    <p style="margin: 5px 5px 20px 5px;">Parece que estas realizando el simulador por fuera de la ESCULA ETB, te recomendamos hacerlo por medio de la plataforma, 
+                                    <p style="margin: 5px 5px 20px 5px;">Parece que estas realizando el simulador por fuera de la ESCUELA ETB, te recomendamos hacerlo por medio de la plataforma, 
                                     para evitar incidentes innesesarios.
                                     </p>
                                 </div>
@@ -949,8 +1319,8 @@
     <script src="../../../bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
-    <script src="../../../../Controller/suma/SVAS/portalSVAS2.js"></script>
-    <script src="../../../../Controller/security/SVAS/anti-cheat-svas16.js"></script>
+    <script src="../../../../Controller/suma/RETENCION/portalRETENCION.js"></script>
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret2.js"></script> 
 
 </body>
 </html>
