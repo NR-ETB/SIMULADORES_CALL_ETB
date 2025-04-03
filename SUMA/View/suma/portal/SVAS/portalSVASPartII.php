@@ -43,7 +43,7 @@
                     <a href="#" class="item-bread">Tramites</a>
                     <a href="#" class="item-bread">ADICCIÓN DE SVAS (ASER)</a>
             </div>
-            <div class="con-main-pasos">
+            <div class="acon-main-pasos">
                 <div class="con-pasos sw-main sw-theme-arrows" id="smartwizard">
                     <ul class="nav nav-tabs step-anchor">
                         <li class="nav-item active" id="pasoli-1"><a class="nav-link">Paso 1<br><small>Datos Contacto</small></a></li>
