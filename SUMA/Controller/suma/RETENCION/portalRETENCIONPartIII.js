@@ -102,10 +102,9 @@ function btn_reto() {
     var selectSubmotivo = document.getElementById('fall').value;
 
     // Si ambos selectores tienen la opción '1' seleccionada, proceder
-    if (selectMotivo === "1" && selectSubmotivo === "1") {
+    if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            $('#ofertasModal').modal('toggle');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);
@@ -227,29 +226,6 @@ function recha_5() {
 
 function recha_6() {
 
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente se le otrorga una tarifa preferencial ($60.000)`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description6").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_5').modal('toggle');
-        $('#paso-6').css('display', 'none');
-        $('#paso-7').css('display', 'block');
-        $('#retab6').css('display', 'table-row');
-        document.getElementById('pasoli-6').classList.add("done");
-        document.getElementById('pasoli-7').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }       
-}
-
-function recha_7() {
-
     // Opcional: mostrar un mensaje si no se cumple la condición
     habladorText('');
-      
 }
