@@ -106,7 +106,7 @@
                                             <td>BOGOTA</td>
                                             <td>BOGOTA D.C.</td>
                                             <td>KR 68C 168 95 DG 2 AP 1602</td>
-                                            <td>3</td>
+                                            <td>6</td>
                                             <td>FTTH</td>
                                             <td>MOLECULA.FTO32</td>
                                             <td>TOBERIN</td>
@@ -118,31 +118,53 @@
                                             <td>BOGOTA</td>
                                             <td>BOGOTA D.C.</td>
                                             <td>CL 94 52 77</td>
-                                            <td>3</td>
+                                            <td>6</td>
                                             <td>FTTH</td>
                                             <td>MOLECULA.FTO31</td>
                                             <td>TOBERIN</td>
                                             <td>SUBA</td>
-                                            <td style="color: #F36F31;">Borrar</td>
-                                            <td>🟠</td>
+                                            <td id="flew5" style="color: grey; display: none;">Existente</td>
+                                            <td id="flew6" style="color: #F36F31;">Borrar</td>
+                                            <td id="flew7" style="display: 	none;">⚪</td>
+                                            <td id="flew8">🟠</td>
                                         </tr>
+                                        <tbody id="direction" style="text-align: center; display: none;">
+                                            <tr class="row-bl">
+                                                <td>BOGOTA</td>
+                                                <td>BOGOTA D.C.</td>
+                                                <td>CL 172B 45C 29</td>
+                                                <td>3</td>
+                                                <td>FTTH</td>
+                                                <td>MOLECULA.FTO33</td>
+                                                <td>TOBERIN</td>
+                                                <td>USAQUEN</td>
+                                                <td id="flew1" style="color: grey;">Existente</td>
+                                                <td id="flew2" style="color: #F36F31; display: none;">Borrar</td>
+                                                <td id="flew3" onclick="btn_flew();">⚪</td>
+                                                <td id="flew4" style="color: grey; display: none;">🟠</td>
+                                            </tr>
                                     </tbody>
                                 </table>                    
                         </div>  
 
-                        <div class="con-btn-paso-2">
-                            <button onclick="">Nueva Direccion</button>
+                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aqui podras apreciar, la diferencia entre el plan actual del cliente y el Seleccionado');" style="width: 280px; z-index: 1030;">
+                            COMPARACIÓN DE PLANES
                         </div>
-                    </div>
 
-                    <div id="btn-comp" class="btn-flot" onclick="btn_comp(), habladorText('Aqui podras apreciar, una sencilla comparación de los SVAs que al cliente se le han adicionado o retirado');" style="width: 280px; background-color: #20A4CB;">
-                        COMPARACIÓN DE SVAs
+                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aqui podras apreciar, una sencilla comparación de los SVAs que al cliente se le han adicionado o retirado');" style="width: 280px; background-color: #20A4CB; margin-left: 400px;">
+                            COMPARACIÓN DE SVAs
+                        </div>
+
+                        <div class="con-btn-paso-2">
+                            <button onclick="new_dir();">Nueva Direccion</button>
+                        </div>
                     </div>
 
                         <a onclick="btn_or();" style="color: var(--orange-etb); position: relative; bottom: 30px; left: 700px;"><u>Ver Resumen de Compra</u></a> 
 
                         <div class="con-btn-paso-2" style="display: flex; position: relative; bottom: 30px;"> 
-                        <button onclick="cancel();"style="background-color: #20A4CB;">CERRAR INTERACCIÓN</button>
+                        <button id="btn_can" style="background-color: #20A4CB;">CERRAR INTERACCIÓN</button>
+                        <button id="btn_can2" onclick="cancel();" style="background-color: #20A4CB; display: none;">CERRAR INTERACCIÓN</button>
                         <button onclick="btn_paso_3(),habladorText('En este apartado podras observar los datos del cliente, en algunos casos, el sistema omitira este paso y redirigira al usuario hasta el paso 6, de igual manera puedes ingresar la fecha de expedicion del cliente **12/08/2024** para continuar presiona en Siguiente.')">SIGUIENTE >></button>
                     </div>
                 </div>
@@ -187,7 +209,6 @@
                     <h5 class="modal-title">NUEVA DIRECCIÓN INTALACION</h5>
                 </div>
                 <div class="modal-body">
-                    <form>
                         <div class="mb-3">
                             <label for="departamento" style="color: #F36F31; font-weight: bold;">Departamento *</label>
                             <select id="departamento" class="form-select" style="border: 1px solid #ccc;">
@@ -202,15 +223,14 @@
                             <label for="ciudad" style="color: #F36F31; font-weight: bold;">Ciudad *</label>
                             <select id="ciudad" class="form-select" style="border: 1px solid #ccc;">
                                 <option selected>Seleccione...</option>
-                                <option selected>BOGOTA D.C</option>
+                                <option>BOGOTA D.C</option>
                             </select>
                         </div>
                 
                         <div class="mb-3">
                             <label for="direccion" style="color: #F36F31; font-weight: bold;">Dirección de Instalación</label>
-                            <button id="direccion" class="form-control" style="border: 1px solid #ccc; border: 1px solid #ccc; left: 0; width: 285px; background-color: #fff;"></button>
+                            <button id="direccion" class="form-control" style="border: 1px solid #ccc; border: 1px solid #ccc; left: 0; width: 285px; background-color: #fff;" onclick="add_dir();"></button>
                         </div>
-                    </form>
                 </div>                
                 <div class="modal-footer" style="display: flex;">
                     <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 0;">ADICIONAR</button>
@@ -220,7 +240,7 @@
         </div>
     </div>
 
-    <div class="modal modal-success-sim" tabindex="-1" id="modal-add_dir">
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-addir">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content" style="width: 1000px;">
                 <div class="modal-header">
@@ -229,15 +249,15 @@
                 <div class="modal-body modal-xl" style="width: 1000px;">
                     <!-- Primera fila -->
                     <div class="row mb-2" style="margin-top: 25px;">
-                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="" class="form-control" >
+                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="auto" class="form-control" >
                             <option value="0"></option>
                             <option value="0">Autopista</option>
                             <option value="0">Avenida</option>
                             <option value="0">Avenida Calle</option>
                             <option value="0">Avenida Carrera</option>
                             <option value="0">Bulevar</option>
-                            <option value="0">Calle</option>
-                            <option value="1">Carrera</option>
+                            <option value="1">Calle</option>
+                            <option value="0">Carrera</option>
                             <option value="0">Carretera</option>
                             <option value="0">Circular</option>
                             <option value="0">Circunvalar</option>
@@ -251,13 +271,13 @@
                             <option value="0">Variante</option>
                             <option value="0">Vía</option>
                         </select></div>
-                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder=""></div>
-                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="" class="form-control" >
+                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder="" required></div>
+                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="letra1" class="form-control" >
                             <option value="0"></option>
                             <option value="0">A</option>
-                            <option value="0">B</option>
+                            <option value="1">B</option>
                             <option value="0">C</option>
-                            <option value="1">D</option>
+                            <option value="0">D</option>
                             <option value="0">E</option>
                             <option value="0">F</option>
                             <option value="0">G</option>
@@ -289,13 +309,13 @@
                             <option value="0"></option>
                         </select></div>
                         <div class="col"><p>NO</p></div>
-                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder=""></div>
-                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="" class="form-control" >
+                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder="" required></div>
+                        <div class="col"><select style="width: 50px; border: 2px solid #F36F31;" name="" id="letra2" class="form-control" >
                             <option value="0"></option>
                             <option value="0">A</option>
                             <option value="0">B</option>
-                            <option value="0">C</option>
-                            <option value="1">D</option>
+                            <option value="1">C</option>
+                            <option value="0">D</option>
                             <option value="0">E</option>
                             <option value="0">F</option>
                             <option value="0">G</option>
@@ -324,7 +344,7 @@
                             <option value="0"></option>
                         </select></div>
                         <div class="col"><p>-</p></div>
-                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder=""></div>
+                        <div class="col"><input style="border: 2px solid #F36F31;" type="text" class="form-control" placeholder="" required></div>
                         <div class="col"><select style="width: 50px;" name="" id="" class="form-control" >
                             <option value="0"></option>
                         </select></div>
@@ -361,11 +381,27 @@
                 </div>
                               
                 <div class="modal-footer" style="display: flex; margin: 85px 400px 0 0;">
-                    <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 0;">ACEPTAR</button>
+                    <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 0;" onclick="add_err();">ACEPTAR</button>
                     <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 0;" data-bs-dismiss="modal" id="btn-modal-ps4error">MAPA</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-err">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">ERROR</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>098 - La validación de cobertura de la dirección FTTC arroja tipo de distancia XX, no es posible continuar</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="left: 0;">ACEPTAR</button>
+                    </div>
+                </div>
+            </div>
     </div>
 
     <div class="modal modal-success-sim" tabindex="-1" id="modal-can">
@@ -400,7 +436,7 @@
               <!-- Dirección De Traslado -->
               <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Dirección De Traslado <span style="color: red;">*</span></label>
-                <input type="text" class="form-control" value="KR 73 D 69 G 18">
+                <input type="text" class="form-control" value="CL 172 B 45 C 29">
               </div>
       
               <!-- Descripción Cancelación -->
@@ -411,27 +447,11 @@
             </div>
       
             <div class="modal-footer" style="display: flex; justify-content: space-between;">
-                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 140px;" onclick="">ACEPTAR</button>
+                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 140px;" onclick="location.href='./cretRETENCIONPartII.php'">ACEPTAR</button>
                 <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; margin-right: 140px; left: 0px;">CANCELAR</button>
             </div>
           </div>
         </div>
-    </div>
-
-    <div class="modal modal-success-sim" tabindex="-1" id="modal-err">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">ERROR</h5>
-                    </div>
-                    <div class="modal-body">
-                        <p>098 - La validación de cobertura de la dirección FTTC arroja tipo de distancia XX, no es posible continuar</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error">ACEPTAR</button>
-                    </div>
-                </div>
-            </div>
     </div>
 
     <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
