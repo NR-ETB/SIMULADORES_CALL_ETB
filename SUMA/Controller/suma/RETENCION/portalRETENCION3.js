@@ -196,6 +196,7 @@ function recha_4() {
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        $('#ofertasModal_2').modal('toggle');
         $('#paso-4').css('display', 'none');
         $('#paso-5').css('display', 'block');
         $('#retab4').css('display', 'table-row');
@@ -218,7 +219,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_2').modal('toggle');
+        $('#ofertasModal_3').modal('toggle');
         $('#paso-5').css('display', 'none');
         $('#paso-6').css('display', 'block');
         $('#retab5').css('display', 'table-row');
@@ -237,16 +238,16 @@ function recha_6() {
 plan contratado`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description5").value.trim();
+    var textoIngresado = document.getElementById("description6").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_3').modal('toggle');
-        $('#paso-5').css('display', 'none');
-        $('#paso-6').css('display', 'block');
+        $('#ofertasModal_4').modal('toggle');
+        $('#paso-6').css('display', 'none');
+        $('#paso-7').css('display', 'block');
         $('#retab5').css('display', 'table-row');
-        document.getElementById('pasoli-5').classList.add("done");
-        document.getElementById('pasoli-6').classList.add("active");
+        document.getElementById('pasoli-6').classList.add("done");
+        document.getElementById('pasoli-7').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
@@ -256,20 +257,20 @@ plan contratado`;
 function recha_7() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 25% de descuento sobre su 
+    var textoDescripcion = `Cliente obtiene 25% de descuento sobre su
 plan contratado`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description5").value.trim();
+    var textoIngresado = document.getElementById("description7").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_4').modal('toggle');
-        $('#paso-6').css('display', 'none');
-        $('#paso-7').css('display', 'block');
+        $('#ofertasModal_5').modal('toggle');
+        $('#paso-7').css('display', 'none');
+        $('#paso-8').css('display', 'block');
         $('#retab6').css('display', 'table-row');
-        document.getElementById('pasoli-6').classList.add("done");
-        document.getElementById('pasoli-7').classList.add("active");
+        document.getElementById('pasoli-7').classList.add("done");
+        document.getElementById('pasoli-8').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
@@ -282,16 +283,15 @@ function recha_8() {
     var textoDescripcion = `Cliente se le otrorga una tarifa preferencial ($60.000)`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description5").value.trim();
+    var textoIngresado = document.getElementById("description8").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_5').modal('toggle');
-        $('#paso-7').css('display', 'none');
-        $('#paso-8').css('display', 'block');
+        $('#paso-8').css('display', 'none');
+        $('#paso-9').css('display', 'block');
         $('#retab7').css('display', 'table-row');
-        document.getElementById('pasoli-7').classList.add("done");
-        document.getElementById('pasoli-8').classList.add("active");
+        document.getElementById('pasoli-8').classList.add("done");
+        document.getElementById('pasoli-9').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
@@ -301,31 +301,11 @@ function recha_8() {
 function recha_9() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Ofrecer el paquete de menor valor o la cancelación de alguno de los productos`;
+    var textoDescripcion = `Ofrecer el paquete de menor valor o la
+cancelación de alguno de los productos`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description5").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#paso-8').css('display', 'none');
-        $('#paso-9').css('display', 'block');
-        $('#retab8').css('display', 'table-row');
-        document.getElementById('pasoli-9').classList.add("done");
-        document.getElementById('pasoli-10').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-}
-
-function recha_10() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 25% de descuento sobre su plan contratado`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description5").value.trim();
+    var textoIngresado = document.getElementById("description9").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
@@ -338,6 +318,11 @@ function recha_10() {
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    } 
+    }  
+}
+
+function recha_10() {
+
+    habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
 
 }
