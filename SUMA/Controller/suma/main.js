@@ -475,3 +475,50 @@ function menu_3() {
     $('#rett').css('display','none')            
 }
 
+function u() {
+    // Obtener el contenedor actual que está visible
+    var contenedorActual = document.querySelector('div[id^="paso-"]:not([style*="display: none"])');
+    if (!contenedorActual) {
+        console.error('No se encontró el contenedor actual visible.');
+        return;
+    }
+
+    // Obtener el número del paso actual desde el ID del contenedor
+    var numeroPasoActual = parseInt(contenedorActual.id.replace('paso-', ''), 10);
+    if (isNaN(numeroPasoActual) || numeroPasoActual <= 1) {
+        console.warn('No hay un paso anterior disponible.');
+        return;
+    }
+
+    // Construir el ID del contenedor anterior
+    var idPasoAnterior = 'paso-' + (numeroPasoActual - 1);
+    var contenedorAnterior = document.getElementById(idPasoAnterior);
+    if (!contenedorAnterior) {
+        console.error('No se encontró el contenedor anterior.');
+        return;
+    }
+
+    // Ocultar el contenedor actual y mostrar el anterior
+    contenedorActual.style.display = 'none';
+    contenedorAnterior.style.display = 'block';
+
+    // Gestionar la clase 'active' en los elementos 'pasoli-'
+    var idPasoSoliActual = 'pasoli-' + numeroPasoActual;
+    var idPasoSoliAnterior = 'pasoli-' + (numeroPasoActual - 1);
+
+    var pasoSoliActual = document.getElementById(idPasoSoliActual);
+    var pasoSoliAnterior = document.getElementById(idPasoSoliAnterior);
+
+    if (pasoSoliActual) {
+        pasoSoliActual.classList.remove('active');
+    } else {
+        console.warn(`No se encontró el elemento con ID ${idPasoSoliActual}.`);
+    }
+
+    if (pasoSoliAnterior) {
+        pasoSoliAnterior.classList.add('active');
+        pasoSoliAnterior.classList.remove('done');
+    } else {
+        console.warn(`No se encontró el elemento con ID ${idPasoSoliAnterior}.`);
+    }
+}

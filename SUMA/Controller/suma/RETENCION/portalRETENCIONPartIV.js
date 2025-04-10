@@ -114,6 +114,28 @@ function btn_reto() {
     }
 }
 
+function recha_1() {
+
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Se invocara el tramite de traslado para mejorar proceso de retención, y captar
+información en no retenidos`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#paso-1').css('display', 'none');
+        $('#paso-2').css('display', 'block');
+        $('#retab1').css('display', 'table-row');
+        document.getElementById('pasoli-1').classList.add("done");
+        document.getElementById('pasoli-2').classList.add("active");
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }       
+}
+
 function recha_2() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
