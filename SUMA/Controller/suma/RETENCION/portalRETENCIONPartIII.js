@@ -105,6 +105,7 @@ function btn_reto() {
     if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton ACEPTAR');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);

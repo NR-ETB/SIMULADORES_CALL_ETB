@@ -677,7 +677,7 @@
                 </div>
                 <div class="modal-footer" style="display: flex;">
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: PS 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">Despues</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Para filtrar a nuestro cliente en cuestion puedes utilizar diferentes datos para esto, en este escenario usaremos unicamente el NUMERO DE ORDEN: RF-003575869');">Despues</button>
                 </div>
             </div>
             </div>
@@ -899,7 +899,7 @@
                                                 <td>6017829304</td>
                                                 <td>FTTH</td>
                                                 <td class="fa-solid fa-eye eye-color" style="display: table-cell;" onclick="dete(),habladorText('Aqui podras encontrar los detalles mas escenciales de la Retencion filtrada en cuestion, da click en el boton X en la parte superior derecha para finalizar');"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" onclick="location.href='./cretRETENCION.php'" alt=""></td>
                                             </tr>
                                             <tr>
                                                 <td>2025/02/10, 12:24:09 pm</td>

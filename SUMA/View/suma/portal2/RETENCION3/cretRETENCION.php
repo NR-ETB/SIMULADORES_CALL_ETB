@@ -163,11 +163,11 @@
 
 
                         <div style="display: flex;">
-                            <label>Motivos</label> <select onchange="submot();" name="" id="mot" style="width: 630px; margin-left: 5px;" disabled>
+                            <label>Motivos</label> <select onchange="submot();" name="" id="mot" style="width: 630px; margin-left: 5px;">
                                 <option value="1">Problemas Técnicos</option>
                                 <option value="2">ECÓNOMICO</option>
                                 <option value="3">Facturación</option>
-                                <option value="4" selected>Traslado - Fuera de cobertura</option>
+                                <option value="4">Traslado - Fuera de cobertura</option>
                                 <option value="5">Competencia</option>
                                 <option value="6">Inconformidades de Servicio</option>
                                 <option value="7">Personales</option>
@@ -186,7 +186,7 @@
                                 </select><br>
                             </div>
 
-                            <div id="sub" style="display: none;">
+                            <div id="sub" style="display: flex;">
                                 <label>SubMotivo</label> <select name="" id="" style="width: 630px; margin-left: 5px;">
                                     <option value="">Seleccione un SubMotivo...</option>
                                 </select><br>
@@ -224,10 +224,10 @@
                                 </select><br>
                             </div>
 
-                            <div id="sub4" style="display: flex;">
-                                <label>SubMotivo</label> <select name="" id="fall" style="width: 630px; margin-left: 5px;" disabled>
+                            <div id="sub4" style="display: none;">
+                                <label>SubMotivo</label> <select name="" id="fall" style="width: 630px; margin-left: 5px;">
                                     <option value="0">Seleccione un SubMotivo...</option>
-                                    <option value="1" selected>No hay cobertura</option>
+                                    <option value="1">No hay cobertura</option>
                                     <option value="0">Desmonte de red / Imposibilidad Tecnica</option>
                                     <option value="0">Viaje</option>
                                 </select><br>
@@ -286,7 +286,7 @@
         
         </div>
 
-        <div id="reto">
+        <div id="reto" style="display: none;">
 
             <div class="contedor-portal" style="width: 1600px;">
                 <div class="breadcump">
@@ -296,7 +296,7 @@
                     <a href="#" class="item-bread">Nivel: 3</a>
             </div>
 
-            <div class="items-info items-sopor item-datas" style="width: 1620px; height: 1850px; position: relative; right: 20px;">
+            <div class="items-info items-sopor item-datas" style="width: 1620px; height: 1330px; position: relative; right: 20px;">
                 <div class="cabecera" style="background-color: #fff;">
                 <h5>Retención</h5>
                     <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)">
@@ -325,8 +325,8 @@
                 
                 <div class="items-info items-sopor item-datas" style="margin-top: 50px; width: 1510px;">
 
-                        <!-- Paso 1 -->
-                        <div class="paso-1" id="paso-1" style="position: relative; bottom: 40px; height: 380px;">
+                    <!-- Paso 1 -->
+                    <div class="paso-1" id="paso-1" style="position: relative; bottom: 40px; height: 380px;">
 
                             <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
                                 <button id="btn-paso-3" style="height: 24px;">RETIRAR >></button>
@@ -351,181 +351,11 @@
 
                             <div class="con-btn-paso-2" style="position: relative; top: 180px;">
                                 <div class="mar">
-                                    <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                    <button id="btn-paso-3" onclick="recha_1(),habladorText('')">RECHAZAR >></button>
+                                    <button onclick="recha_1();"style="background-color: #20A4CB;">ACEPTAR</button>
                                 </div>
                             </div>
                     </div>
                     <!-- Paso 1 -->
-
-                    <!-- Paso 2 -->
-                    <div class="paso-2" id="paso-2" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Resaltar beneficios</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Se brinda información al cliente respecto a los beneficios y bondades de su <br> plan actual</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description2"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u(boton);" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_2(),habladorText('')">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 2 -->
-
-                    <!-- Paso 3 -->
-                    <div class="paso-3" id="paso-3" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta estructural de planta (captura sin promoción)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Ofrecer al cliente oferta de planta <br> competitiva (sin promoción)</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description3"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px;  display: flex;">
-                            <div class="mar">
-                                <button onclick="u(boton);" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_3(),habladorText('')">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 3 -->
-                    
-                    <!-- Paso 4 -->
-                    <div class="paso-4" id="paso-4" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta de plan trios</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente retenido con valores de la oferta de plan vigente</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description4"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px;  display: flex;">
-                            <div class="mar">
-                                <button onclick="u(boton);" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_4(),habladorText('')">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 4 -->
-
-                    <!-- Paso 5 -->
-                    <div class="paso-5" id="paso-5" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Cesión de contrato</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente con serivicio terenido con el trámite de cesión de contrato Aplican <br> políticas actuales de generación de trámites</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description5"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u(boton);" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_5(),habladorText('')">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 5 -->
-
-                    <!-- Paso 6 -->
-                    <div class="paso-6" id="paso-6" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Suspensión voluntaria</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Suspensión a solicitud del cliente según resolución</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description6"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px;">
-                            <div class="mar">
-                                <button onclick="u(boton);" id="btn-paso-3"><< ANTERIOR</button>
-                                <button onclick="recha_6();"style="background-color: #20A4CB;">ACEPTAR</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 6 -->
 
                 </div>
 
@@ -627,7 +457,7 @@
                                             <td>Número Agrupación</td>
                                             <td>6236</td>
                                         </tr>
-                                        <tr class="row-bl">
+                                        <tr>
                                             <td>AsesorCancelacion - TRASLADO</td>
                                             <td>genialo</td>
                                         </tr>
@@ -635,7 +465,7 @@
                                             <td>FechaCancelacion - TRASLADO</td>
                                             <td>4/7/2025 1:04:05 PM</td>
                                         </tr>
-                                        <tr class="row-bl">
+                                        <tr>
                                             <td>DescripcionCancelacion - TRASLADO</td>
                                             <td>No hay Covertura</td>
                                         </tr>
@@ -1741,7 +1571,7 @@
             <h5 class="modal-title">ESCUELA ETB</h5>
             </div>
             <div class="modal-body">
-            <p>Has finalizado con exito el escenario de CREACION DE RETENCION (TRASLADOS - NO HAY COBERTURA) del Simulador SUMA, recuerda que siempre esta a tu disposicion y cuentas con intentos ilimitados :)</p>
+            <p>Has finalizado con exito el escenario RETIRO (SVAS) del Simulador SUMA, recuerda que siempre esta a tu disposicion y cuentas con intentos ilimitados :)</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href ='../../menu/menuSUMA.html'" style="left: 0;">ACEPTAR</button>
@@ -1774,11 +1604,11 @@
     <script src="../../../bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
-    <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartIV.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret8.js"></script> 
+    <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartIII.js"></script>
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret5.js"></script> 
 
     <script>
-        habladorText('')
+        habladorText('Selecciona el Motivo TRASLADO - FUERA DE COBERTURA y el Submotivo NO HAY COBERTURA, da click en el boton RETENER')
     </script>
 
 </body>

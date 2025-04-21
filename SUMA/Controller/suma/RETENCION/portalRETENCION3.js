@@ -323,6 +323,18 @@ cancelación de alguno de los productos`;
 
 function recha_10() {
 
-    habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Cliente obtiene 1 mes sin costo, más descuento
+del 15% en la Oferta retención S`;
 
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description9").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }  
 }

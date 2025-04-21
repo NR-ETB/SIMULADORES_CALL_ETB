@@ -96,35 +96,29 @@ function est() {
       }, "4000");
 }
 
-function sub_2() {
-    $('#sub8').css('display', 'flex');
-    $('#SubMotivo').css('top', '8px');      
-}
-
 function btn_reto() {
-
+    // Obtener los elementos select por su ID
     var selectMotivo = document.getElementById('mot').value;
     var selectSubmotivo = document.getElementById('fall').value;
 
     // Si ambos selectores tienen la opción '1' seleccionada, proceder
-    if (selectMotivo === "2" && selectSubmotivo === "1") {
+    if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            $('#ofertasModal').modal('toggle');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, seleccione "Problemas Técnicos" en Motivo y "Falla todos los servicios" en SubMotivo antes de continuar.');
-    }    
+    }
 }
 
 function recha_1() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Se brinda la información al cliente respecto a los beneficios y bondades
-de su plan actual`;
+    var textoDescripcion = `Se invocara el tramite de traslado para mejorar proceso de retención, y captar
+información en no retenidos`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
     var textoIngresado = document.getElementById("description").value.trim();
@@ -133,7 +127,7 @@ de su plan actual`;
     if (textoIngresado === textoDescripcion) {
         $('#paso-1').css('display', 'none');
         $('#paso-2').css('display', 'block');
-        $('#retab').css('display', 'table-row');
+        $('#retab1').css('display', 'table-row');
         document.getElementById('pasoli-1').classList.add("done");
         document.getElementById('pasoli-2').classList.add("active");
     } else {
@@ -145,14 +139,15 @@ de su plan actual`;
 function recha_2() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente retenido con activación de beneficios
-de descuento captura promocial`;
+    var textoDescripcion = `Se brinda información al cliente respecto a los beneficios y bondades de su
+plan actual`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
     var textoIngresado = document.getElementById("description2").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        $('#ofertasModal_2').modal('toggle');
         $('#paso-2').css('display', 'none');
         $('#paso-3').css('display', 'block');
         $('#retab2').css('display', 'table-row');
@@ -167,14 +162,14 @@ de descuento captura promocial`;
 function recha_3() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente retenido con valores de la oferta de planta vigente`;
+    var textoDescripcion = `Cliente obtiene 15% de descuento sobre
+su plan contratado`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
     var textoIngresado = document.getElementById("description3").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_2').modal('toggle');
         $('#paso-3').css('display', 'none');
         $('#paso-4').css('display', 'block');
         $('#retab3').css('display', 'table-row');
@@ -189,15 +184,14 @@ function recha_3() {
 function recha_4() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 15% de descuento sobre su
-plan contratado`;
+    var textoDescripcion = `Cliente con servicio retenido con el trámite de cesión de contrato.
+Aplican politicas actuales de generación de tramite`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
     var textoIngresado = document.getElementById("description4").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_3').modal('toggle');
         $('#paso-4').css('display', 'none');
         $('#paso-5').css('display', 'block');
         $('#retab4').css('display', 'table-row');
@@ -212,122 +206,10 @@ plan contratado`;
 function recha_5() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 20% de descuento sobre su
-plan contratado`;
+    var textoDescripcion = `Suspención a solicitud del cliente segun la resolución`;
 
     // Obtener el contenido del textarea y eliminar espacios extras
     var textoIngresado = document.getElementById("description5").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_4').modal('toggle');
-        $('#paso-5').css('display', 'none');
-        $('#paso-6').css('display', 'block');
-        $('#retab5').css('display', 'table-row');
-        document.getElementById('pasoli-5').classList.add("done");
-        document.getElementById('pasoli-6').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }       
-}
-
-function recha_6() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 25% de descuento sobre su
-plan contratado`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description6").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_5').modal('toggle');
-        $('#paso-6').css('display', 'none');
-        $('#paso-7').css('display', 'block');
-        $('#retab5').css('display', 'table-row');
-        document.getElementById('pasoli-6').classList.add("done");
-        document.getElementById('pasoli-7').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-}
-
-function recha_7() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente se le otrorga una tarifa preferencial ($60.000)`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description7").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#paso-7').css('display', 'none');
-        $('#paso-8').css('display', 'block');
-        $('#retab6').css('display', 'table-row');
-        document.getElementById('pasoli-7').classList.add("done");
-        document.getElementById('pasoli-8').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-}
-
-function recha_8() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Ofrecer el paquete de menor valor o la
-cancelación de alguno de los productos`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description8").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#paso-8').css('display', 'none');
-        $('#paso-9').css('display', 'block');
-        $('#retab7').css('display', 'table-row');
-        document.getElementById('pasoli-8').classList.add("done");
-        document.getElementById('pasoli-9').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-}
-
-function recha_9() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Suspensión a solicitud del cliente según resolución`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description9").value.trim();
-
-    // Comparar ambos textos
-    if (textoIngresado === textoDescripcion) {
-        $('#ofertasModal_6').modal('toggle');
-        $('#paso-9').css('display', 'none');
-        $('#paso-10').css('display', 'block');
-        $('#retab8').css('display', 'table-row');
-        document.getElementById('pasoli-9').classList.add("done");
-        document.getElementById('pasoli-10').classList.add("active");
-    } else {
-        // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-}
-
-function recha_10() {
-
-    // Obtener el texto original de la descripción (debe coincidir exactamente)
-    var textoDescripcion = `Cliente obtiene 1 mes sin costo, más descuento
-del 15% en la Oferta retención S`;
-
-    // Obtener el contenido del textarea y eliminar espacios extras
-    var textoIngresado = document.getElementById("description10").value.trim();
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
@@ -335,6 +217,5 @@ del 15% en la Oferta retención S`;
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
-    }  
-
+    }       
 }

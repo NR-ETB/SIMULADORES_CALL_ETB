@@ -225,6 +225,17 @@ políticas actuales de generación de trámites`;
 
 function recha_6() {
 
-    // Opcional: mostrar un mensaje si no se cumple la condición
-    habladorText('');
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Suspensión a solicitud del cliente según resolución`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description6").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }
 }

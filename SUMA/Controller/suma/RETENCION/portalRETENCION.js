@@ -379,9 +379,12 @@ function cic2() {
     $('#modal-produc').css('z-index','1060')
 }
 
-
-
-
-
-
-
+function btn_end() {
+    $('#modal-loading').modal('toggle')
+    setTimeout(() => {
+        $( document ).ready(function() {
+            $('#modal-fase1').modal('toggle')
+            $('#modal-loading').modal('hide')
+        });
+      }, "4000");
+}
