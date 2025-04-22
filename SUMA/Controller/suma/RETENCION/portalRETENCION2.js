@@ -116,6 +116,26 @@ function btn_reto() {
     }
 }
 
+function btn_reto2() {
+    // Obtener los elementos select por su ID
+    var selectMotivo = document.getElementById('mot').value;
+    var selectSubmotivo = document.getElementById('fall').value;
+
+    // Si ambos selectores tienen la opción '1' seleccionada, proceder
+    if (selectMotivo === "1" && selectSubmotivo === "1") {
+        $('#modal-loading').modal('toggle');
+        setTimeout(() => {
+            $('#ofertasModal').modal('toggle');
+            $('#reto').css('display', 'block');
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras el boton de RETIRAR, da click para continuar');
+            $('#modal-loading').modal('hide');
+        }, 4000);
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, seleccione "Problemas Técnicos" en Motivo y "Falla todos los servicios" en SubMotivo antes de continuar.');
+    }
+}
+
 function recha_1() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)

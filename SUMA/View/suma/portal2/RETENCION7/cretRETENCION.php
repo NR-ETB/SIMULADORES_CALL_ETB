@@ -270,7 +270,7 @@
 
                     <div style="display: flex; position: relative; right: 250px; top: 35px;">
                         <p style="margin-right: 40px;">Nueva...</p>
-                        <button style="width: 400px; border-radius: 25px;" onclick="btn_reto();">RETENER</button>
+                        <button style="width: 400px; border-radius: 25px;" onclick="btn_reto2();">RETENER</button>
                         <div class="semaforo semaforo-co" style="margin-left: 200px;"></div>
                     </div>
 
@@ -330,7 +330,7 @@
                     <div class="paso-1" id="paso-1" style="position: relative; bottom: 40px; height: 380px;">
 
                             <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                                <button id="btn-paso-3" style="height: 24px;">RETIRAR >></button>
+                                <button id="btn-paso-3" style="height: 24px;" onclick="location.href='./portalRETENCIONPartII.php';">RETIRAR >></button>
                                 <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
                             </div>
 
@@ -352,215 +352,12 @@
 
                             <div class="con-btn-paso-2" style="position: relative; top: 180px;">
                                 <div class="mar">
-                                    <button onclick="cancel();"style="background-color: #20A4CB;">ACEPTAR</button>
-                                    <button id="btn-paso-3" onclick="recha_1();">RECHAZAR >></button>
+                                    <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                    <button id="btn-paso-3">RECHAZAR >></button>
                                 </div>
                             </div>
                     </div>
                     <!-- Paso 1 -->
-
-                    <!-- Paso 2 -->
-                    <div class="paso-2" id="paso-2" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Visita técnica</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Generar visita técnica que al hacer soporte técnico <br> continuá la falla del servicio</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description2"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_2();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 2 -->
-
-                    <!-- Paso 3 -->
-                    <div class="paso-3" id="paso-3" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención S (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 15% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description3"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_3();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 3 -->
-                    
-                    <!-- Paso 4 -->
-                    <div class="paso-4" id="paso-4" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención M (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 20% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description4"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_4();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 4 -->
-
-                    <!-- Paso 5 -->
-                    <div class="paso-5" id="paso-5" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención L (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 25% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description5"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_5();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 5 -->
-
-                    <!-- Paso 6 -->
-                    <div class="paso-6" id="paso-6" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta de retención Básica</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente se le otrorga una tarifa preferencial ($60.000)</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description6"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_6();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 6 -->
-        
-                    <!-- Paso 7 -->
-                    <div class="paso-7" id="paso-7" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención XL (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 1 mes sin costo, más descuento <br> del 15% en la Oferta retención S</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description7"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button onclick="recha_7();"style="background-color: #20A4CB;">ACEPTAR</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 7 -->
 
                 </div>
 

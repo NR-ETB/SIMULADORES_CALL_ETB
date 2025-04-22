@@ -156,10 +156,8 @@ function add_dir() {
 function add_err() {
 
     let auto = document.getElementById('auto').value;
-    let letra1 = document.getElementById('letra1').value;
-    let letra2 = document.getElementById('letra2').value;
 
-    if (auto == 1 && letra1 == 1 && letra2 == 1 ) {
+    if (auto == 1) {
         $('#modal-loading').modal('toggle');
         $('#modal-addir').modal('toggle');
         setTimeout(() => {

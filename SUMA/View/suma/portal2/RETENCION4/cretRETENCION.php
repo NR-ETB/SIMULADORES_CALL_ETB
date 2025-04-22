@@ -193,13 +193,13 @@
                             </div>
 
                             <div id="sub1" style="display: none;">
-                                <label>SubMotivo</label> <select name="" id="fall" style="width: 630px; margin-left: 5px;">
-                                    <option value="0">Seleccione un SubMotivo...</option>
-                                    <option value="0">Falla Televisión</option>
-                                    <option value="0">Falla en Voz (Línea, local, nacional o internacional)</option>
-                                    <option value="1">Falla todos los servicios</option>
-                                    <option value="0">Falla en DirectvGO</option>
-                                    <option value="0">Falla Internet (cable y/o WiFi)</option>
+                                <label>SubMotivo</label> <select name="" id="" style="width: 630px; margin-left: 5px;">
+                                    <option value="">Seleccione un SubMotivo...</option>
+                                    <option value="">Falla Televisión</option>
+                                    <option value="">Falla en Voz (Línea, local, nacional o internacional)</option>
+                                    <option value="">Falla todos los servicios</option>
+                                    <option value="">Falla en DirectvGO</option>
+                                    <option value="">Falla Internet (cable y/o WiFi)</option>
                                 </select><br>
                             </div>
 
@@ -225,11 +225,11 @@
                             </div>
 
                             <div id="sub4" style="display: none;">
-                                <label>SubMotivo</label> <select name="" id="" style="width: 630px; margin-left: 5px;">
-                                    <option value="">Seleccione un SubMotivo...</option>
-                                    <option value="">No hay cobertura</option>
-                                    <option value="">Desmonte de red / Imposibilidad Tecnica</option>
-                                    <option value="">Viaje</option>
+                                <label>SubMotivo</label> <select name="" id="fall" style="width: 630px; margin-left: 5px;">
+                                    <option value="0">Seleccione un SubMotivo...</option>
+                                    <option value="0">No hay cobertura</option>
+                                    <option value="0">Desmonte de red / Imposibilidad Tecnica</option>
+                                    <option value="1">Viaje</option>
                                 </select><br>
                             </div>
 
@@ -291,12 +291,12 @@
             <div class="contedor-portal" style="width: 1600px;">
                 <div class="breadcump">
                     <a href="#" class="item-bread">Retención</a>
-                    <a href="#" class="item-bread">RF-003575869</a>
+                    <a href="#" class="item-bread">RF-003575873</a>
                     <a href="#" class="item-bread">Estado Retención: Pendiente</a>
                     <a href="#" class="item-bread">Nivel: 3</a>
             </div>
 
-            <div class="items-info items-sopor item-datas" style="width: 1620px; height: 1700px; position: relative; right: 20px;">
+            <div class="items-info items-sopor item-datas" style="width: 1620px; height: 1330px; position: relative; right: 20px;">
                 <div class="cabecera" style="background-color: #fff;">
                 <h5>Retención</h5>
                     <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)">
@@ -312,8 +312,6 @@
                         <li class="nav-item" id="pasoli-3"><a class="nav-link">Paso 3<br><small style="color: transparent;">...</small></a></li>
                         <li class="nav-item" id="pasoli-4"><a class="nav-link">Paso 4<br><small style="color: transparent;">...</small></a></li>
                         <li class="nav-item" id="pasoli-5"><a class="nav-link">Paso 5<br><small style="color: transparent;">...</small></a></li>
-                        <li class="nav-item" id="pasoli-6"><a class="nav-link">Paso 6<br><small style="color: transparent;">...</small></a></li>
-                        <li class="nav-item" id="pasoli-7"><a class="nav-link">Paso 7<br><small style="color: transparent;">...</small></a></li>
                         <li class="nav-item nav-item-alert"><a class="nav-link">
                             <img src="../../../images/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img-list-paso-a" onclick="alertAudio('au-list-paso-a', 'img-list-paso-a')" style="margin-left: 20px;">
                             <audio id="au-list-paso-a" controls class="audio" style="display: none;">
@@ -336,12 +334,12 @@
 
                             <div style="display: flex; position: relative; left: 270px;">
                                 <div style="display: flex;">
-                                    <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Soporte primer nivel</p>
+                                    <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Tramite Traslado</p>
                                 </div>
 
 
                                 <div style="display: flex; position: relative; left: 270px;">
-                                    <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente retenido solucionado en linea fallas técnicas en sus <br> servicios</p>
+                                    <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Se invocara el tramite de traslado para mejorar proceso de retención, y captar <br> información en no retenidos</p>
                                 </div>
                             </div>
 
@@ -352,215 +350,11 @@
 
                             <div class="con-btn-paso-2" style="position: relative; top: 180px;">
                                 <div class="mar">
-                                    <button onclick="cancel();"style="background-color: #20A4CB;">ACEPTAR</button>
-                                    <button id="btn-paso-3" onclick="recha_1();">RECHAZAR >></button>
+                                    <button onclick="recha_1();"style="background-color: #20A4CB;">ACEPTAR</button>
                                 </div>
                             </div>
                     </div>
                     <!-- Paso 1 -->
-
-                    <!-- Paso 2 -->
-                    <div class="paso-2" id="paso-2" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Visita técnica</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Generar visita técnica que al hacer soporte técnico <br> continuá la falla del servicio</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description2"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_2();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 2 -->
-
-                    <!-- Paso 3 -->
-                    <div class="paso-3" id="paso-3" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención S (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 15% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description3"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_3();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 3 -->
-                    
-                    <!-- Paso 4 -->
-                    <div class="paso-4" id="paso-4" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención M (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 20% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description4"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_4();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 4 -->
-
-                    <!-- Paso 5 -->
-                    <div class="paso-5" id="paso-5" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención L (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 25% de descuento sobre <br> su plan contratado</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description5"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_5();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 5 -->
-
-                    <!-- Paso 6 -->
-                    <div class="paso-6" id="paso-6" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta de retención Básica</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente se le otrorga una tarifa preferencial ($60.000)</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description6"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
-                                <button id="btn-paso-3" onclick="recha_6();">RECHAZAR >></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 6 -->
-        
-                    <!-- Paso 7 -->
-                    <div class="paso-7" id="paso-7" style="position: relative; bottom: 40px; height: 380px; display: none;">
-
-                        <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                            <button id="btn-paso-3" style="height: 24px; margin-top: 18px;">RETIRAR >></button>
-                            <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px;">
-                            <div style="display: flex;">
-                                <label style="color: #F36F31;">Nombre</label> <p style="margin-left: 17.8px; color: #005b96;">Oferta escalera retención XL (no cuenta control)</p>
-                            </div>
-
-
-                            <div style="display: flex; position: relative; left: 270px;">
-                                <label style="color: #F36F31;">Descripción</label> <p style="margin-left: 17.8px; color: #005b96;">Cliente obtiene 1 mes sin costo, más descuento <br> del 15% en la Oferta retención S</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; position: relative; left: 270px; top: 50px;">
-                            <p style="color: #F36F31;">Observaciones</p>
-                            <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description7"></textarea>
-                        </div>
-
-                        <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
-                            <div class="mar">
-                                <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button onclick="recha_7();"style="background-color: #20A4CB;">ACEPTAR</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paso 7 -->
 
                 </div>
 
@@ -582,51 +376,43 @@
                                     <tbody>
                                         <tr class="row-bl" id="retab" style="display: none;">
                                             <td>1</td>
-                                            <td>4/3/2025 8:45:42 AM</td>
-                                            <td>Soporte primer nivel</td>
-                                            <td>Cliente retenido solucionando en línea fallas técnicas en sus servicios</td>
+                                            <td>4/7/2025 1:04:05 PM</td>
+                                            <td>Trámite Traslado</td>
+                                            <td>Se invocara el trámite de traslado para mejorar proceso de retención, y captar información en no retenidos.</td>
                                             <td>Rechazado</td>
-                                            <td>Cliente retenido solucionando en línea fallas técnicas en sus servicios</td>
+                                            <td>Se invocara el trámite de traslado para mejorar proceso de retención, y captar información en no retenidos.</td>
                                         </tr>
                                         <tr id="retab2" style="display: none;">
                                             <td>2</td>
-                                            <td>4/3/2025 8:46:39 AM</td>
-                                            <td>Visita técnica</td>
-                                            <td>Generar visita técnica ya que al hacer soporte técnico continúan las fallas del servicio</td>
+                                            <td>4/7/2025 3:58:16 PM</td>
+                                            <td>Resaltar beneficios</td>
+                                            <td>Se brinda información al cliente respecto a los beneficios y bondades de su plan actual.</td>
                                             <td>Rechazado</td>
-                                            <td>Generar visita técnica ya que al hacer soporte técnico continúan las fallas del servicio</td>
+                                            <td>Se brinda información al cliente respecto a los beneficios y bondades de su plan actual.</td>
                                         </tr>
                                         <tr class="row-bl" id="retab3" style="display: none;">
                                             <td>3</td>
-                                            <td>4/3/2025 8:46:21 AM</td>
-                                            <td>Oferta escalar retención (S/In cuenta control)</td>
-                                            <td>Cliente obtiene 15% de descuento sobre su plan contratado</td>
+                                            <td>4/7/2025 3:58:22 PM</td>
+                                            <td>Oferta estructural de planta (captura sin promoción)</td>
+                                            <td>Ofrecer al cliente oferta de planta competitiva (sin promoción)</td>
                                             <td>Rechazado</td>
-                                            <td>Cliente obtiene 15% de descuento sobre su plan contratado</td>
+                                            <td>Ofrecer al cliente oferta de planta competitiva (sin promoción)</td>
                                         </tr>
                                         <tr id="retab4" style="display: none;">
                                             <td>4</td>
-                                            <td>4/3/2025 8:46:57 AM</td>
-                                            <td>Oferta escalar retención (M/In cuenta control)</td>
-                                            <td>Cliente obtiene 20% de descuento sobre su plan contratado</td>
+                                            <td>4/7/2025 3:58:26 PM</td>
+                                            <td>Oferta de planta tríos</td>
+                                            <td>Cliente retenido con valores de la oferta de planta vigente</td>
                                             <td>Rechazado</td>
-                                            <td>Cliente obtiene 20% de descuento sobre su plan contratado</td>
+                                            <td>Cliente retenido con valores de la oferta de planta vigente</td>
                                         </tr>
                                         <tr class="row-bl" id="retab5" style="display: none;">
                                             <td>5</td>
-                                            <td>4/3/2025 8:47:35 AM</td>
-                                            <td>Oferta escalar retención (L/In cuenta control)</td>
-                                            <td>Cliente obtiene 25% de descuento sobre su plan contratado</td>
+                                            <td>4/7/2025 3:58:30 PM</td>
+                                            <td>Cesión de contrato</td>
+                                            <td>Cliente con servicio retenido con el trámite de cesión de contrato. Aplican políticas actuales de generación del trámite</td>
                                             <td>Rechazado</td>
-                                            <td>Cliente obtiene 25% de descuento sobre su plan contratado</td>
-                                        </tr>
-                                        <tr id="retab6" style="display: none;">
-                                            <td>6</td>
-                                            <td>4/3/2025 8:47:47 AM</td>
-                                            <td>Oferta de retención Básica</td>
-                                            <td>Cliente se le otorgará una tarifa preferencial ($60.000)</td>
-                                            <td>Rechazado</td>
-                                            <td>Cliente se le otorgará una tarifa preferencial ($60.000)</td>
+                                            <td>Cliente con servicio retenido con el trámite de cesión de contrato. Aplican políticas actuales de generación del trámite</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -670,6 +456,22 @@
                                             <td>Número Agrupación</td>
                                             <td>6236</td>
                                         </tr>
+                                        <tr>
+                                            <td>AsesorCancelacion - TRASLADO</td>
+                                            <td>genialo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FechaCancelacion - TRASLADO</td>
+                                            <td>4/7/2025 1:04:05 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DescripcionCancelacion - TRASLADO</td>
+                                            <td>No hay Covertura</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Numero Ordern - Aprovisionamiento Cancelado</td>
+                                            <td>MDM-FIBRA-012345678</td>
+                                        </tr>
                                     </tbody>
                                 </table>                    
                         </div>  
@@ -698,10 +500,6 @@
                     <p class="fw-bold">Las ofertas disponibles para el cliente son:</p>
                     <ul class="list-unstyled">
                         <li>Oferta escalera retención S (no cuenta control)</li>
-                        <li>Oferta escalera retención M (no cuenta control)</li>
-                        <li>Oferta escalera retención L (no cuenta control)</li>
-                        <li>Oferta de retención Básica</li>
-                        <li>Oferta escalera retención XL (no cuenta control)</li>
                     </ul>
                 </div>
                 <div class="modal-footer justify-content-center">
@@ -739,75 +537,36 @@
 
     <div class="modal fade" id="ofertasModal_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75); padding: 20px;">
-                <div class="modal-body">
-                    <p class="fw-bold">
-                        El valor por pagar con la selección de la estrategia <b>Oferta escalera retención M (no cuenta control)(20%)</b> es <b>$72.088,00</b> IVA incluido
-                    </p>
-                    <p><i>*La tarifa aplica solo para productos principales</i></p>
-                    
-                    <div class="text-start" style="padding: 10px;">
-                        <p><b>Valor de la oferta actual:</b> <span style="float: right;">$90.110,00</span></p>
-                        <p><b>Valor a pagar con la oferta:</b> <span style="float: right; color: green;">$72.088,00</span></p>
-                        <p><b>Beneficio entregado:</b> <span style="float: right; color: green;">$18.022,00</span></p>
-                    </div>
-    
-                    <p style="color: #F36F31; font-weight: bold;">
-                        Esta degradación será por tiempo definido para la oferta correspondiente
-                    </p>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" style="background-color: #005b96; border: none; width: 200px;" data-bs-dismiss="modal">Aceptar</button>
-                </div>
-            </div>
-        </div>
-    </div>    
-    
-    <div class="modal fade" id="ofertasModal_4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75); padding: 20px;">
-                <div class="modal-body">
-                    <p class="fw-bold">
-                        El valor por pagar con la selección de la estrategia <b>Oferta escalera retención L (no cuenta control)(25%)</b> es <b>$67.582,00</b> IVA incluido
-                    </p>
-                    <p><i>*La tarifa aplica solo para productos principales</i></p>
-                    
-                    <div class="text-start" style="padding: 10px;">
-                        <p><b>Valor de la oferta actual:</b> <span style="float: right;">$90.110,00</span></p>
-                        <p><b>Valor a pagar con la oferta:</b> <span style="float: right; color: green;">$67.582,00</span></p>
-                        <p><b>Beneficio entregado:</b> <span style="float: right; color: green;">$22.528,00</span></p>
-                    </div>
-    
-                    <p style="color: #F36F31; font-weight: bold;">
-                        Esta degradación será por tiempo definido para la oferta correspondiente
-                    </p>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" style="background-color: #005b96; border: none; width: 200px;" data-bs-dismiss="modal">Aceptar</button>
-                </div>
-            </div>
-        </div>
-    </div>    
-
-    <div class="modal fade" id="ofertasModal_5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
-        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75);">
+                <div class="modal-header">
+                </div>
                 <div class="modal-body">
                     <p class="fw-bold">
-                        El valor por pagar con la selección de la estrategia <b>Oferta de retención Básica</b> es <b>$60.000,00</b> IVA incluido
+                        El valor por pagar con la selección de la estrategia 
+                        <b>Oferta escalera retención M</b> (no cuenta control)(20%) es: 
+                        <b>$72.088,00 IVA incluido</b>
                     </p>
                     <p><i>*La tarifa aplica solo para productos principales</i></p>
-                
-                    <div class="text-start" style="padding: 10px;">
-                        <p><b>Valor de la oferta actual:</b> <span style="float: right;">$90.110,00</span></p>
-                        <p><b>Valor a pagar con la oferta:</b> <span style="float: right; color: green;">$60.000,00</span></p>
-                        <p><b>Beneficio entregado:</b> <span style="float: right; color: green;">$30.110,00</span></p>
-                    </div>
-                
+                    <table class="table text-start">
+                        <tbody>
+                            <tr>
+                                <td>Valor de la oferta actual:</td>
+                                <td><b>$90.110,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Valor a pagar con la oferta:</td>
+                                <td style="color: green;"><b>$72.088,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Beneficio entregado:</td>
+                                <td style="color: green;"><b>$18.022,00</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p style="color: #F36F31; font-weight: bold;">
                         Esta degradación será por tiempo definido para la oferta correspondiente
                     </p>
-                </div>                            
+                </div>
                 <div class="modal-footer justify-content-center">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
                 </div>
@@ -815,31 +574,83 @@
         </div>
     </div>
     
-    <div class="modal fade" id="ofertasModal_6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
+    <div class="modal fade" id="ofertasModal_4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75); padding: 20px;">
+            <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75);">
+                <div class="modal-header">
+                </div>
                 <div class="modal-body">
                     <p class="fw-bold">
-                        El valor por pagar con la selección de la estrategia <b>Oferta escalera retención XL (no cuenta control)(15%)</b> es <b>$76.594,00 IVA incluido</b>
+                        El valor por pagar con la selección de la estrategia 
+                        <b>Oferta escalera retención L</b> (no cuenta control)(25%) es: 
+                        <b>$67.582,00 IVA incluido</b>
                     </p>
                     <p><i>*La tarifa aplica solo para productos principales</i></p>
-                    
-                    <div class="text-start" style="padding: 10px;">
-                        <p><b>Valor de la oferta actual:</b> <span style="float: right;">$90.110,00</span></p>
-                        <p><b>Valor a pagar con la oferta:</b> <span style="float: right; color: green;">$76.594,00</span></p>
-                        <p><b>Beneficio entregado:</b> <span style="float: right; color: green;">$13.516,00</span></p>
-                    </div>
-    
+                    <table class="table text-start">
+                        <tbody>
+                            <tr>
+                                <td>Valor de la oferta actual:</td>
+                                <td><b>$90.110,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Valor a pagar con la oferta:</td>
+                                <td style="color: green;"><b>$67.582,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Beneficio entregado:</td>
+                                <td style="color: green;"><b>$22.528,00</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p style="color: #F36F31; font-weight: bold;">
                         Esta degradación será por tiempo definido para la oferta correspondiente
                     </p>
-                </div>                
+                </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary" style="background-color: #005b96; border: none; width: 200px;" data-bs-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    
+    <div class="modal fade" id="ofertasModal_5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 50px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center" style="border-radius: 10px; border: none; box-shadow: 0px 0px 14px 10px rgba(243, 111, 49, 0.75);">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold">
+                        El valor por pagar con la selección de la estrategia 
+                        <b>Oferta de retención Básica</b> es: 
+                        <b>$60.000,00 IVA incluido</b>
+                    </p>
+                    <p><i>*La tarifa aplica solo para productos principales</i></p>
+                    <table class="table text-start">
+                        <tbody>
+                            <tr>
+                                <td>Valor de la oferta actual:</td>
+                                <td><b>$90.110,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Valor a pagar con la oferta:</td>
+                                <td style="color: green;"><b>$60.000,00</b></td>
+                            </tr>
+                            <tr>
+                                <td>Beneficio entregado:</td>
+                                <td style="color: green;"><b>$30.110,00</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="color: #F36F31; font-weight: bold;">
+                        Esta degradación será por tiempo definido para la oferta correspondiente
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="alert-flotante" id="alert-flotante">
         <div class="etb-flotant etb-flotant-login" id="etb-flotant">
@@ -1747,7 +1558,6 @@
         </div>
     </div>
 
-
     <div class="modal" tabindex="-1" id="modal-fase1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -1755,7 +1565,7 @@
             <h5 class="modal-title">ESCUELA ETB</h5>
             </div>
             <div class="modal-body">
-            <p>Has finalizado con exito el escenario de CREACION DE RETENCION (PROBLEMAS TECNICOS) del Simulador SUMA, recuerda que siempre esta a tu disposicion y cuentas con intentos ilimitados :)</p>
+            <p>Has finalizado con exito el escenario RETIRO (SVAS) del Simulador SUMA, recuerda que siempre esta a tu disposicion y cuentas con intentos ilimitados :)</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href ='../../menu/menuSUMA.html'" style="left: 0;">ACEPTAR</button>
@@ -1788,11 +1598,11 @@
     <script src="../../../bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
-    <script src="../../../../Controller/suma/RETENCION/portalRETENCION2.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret3.js"></script> 
+    <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartIII.js"></script>
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret5.js"></script> 
 
     <script>
-        habladorText('Selecciona el Motivo PROBLEMAS TÉCNICOS y el Submotivo FALLA TODOS LOS SERVICIOS, da click en el boton RETENER')
+        habladorText('Selecciona el Motivo TRASLADO - FUERA DE COBERTURA y el Submotivo VIAJE, da click en el boton RETENER')
     </script>
 
 </body>

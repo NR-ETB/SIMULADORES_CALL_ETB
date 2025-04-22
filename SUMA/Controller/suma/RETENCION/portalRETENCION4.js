@@ -110,6 +110,7 @@ function btn_reto() {
     if (selectMotivo === "2" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton RECHAZAR');
             $('#ofertasModal').modal('toggle');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
@@ -174,6 +175,7 @@ function recha_3() {
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_2').modal('toggle');
         $('#paso-3').css('display', 'none');
         $('#paso-4').css('display', 'block');
@@ -197,6 +199,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_3').modal('toggle');
         $('#paso-4').css('display', 'none');
         $('#paso-5').css('display', 'block');
@@ -220,6 +223,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_4').modal('toggle');
         $('#paso-5').css('display', 'none');
         $('#paso-6').css('display', 'block');
@@ -243,6 +247,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_5').modal('toggle');
         $('#paso-6').css('display', 'none');
         $('#paso-7').css('display', 'block');
@@ -308,6 +313,7 @@ function recha_9() {
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_6').modal('toggle');
         $('#paso-9').css('display', 'none');
         $('#paso-10').css('display', 'block');

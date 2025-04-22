@@ -105,6 +105,7 @@ function btn_reto() {
     if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton ACEPTAR');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);
@@ -147,6 +148,7 @@ plan actual`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
+        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
         $('#ofertasModal_2').modal('toggle');
         $('#paso-2').css('display', 'none');
         $('#paso-3').css('display', 'block');
