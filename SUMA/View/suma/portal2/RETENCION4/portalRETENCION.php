@@ -656,7 +656,7 @@
                 <h5 class="modal-title" id="mas">Bienvenid@</h5>
                 </div>
                 <div class="modal-body">
-                <p>Al escenario de CREACION DE RETENCION del simulador SUMA, sigue las indicaciones y aprende en el proceso</p>
+                <p>Al escenario de CONSULTA RETENCION del simulador SUMA, sigue las indicaciones y aprende en el proceso</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" onclick="dates();">ACEPTAR</button>
@@ -677,7 +677,7 @@
                 </div>
                 <div class="modal-footer" style="display: flex;">
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: PS 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">Despues</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Para filtrar a nuestro cliente en cuestion puedes utilizar diferentes datos para esto, en este escenario usaremos unicamente el NUMERO DE ORDEN: RF-003575869');">Despues</button>
                 </div>
             </div>
             </div>
@@ -788,7 +788,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-ret"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-dete"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -796,12 +796,81 @@
                     <audio id="au_editar_contac" controls class="audio" style="display: none;">
                         <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_editar_contac.mp3">
                     </audio>
+                    <h5 class="modal-title">RETENCIÓN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </h5>           
+                </div>
+                <div class="modal-body">
+                   
+                    <div class="items-info items-sopor item-datas" style="margin-top: 25px; width: 760px; height: 630px;">
+                        <div class="cabecera" style="background-color: #fff;">
+                        <h5>Datos Generales</h5>
+                            <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)">
+                            <audio id="au_datos_cliente" controls class="audio" style="display: none;">
+                                <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_datos_cliente.mp3">
+                            </audio>
+                        </div>
+                    
+                        <div class="body-items-inf" style="height: 490px;">
+                            <div class="content-info" id="con-sopo-inter">
+                            
+                                <div class='content-item-info item-1' style="position: relative; bottom: 17px; width: 220px;">
+                                    <label>Fecha Creación</label> <span>1/4/2025 10:39:36 AM</span><br>
+                                    <label>Usuario Creación</label> <span>calamar3</span><br>
+                                    <label>Número Retención</label> <span>RF-003575869</span><br>
+                                    <label>Motivo</label> <span>ECONÓMICO</span><br><br>
+                                    <label>Acción</label> <span>Downgrade oferta planta (captura sin promoción)</span><br>
+                                    <label>Estado Acción</label> <span>Rechazado</span><br>
+                                    <label>Cuenta Facturación</label> <span>7777</span><br>
+                                    <label>Estrato</label> <span>3</span><br>
+                                    <label>Contacto Fijo</label> <span>6017829304</span><br>
+                                    <label>Tarifa Inicial</label> <span>139900</span><br>
+                                    <label>Tecnología</label> <span>FTTH</span><br>
+                                    <label>Usuario Paso</label> <span>calamar3</span><br>
+                                    <label>Número de Orden</label> <span></span><br><br>
+                                </div>
+                                
+                                <div class='content-item-info item-2' style="position: relative; right: 20px; top: 21px;">
+                                    <div style="position: relative; left: 160px; bottom: 3px;">
+                                        <label>Fecha Modificación</label> <span>1/4/2025 10:41:48 AM</span><br>
+                                        <label>Usuario Modificación</label> <span>carlmar6</span><br>
+                                        <label>Estado Retención</label> <span>Suscriptor_No_Valido_Retirado</span><br>
+                                        <label>SubMotivo</label> <span>Cliente desea reducción en el valor de su factura</span><br>
+                                        <label>Descripción Acción</label> <span>Ofrecer el paquete de menor valor o la cancelación de alguno de los productos</span><br>
+                                        <label>Observaciones</label> <span>PRUEBA DE CANCELACIÓN DE CHAT BOT</span><br>
+                                        <label>Número Conexión</label> <span>6017829304</span><br>
+                                        <label>UEN</label> <span>HOGARES Y MIPYMES/HOGARES</span><br>
+                                        <label>Contacto Móvil</label> <span>3176251432</span><br>
+                                        <label>Tarifa Retención</label> <span></span><br>
+                                        <label>Tipo Producto</label> <span>Duo</span><br>
+                                        <label>Nivel Retención</label> <span>3</span><br>
+                                        <label>Proveedor</label> <span>COLOMBIAN OUTSOURCING</span><br>
+                                    </div>
+                                </div>                          
+                            </div>
+                        </div>
+            
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-ret"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_contac', 'img_editar_contac', 2, 7)">
+                    <audio id="au_editar_contac" controls class="audio" style="display: none;">
+                        <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten2.mp3">
+                    </audio>
                     <h5 class="modal-title">RETENCIONES</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </h5>           
                 </div>
                 <div class="modal-body" style="overflow-x: hidden;">
-                    <p id="ayu5" style="position: relative; top: 15px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="0" disabled>registros</p>
+                    <p id="ayu5" style="position: relative; top: 15px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
                     <p style="position: relative; bottom: 25px; left: 530px;">Buscar:<input style="width: 170px; margin-left: 10px;" type="text" placeholder="" disabled></p>
                             
                         <div class="table-product" id="con-sopo-inter">
@@ -821,14 +890,71 @@
                                         </tr>
                                         <tbody>
                                             <tr>
-                                                <td colspan="10" style="text-align: center;">Ningun dato disponible en esta tabla</td>
+                                                <td>20/02/2024 8:46:00 AM</td>
+                                                <td>RF-003575869</td>
+                                                <td>Suscriptor_No_Valido_Retirado</td>
+                                                <td>Downgrade oferta plan (captura sin promocion)</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;" onclick="dete(),habladorText('Aqui podras encontrar los detalles mas escenciales de la Retencion filtrada en cuestion, da click en el boton X en la parte superior derecha para finalizar');"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" onclick="location.href='./cretRETENCION.php'" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/02/10, 12:24:09 pm</td>
+                                                <td>RF-003649582</td>
+                                                <td>Pendiente</td>
+                                                <td>Cesión de contrato</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/28, 10:11:13 am</td>
+                                                <td>RF-003936485</td>
+                                                <td>Suscriptor_No_Valido_Retenido</td>
+                                                <td>Resaltar beneficios</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/28, 09:18:18 am</td>
+                                                <td>RF-003091725</td>
+                                                <td>Suscriptor_No_Valido_Retenido</td>
+                                                <td>Resaltar beneficios</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025/01/24, 10:20:13 am</td>
+                                                <td>RF-003523142</td>
+                                                <td>Suscriptor_No_Valido_Retirado</td>
+                                                <td>Suspensión voluntaria</td>
+                                                <td>Rechazado</td>
+                                                <td>7777</td>
+                                                <td>6017829304</td>
+                                                <td>FTTH</td>
+                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
+                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
                                             </tr>
                                         </tbody>                               
                                     </table>
 
-                                    <p id="ayu3" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 0 al 0 de un total de 0 registros</p>
-                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 560px; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
-                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 555px; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 0 2px 2px 0; cursor: pointer;">Siguiente</button>
+                                    <p id="ayu3" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 1 al 5 de un total de 5 registros</p>
+                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1010px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
+                                    <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1005px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 0 2px 2px 0; cursor: pointer;">Siguiente</button>
 
                                     <div>
                                         <button class="btn btn-secondary" style="margin-bottom: 10px; background-color: #20a4cb; border-color: #20a4cb; border-radius: 25px;" onclick="reten();">Iniciar Retencion</button>
@@ -841,6 +967,249 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal fade modales-soporte" tabindex="-1" id="modal-produc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false" style="margin: 10px 50px 0 0;">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-exito-s">
+             <div class="modal-content" style="position: relative; min-width: 1100px; width: 100%; min-height: 1100px;">
+                <div class="modal-header" style="background-color: #fff; margin-top: 15px; border-radius: 10px 10px 0 0;">
+                    <h5 class="modal-title" style="text-align: center; color: #1285B6;">Detalle Servicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                        <div class="items-info items-sopor item-datas" id="table1" style="height: 350px; bottom: 160px; margin: 80px 0 0 0;">
+                            <div class="cabecera">
+                            <h5>Producto</h5>
+                                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente2', 'img_datos_cliente', 2, 0)">
+                                <audio id="au_datos_cliente2" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../../Model/audioSuma/audio_com/gcs6.mp3">
+                                </audio>
+                            </div>
+                        
+                            <div class="body-items-inf">
+                                <div class="content-info" id="con-sopo-inter">
+                                
+                                    <div class='content-item-info item-1'>
+                                    <br>
+                                    <label>Cuenta de Facturación</label> <span>2222</span><br>
+                                    <br><br>
+                                    <label>Ciudad Instalación</label> <span>Medellin</span><br>
+                                    <label>Estrato Instalación</label> <span>5</span><br>
+                                    <label>Servicio Demostración</label> <span></span><br>
+                                    <label>Accion Sugerida</label> <span></span><br>
+                                    </div>
+
+                                    <div class='content-item-info item-2'>
+                                    <label>Direccion Instalación</label> <span>Calle 4D #45 a 28</span><br><br>
+                                    <label>Localidad Instalación</label> <span>16</span><br>
+                                    <label>Segmento Servicio</label> <span>Hogares y Mipymes</span><br>
+                                    <label>Nivel Riesgo</label> <span></span><br>
+                                    <label>Oferta Especia TV:</label> <span>No</span><br> 
+                                    </div>                          
+
+                                    <div class='content-item-info item-2'>
+                                    <label>Pais Instalación</label> <span>COLOMBIA</span><br>
+                                    <label>Departamento Instalación</label> <span>ANTIOQUIA</span><br>
+                                    <label>Zona Instalación</label> <span></span><br>
+                                    <label>Tecnologia</label> <span>FTTH</span><br>
+                                    <label>Variable de Impacto</label> <span></span><br>
+                                    <label>Pendiente Migración</label> <span>No</span><br>
+                                    </div>
+
+                                    <div class='content-item-info item-1'>
+                                    <p>Acceder a Sistema Configurador</p> <br>
+                                    <p>Acceder a Sistema Radius</label>
+                                    </div>
+
+                                    <div class='content-item-info item-2'>
+                                    <p style="color: transparent;">Acceder a Grupo Mix</p>
+                                    </div>
+
+                                    <div class='content-item-info item-2'>
+                                    <p>Acceder a Grupo Mix</p> <br>
+                                    <p style="color: transparent;">Acceder a Grupo Mix</p> 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    <div style="position: relative; top: 40px;">
+                                <div class="table-solui"  id="table2" style="top: 215px; position: relative;">
+                                    <table class="table-general table-sopor">
+                                            <tr>
+                                                <th id="changes1" style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31; cursor: pointer;" onclick="cam();">Productos</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Estados</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Promociones</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Adjuntos</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Susp/Reconex</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">PQR</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Incremento Tarifa</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Tipo ONT</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Hoja de Vida</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Inventario Ips</th>
+                                                <th style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31;">Equipos</th>
+                                            </tr>
+                                            <tr>
+                                                <th id="changes2" style="border: solid #fff; color: #000; background-color: #868686; border-width: thick; width: 200px; text-align: center; border-top-color: #F36F31; cursor: pointer;" onclick="cam2();">Preguntas Frecuentes</th>
+                                            </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="cambi" style="position: relative; top: 225px;">
+                            <div style="position: relative; top: 40px;" id="ocul1">
+                                <p id="ayu5" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
+                                <p id="ayu6" style="position: relative; bottom: 20px; left: 50px; display: none;">Mostrar<input style="width: 30px;" type="text" placeholder="2" disabled>registros</p>
+                                <p style="position: relative; bottom: 55px; left: 770px;">Buscar:</p>
+                                <textarea name="" id="des3" cols="30" rows="10" style="width: 200px; height: 40px; position: relative; bottom: 110px; left: 840px;"></textarea>  
+                            </div>
+                                <div class="table-solui" style="bottom: 110px; position: relative; left: 100px;" id="">
+                                        <table class="table-general table-sopor" style="width: 900px;">
+                                            <tr style="opacity: 0;">
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                                <th style="border: none; width: 50%;">proyectos</th>
+                                            </tr>
+                                            <tr style="height: 40px;">
+                                                <th colspan="12"></th>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu11">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/h5pactivity/view.php?id=5725" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Tplink Archer-Fisico</a></td>
+                                            </tr>
+                                            <tr id="ayu12">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/h5pactivity/view.php?id=5726" target="_blank" style="text-decoration: none; color: var(--orange-etb);">APP Archer C5</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu13">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5727" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Web Archer C5</a></td>
+                                            </tr>
+                                            <tr id="ayu14">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5728" target="_blank" style="text-decoration: none; color: var(--orange-etb);">APP Configuracion ap zt h176a</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu15">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/course/view.php?id=2582" target="_blank" style="text-decoration: none; color: var(--orange-etb);">IP´S</a></td>
+                                            </tr>
+                                            <tr id="ayu17">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5729" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Web Firehome</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu16">
+                                                <td colspan="12" style="text-align: center;"><a onclick="habladorText2('La mejor forma de solucionar los problemas de lentitud, siempre sera por medio del cable, esta nos asegura una mejor gestion del problema, opacando todas las brechas posibles, a diferencia de la solucion wifi, en la cual esta no daria una solucion tan contundente.');" style="text-decoration: none; color: var(--orange-etb);">Solucion Wifi / Cable</a></td>
+                                            </tr>
+                                            <tr id="ayu18">
+                                                <td colspan="12" style="text-align: center;"><a href="https://docs.google.com/presentation/d/e/2PACX-1vTHEli8MwkCovpdrRMcb59jZ3tTWuIlJ1_8mSulVsXfA3-U6gL6aPcw6DEiaBOLBw/embed?start=false&loop=false&delayms=3000&slide=id.p1" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Imagenes de los Dispositivos</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu21" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5731" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Web ap hc220 tplink</a></td>
+                                            </tr>
+                                            <tr id="ayu22" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5732" target="_blank" style="text-decoration: none; color: var(--orange-etb);">AP TP LINK HC220 G5</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu23" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5733" target="_blank" style="text-decoration: none; color: var(--orange-etb);">ZTE MESH</a></td>
+                                            </tr>
+                                            <tr id="ayu24" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5734" target="_blank" style="text-decoration: none; color: var(--orange-etb);">ZTE AP</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu25" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://auladigital.etb.com.co/mod/hvp/view.php?id=5730" target="_blank" style="text-decoration: none; color: var(--orange-etb);">App Firehome</a> <span style="color: var(--orange-etb);"></a></td>
+                                            </tr>
+                                            <tr id="ayu26" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="https://etb.my.salesforce-sites.com/FTTH3/FG_FTTH3" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Conoce el FLUJO SUMA FTTH</a> <span style="color: var(--orange-etb);">/</span> <a href="https://etb--devflow.sandbox.my.salesforce-sites.com/FTTC" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Conoce el FLUJO SUMA FTTC</a></td>
+                                            </tr>
+                                            <tr class="row-bl" id="ayu27" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a onclick="cic();" style="text-decoration: none; color: var(--orange-etb);">Ciclos y Cortes de Facturacion</a></td>
+                                            </tr>
+                                            <tr id="ayu28" style="display: none;">
+                                                <td colspan="12" style="text-align: center;"><a href="../../../../Model/documents/LEY 2300.pdf" target="_blank" style="text-decoration: none; color: var(--orange-etb);">Conoce la LEY 2300 de 2023</a></td>
+                                            </tr>
+                                    </table>
+                                </div>
+
+                                <p id="ayu3" style="position: relative; left: 30px; bottom: 90px;">Mostrando registros del 1 al 2 de un total de 2 registros</p>
+                                <p id="ayu4" style="position: relative; left: 30px; bottom: 90px; display: none;">Mostrando registros del 2 al 2 de un total de 2 registros</p>
+                                <button type="button" class="btn-clasic" onclick="">Exportar</button>
+                                <button type="button" class="btn-clasic" style="position: relative; bottom: 80px; left: 780px; background-color: var(--blue-os-etb);" onclick="">Enviar</button>
+                                <div>
+                                <button type="button" onclick="ant();" style="width: 100px; background-color: transparent; position: relative; left: 845px; bottom: 195px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
+                                <button type="button" onclick="sig();" style="width: 100px; background-color: transparent; position: relative; left: 840px; bottom: 195px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 0 2px 2px 0; cursor: pointer;">Siguiente</button>
+                            </div>
+                    </div>
+
+                    <div style="bottom: 40px; display: flex; position: relative; left: 300px; margin-top: 120px;">
+
+                        <div class="con-it-o2" id="ocul2" style="display: none; position: relative; right: 300px;">
+                            <div class="items-info2" style="height: 370px;">
+                                <div class="cabecera">
+                                    <h5>Paquete Seleccionado</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                <div class="content" >
+                                        <div class="bundle2">
+                                            <div class="header-b">
+                                                <p class="f-h-b">SINGLE INTERNET 100M HOG FTTH V2</p>
+                                                <p>$ 64900  <span>Mes</span></p>
+                                            </div>
+                                            <div class="service">
+                                                <div class="header-serv">
+                                                    INTERNET
+                                                </div>
+                                                <div class="list-s list-s-l">
+                                                    <ul>
+                                                        <li>PUNTO CABLEADO</li>
+                                                        <li>IP DINÁMICA</li>
+                                                        <li>PLAN 100M/100M</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="cabecera" id="ocul5" style="display: none;  top: 30px; left: 100px;">
+                            <h5 style="width: 250px; text-align: center;">**La informacion que se muestra es la vigente a la fecha de la consulta</h5>
+                        </div>
+
+                        <div class="con-it-o2" id="ocul3" style="display: none; position: relative; right: 300px;  top: 140px;">
+                            <div class="items-info2" style="height: 60px;">
+                                <div class="cabecera">
+                                    <h5>Valor SVAs</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                <div class="content">
+                                        <div class="bundle2">
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="con-it-o2" id="ocul4" style="display: none; position: relative; right: 300px; top: 70px;">
+                            <div class="items-info2" style="height: 120px;">
+                                <div class="cabecera" style="width: 120px;">
+                                    <h5 style="bottom: 15px; position: relative;">Promociones Servicios Adicionales sin facturación</h5>
+                                </div>
+                                <div class="body-items-inf">
+                                <div class="content">
+                                        <div class="bundle2">
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="position: relative;  width: 100px; left: 530px; bottom: 35px;">ACEPTAR</button>
+                </div>
+             </div>
+         </div>
     </div>
 
     <div class="modal modal-success-sim" tabindex="-1" id="modal-ley" data-bs-backdrop="static" data-bs-keyboard="false">
@@ -1020,7 +1389,7 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCION.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret6.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret1.js"></script>    
 
 </body>
 </html>

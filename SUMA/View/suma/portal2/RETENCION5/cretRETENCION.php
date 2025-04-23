@@ -143,9 +143,9 @@
         <div class="items-info items-sopor item-datas" style="width: 1570px; margin-left: 15px;">
             <div class="cabecera" style="background-color: #fff;">
             <h5>Motivos Retiro</h5>
-                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)">
-                <audio id="au_datos_cliente" controls class="audio" style="display: none;">
-                    <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_datos_cliente.mp3">
+                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_reten2', 'img_datos_cliente', 2, 0)">
+                <audio id="au_datos_reten2" controls class="audio" style="display: none;">
+                    <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten5.mp3">
                 </audio>
             </div>
         
@@ -324,7 +324,7 @@
                         <li class="nav-item nav-item-alert"><a class="nav-link">
                             <img src="../../../images/speaker.png" alt="parlante-audio-etb" class="img-audio" id="img-list-paso-a" onclick="alertAudio('au-list-paso-a', 'img-list-paso-a')" style="margin-left: 20px;">
                             <audio id="au-list-paso-a" controls class="audio" style="display: none;">
-                                <source type="audio/wav" src="../../../../Model/audioSuma/audio_com/gcs24.mp3">
+                                <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten3.mp3">
                             </audio>
                         </a></li>   
                     </ul>
@@ -772,9 +772,9 @@
                     <div class="items-info items-sopor item-datas" style="margin: 65px 0 0 0; width: 1565px;">
                             <div class="cabecera" style="background-color: #fff;">
                             <h5>Caracteristicas</h5>
-                                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente', 'img_datos_cliente', 2, 0)">
-                                <audio id="au_datos_cliente" controls class="audio" style="display: none;">
-                                    <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_datos_cliente.mp3">
+                                <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_reten', 'img_datos_cliente', 2, 0)">
+                                <audio id="au_datos_reten" controls class="audio" style="display: none;">
+                                    <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten4.mp3">
                                 </audio>
                         </div>
                         <div class="table-product" id="con-sopo-inter">

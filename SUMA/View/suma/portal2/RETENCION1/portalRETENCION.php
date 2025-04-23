@@ -863,7 +863,7 @@
                 <div class="modal-header">
                     <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_contac', 'img_editar_contac', 2, 7)">
                     <audio id="au_editar_contac" controls class="audio" style="display: none;">
-                        <source type="audio/wav" src="../../../../Model/audioSuma/audio/tep/au_editar_contac.mp3">
+                        <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten2.mp3">
                     </audio>
                     <h5 class="modal-title">RETENCIONES</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
