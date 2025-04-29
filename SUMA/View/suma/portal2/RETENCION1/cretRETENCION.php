@@ -614,6 +614,20 @@
             </div>
     </div>
 
+    <div class="alert-flotante" id="alert-flotante3">
+        <div class="etb-flotant etb-flotant-login" id="etb-flotant">
+            <img src="../../../images/ETB.svg" alt="">
+        </div>
+        <div class="mensaje-parlante msg-parl-log" id="mensaje-parlante3">
+            <p id="text-msg-hab3">
+                <div class="lds-ellipsis" id="wait-text"><div></div><div></div><div></div><div></div></div>
+            </p>
+        </div>
+        <div class="con-close-alert" onclick="ocultarHablador()">
+            <img src="../../../images/cross_small.svg" alt="">
+        </div>
+    </div>
+
     <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1534,10 +1548,10 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCION.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret4.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret1.js"></script> 
 
     <script>
-        habladorText('En este apartado, encontraras todo lo relacionado con la retencion seleccionada, puedes ver a completo detalle, todo lo que se a realizado con la misma y tambien poder ver de manera completa los datos del cliente. para finalizar con el escenario dirigite a la parte inferior y da click en el boton FINALIZAR')
+        habladorText3('En este apartado, encontraras todo lo relacionado con la retencion seleccionada, puedes ver a completo detalle, todo lo que se a realizado con la misma y tambien poder ver de manera completa los datos del cliente. para finalizar con el escenario dirigite a la parte inferior y da click en el boton FINALIZAR')
     </script>
 
 </body>

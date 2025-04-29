@@ -65,6 +65,7 @@ function desaparecerHablador(){
 function ocultarHablador(){
     $('#alert-flotante').removeClass("etb-flotant-active").hide();
     $('#alert-flotante2').removeClass("etb-flotant-active").hide();
+    $('#alert-flotante3').removeClass("etb-flotant-active").hide();
     $('#text-msg-hab').html(''); // Borra completamente el contenido
 
     if (window.typedInstance) {
@@ -133,6 +134,29 @@ function habladorText2(text) {
         window.typedInstance2 = new Typed('#text-msg-hab2', {
             strings: textoFinal,
             typeSpeed: 1,
+        });
+    }, 700);
+}
+
+function habladorText3(text) {
+
+    if (window.typedInstance) {
+        window.typedInstance.destroy();
+    }
+    // Muestra el hablador
+    $('#alert-flotante3').addClass("etb-flotant-active").show();
+    document.getElementById('mensaje-parlante3').style.display = "block";
+    $('#mensaje-parlante3').addClass('msg-waite');
+    
+    setTimeout(() => {
+        $('#mensaje-parlante3').removeClass('msg-waite');
+        let textoFinal = dividirText3(text);
+        console.log(textoFinal);
+        
+        // Guarda la instancia de Typed para poder destruirla después
+        window.typedInstance = new Typed('#text-msg-hab3', {
+            strings: textoFinal,
+            typeSpeed: 120,
         });
     }, 700);
 }
@@ -219,6 +243,46 @@ function dividirText2(textoInicial){
 
     return textoFinal;
 }
+
+function dividirText3(textoInicial){
+    let lengthText = textoInicial.length;
+    let texto = textoInicial;
+    let contador = 1;
+    let textoFinal = [];
+    let posicion = 0;
+    let tempText = '';
+
+    for(let i = 0; i < lengthText; i++){
+        if(contador >= 100){
+            if(texto.charAt(i) != ' '){
+                tempText = tempText + texto.charAt(i);
+            }else{
+                tempText = tempText + texto.charAt(i);
+                textoFinal[posicion] = tempText;
+                
+                posicion = posicion + 1;
+                contador = 0; 
+                tempText = '';
+            }
+        }else if(i == (lengthText - 1)){
+            
+            tempText = tempText + texto.charAt(i);
+            textoFinal[posicion] = tempText;
+
+            posicion = posicion + 1;
+            contador = 0; 
+            tempText = '';
+
+        }else{
+            tempText = tempText + texto.charAt(i);
+        }
+
+        contador = contador + 1;
+    }   
+
+    return textoFinal;
+}
+
 function verificacionlenght(textarea){
     if(textarea.value.length >= 1 && textarea.value != '' && textarea.value != ' '){
         return true;

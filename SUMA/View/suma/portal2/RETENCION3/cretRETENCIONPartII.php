@@ -1775,7 +1775,7 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartIV.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret8.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret6.js"></script> 
 
     <script>
         habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton RECHAZAR');

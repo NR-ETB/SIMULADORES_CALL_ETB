@@ -187,7 +187,7 @@
                             </div>
 
                             <div id="sub" style="display: flex;">
-                                <label>SubMotivo</label> <select name="" id="" style="width: 630px; margin-left: 5px;">
+                                <label>SubMotivo</label> <select name="" id="subm" style="width: 630px; margin-left: 5px;">
                                     <option value="">Seleccione un SubMotivo...</option>
                                 </select><br>
                             </div>
@@ -1917,7 +1917,7 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCION4.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret3.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret15.js"></script> 
 
     <script>
         habladorText('Selecciona el Motivo ECÓNOMICO y el Submotivo CLIENTE DESEA REDUCCIÓN, da click en el boton RETENER')

@@ -490,7 +490,7 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartVI.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret7.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret19.js"></script> 
 
     <script>
         habladorText('En este apartado deberas realizar la validación de identidad del cliente en cuestion, esto lo haras por medio del codigo OTP Lisim, el cual sera enviado al numero registrado del cliente, en esta oportunidad no ondaremos demaciado en este, para continuar da click en el boton CERRAR INTERACCIÓN')

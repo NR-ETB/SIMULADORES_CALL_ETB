@@ -1,3 +1,52 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona los elementos
+    const motivoSelect = document.getElementById("mot");
+    const submotivoSelect = document.getElementById("subm");
+    
+    // Función para hacer parpadear un elemento
+    function parpadear(elemento) {
+        // Color naranja
+        const colorNaranja = "#F26922";
+        // Color original (transparente o el color por defecto)
+        const colorOriginal = "";
+        
+        // Número de parpadeos
+        let contador = 0;
+        const totalParpadeos = 50;
+        
+        // Configura el intervalo para el parpadeo
+        const intervalo = setInterval(function() {
+            // Alterna entre naranja y el color original
+            if (contador % 2 === 0) {
+                elemento.style.borderColor = colorNaranja;
+                elemento.style.borderWidth = "1px";
+                elemento.style.borderStyle = "solid";
+            } else {
+                elemento.style.borderColor = colorOriginal;
+                elemento.style.borderWidth = "";
+                elemento.style.borderStyle = "";
+            }
+            
+            contador++;
+            
+            // Detiene el parpadeo después de un número específico de cambios
+            if (contador >= totalParpadeos * 2) {
+                clearInterval(intervalo);
+                // Asegura que el borde vuelva a su estado original
+                elemento.style.borderColor = colorOriginal;
+                elemento.style.borderWidth = "";
+                elemento.style.borderStyle = "";
+            }
+        }, 500); // Cambia cada 500ms (medio segundo)
+    }
+    
+    // Inicia el parpadeo para el select de motivos
+    parpadear(motivoSelect);
+    
+    // Inicia el parpadeo para el select de submotivos
+    parpadear(submotivoSelect);
+});
+
 function submot() {
        $('#mot').first().change(function() {
         var valor = $(this).val(); // Obtiene el valor seleccionado

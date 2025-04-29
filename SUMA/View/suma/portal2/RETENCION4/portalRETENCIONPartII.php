@@ -495,7 +495,7 @@
     <script src="../../../bootstrap/typed.js"></script>
     <script src="../../../../Controller/suma/main.js"></script>
     <script src="../../../../Controller/suma/RETENCION/portalRETENCIONPartII.js"></script>
-    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret7.js"></script> 
+    <script src="../../../../Controller/security/RETENCION/anti-cheat-ret12.js"></script> 
 
     <script>
         habladorText('Continua con el paso a paso, siguiendo las indicaciones, selecciona la casilla y luego da click en SIGUIENTE, para continuar')
