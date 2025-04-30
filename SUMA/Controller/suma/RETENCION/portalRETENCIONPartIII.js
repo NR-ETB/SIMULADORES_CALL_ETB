@@ -3,8 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const motivoSelect = document.getElementById("mot");
     const submotivoSelect = document.getElementById("subm");
     
+    // Variables para almacenar los intervalos
+    let intervaloMotivo;
+    let intervaloSubmotivo;
+    
     // Función para hacer parpadear un elemento
-    function parpadear(elemento) {
+    function parpadear(elemento, tipoElemento) {
         // Color naranja
         const colorNaranja = "#F26922";
         // Color original (transparente o el color por defecto)
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Alterna entre naranja y el color original
             if (contador % 2 === 0) {
                 elemento.style.borderColor = colorNaranja;
-                elemento.style.borderWidth = "1px";
+                elemento.style.borderWidth = "1.5px";
                 elemento.style.borderStyle = "solid";
             } else {
                 elemento.style.borderColor = colorOriginal;
@@ -38,13 +42,47 @@ document.addEventListener("DOMContentLoaded", function() {
                 elemento.style.borderStyle = "";
             }
         }, 500); // Cambia cada 500ms (medio segundo)
+        
+        // Guarda la referencia al intervalo
+        if (tipoElemento === "motivo") {
+            intervaloMotivo = intervalo;
+        } else if (tipoElemento === "submotivo") {
+            intervaloSubmotivo = intervalo;
+        }
+        
+        return intervalo;
+    }
+    
+    // Función para detener el parpadeo y restaurar los bordes originales
+    function detenerParpadeo(elemento, intervalo) {
+        if (intervalo) {
+            clearInterval(intervalo);
+        }
+        // Restaura el estilo original
+        elemento.style.borderColor = "";
+        elemento.style.borderWidth = "";
+        elemento.style.borderStyle = "";
     }
     
     // Inicia el parpadeo para el select de motivos
-    parpadear(motivoSelect);
+    intervaloMotivo = parpadear(motivoSelect, "motivo");
     
     // Inicia el parpadeo para el select de submotivos
-    parpadear(submotivoSelect);
+    intervaloSubmotivo = parpadear(submotivoSelect, "submotivo");
+    
+    // Agrega listener al cambio de selección
+    motivoSelect.addEventListener("change", function() {
+        // Detiene el parpadeo del motivo
+        detenerParpadeo(motivoSelect, intervaloMotivo);
+        // Detiene el parpadeo del submotivo
+        detenerParpadeo(submotivoSelect, intervaloSubmotivo);
+    });
+    
+    // También puedes agregar un listener para el submotivo si es necesario
+    submotivoSelect.addEventListener("change", function() {
+        // Detiene el parpadeo del submotivo
+        detenerParpadeo(submotivoSelect, intervaloSubmotivo);
+    });
 });
 
 function submot() {
@@ -157,6 +195,7 @@ function btn_reto() {
             habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton ACEPTAR');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
+            $('#arrow_2').css('display', 'none');
         }, 4000);
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición

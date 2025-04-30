@@ -92,6 +92,7 @@
                         <a onclick="btn_or();" style="color: var(--orange-etb); position: relative; bottom: 30px; left: 700px;"><u>Ver Resumen de Compra</u></a> 
 
                         <div class="con-btn-paso-2" style="display: flex; position: relative; bottom: 30px;"> 
+                        <img id="arrow_1" src="../../../images/images-suma/arrow3.png" alt="" style="margin-left: 15px; width: 40px; height: 40px; animation: shake 2s infinite;">
                         <button id="btn_can2" onclick="cancel(),habladorText('En este modal el ASESOR, debe de ingresar el motivo y detalles pertinentes del CIERRE DE LA INTERACCION, para continuar presiona en CONTINUAR');" style="background-color: #20A4CB;">CERRAR INTERACCIÓN</button>
                         <button>SIGUIENTE >></button>
                     </div>

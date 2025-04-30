@@ -271,6 +271,7 @@
                     <div style="display: flex; position: relative; right: 250px; top: 35px;">
                         <p style="margin-right: 40px;">Nueva...</p>
                         <button style="width: 400px; border-radius: 25px;" onclick="btn_reto2();">RETENER</button>
+                        <img id="arrow_2" src="../../../images/images-suma/arrow.png" alt="" style="width: 50px; height: 50px; animation: shake 2s infinite;">
                         <div class="semaforo semaforo-co" style="margin-left: 200px;"></div>
                     </div>
 
@@ -332,6 +333,7 @@
                             <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
                                 <button id="btn-paso-3" style="height: 24px;" onclick="location.href='./portalRETENCIONPartII.php';">RETIRAR >></button>
                                 <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
+                                <img id="arrow_2" src="../../../images/images-suma/arrow2.png" alt="" style="width: 50px; height: 50px; animation: shakeY 2s infinite;position: relative; right: 295px; top: 40px;">
                             </div>
 
                             <div style="display: flex; position: relative; left: 270px;">

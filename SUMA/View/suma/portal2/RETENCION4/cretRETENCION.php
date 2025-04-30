@@ -271,6 +271,7 @@
                     <div style="display: flex; position: relative; right: 250px; top: 35px;">
                         <p style="margin-right: 40px;">Nueva...</p>
                         <button style="width: 400px; border-radius: 25px;" onclick="btn_reto();">RETENER</button>
+                        <img id="arrow_2" src="../../../images/images-suma/arrow.png" alt="" style="width: 50px; height: 50px; animation: shake 2s infinite;">
                         <div class="semaforo semaforo-co" style="margin-left: 200px;"></div>
                     </div>
 
@@ -348,9 +349,10 @@
                                 <textarea style="margin-left: 10px; width: 700px; height: 100px;" name="" id="description"></textarea>
                             </div>
 
-                            <div class="con-btn-paso-2" style="position: relative; top: 180px;">
+                            <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                                 <div class="mar">
                                     <button onclick="recha_1();"style="background-color: #20A4CB;">ACEPTAR</button>
+                                    <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="width: 50px; height: 50px; animation: shake 2s infinite;">
                                 </div>
                             </div>
                     </div>

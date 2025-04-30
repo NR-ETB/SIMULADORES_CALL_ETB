@@ -149,6 +149,7 @@ function add_dir() {
     setTimeout(() => {
         $('#modal-loading').modal('hide');
         $('#modal-addir').modal('toggle');
+        $('#arrow_1').css('display','none');
     }, 4000);
 
 }
@@ -164,6 +165,7 @@ function add_err() {
             $('#modal-loading').modal('hide');
             $('#modal-err').modal('toggle');
             $('#direction').css('display','contents');
+            $('#arrow_3').css('display','block');
         }, 4000);
     }
 
@@ -182,6 +184,7 @@ function btn_flew() {
     $('#flew8').css('display','none');
     $('#btn_can').css('display','none');
     $('#btn_can2').css('display','block');
+    $('#arrow2').css('display','block');
 
 }
 
