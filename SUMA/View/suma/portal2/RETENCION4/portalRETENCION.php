@@ -875,82 +875,28 @@
                             
                         <div class="table-product" id="con-sopo-inter">
                                 <div class="con-table2">
-                                    <table class="table-general table-sopor table-produc">
+                                <table class="table-general table-sopor table-produc">
+                                    <thead>
                                         <tr>
-                                            <th>Fecha Creacion</th>
+                                            <th>Fecha Creación</th>
                                             <th>ID</th>
                                             <th>Estado</th>
-                                            <th>Accion</th>
-                                            <th>Estado Accion</th>
-                                            <th>Cuenta Facturacion</th>
-                                            <th>Numero Conexion</th>
-                                            <th>Tecnologia</th>
+                                            <th>Acción</th>
+                                            <th>Estado Acción</th>
+                                            <th>Cuenta Facturación</th>
+                                            <th>Número Conexión</th>
+                                            <th>Tecnología</th>
                                             <th>Detalle</th>
-                                            <th>Retencion</th>
+                                            <th>Retención</th>
                                         </tr>
-                                        <tbody>
-                                            <tr>
-                                                <td>20/02/2024 8:46:00 AM</td>
-                                                <td>RF-003575869</td>
-                                                <td>Suscriptor_No_Valido_Retirado</td>
-                                                <td>Downgrade oferta plan (captura sin promocion)</td>
-                                                <td>Rechazado</td>
-                                                <td>7777</td>
-                                                <td>6017829304</td>
-                                                <td>FTTH</td>
-                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;" onclick="dete(),habladorText('Aqui podras encontrar los detalles mas escenciales de la Retencion filtrada en cuestion, da click en el boton X en la parte superior derecha para finalizar');"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" onclick="location.href='./cretRETENCION.php'" alt=""></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2025/02/10, 12:24:09 pm</td>
-                                                <td>RF-003649582</td>
-                                                <td>Pendiente</td>
-                                                <td>Cesión de contrato</td>
-                                                <td>Rechazado</td>
-                                                <td>7777</td>
-                                                <td>6017829304</td>
-                                                <td>FTTH</td>
-                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2025/01/28, 10:11:13 am</td>
-                                                <td>RF-003936485</td>
-                                                <td>Suscriptor_No_Valido_Retenido</td>
-                                                <td>Resaltar beneficios</td>
-                                                <td>Rechazado</td>
-                                                <td>7777</td>
-                                                <td>6017829304</td>
-                                                <td>FTTH</td>
-                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2025/01/28, 09:18:18 am</td>
-                                                <td>RF-003091725</td>
-                                                <td>Suscriptor_No_Valido_Retenido</td>
-                                                <td>Resaltar beneficios</td>
-                                                <td>Rechazado</td>
-                                                <td>7777</td>
-                                                <td>6017829304</td>
-                                                <td>FTTH</td>
-                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2025/01/24, 10:20:13 am</td>
-                                                <td>RF-003523142</td>
-                                                <td>Suscriptor_No_Valido_Retirado</td>
-                                                <td>Suspensión voluntaria</td>
-                                                <td>Rechazado</td>
-                                                <td>7777</td>
-                                                <td>6017829304</td>
-                                                <td>FTTH</td>
-                                                <td class="fa-solid fa-eye eye-color" style="display: table-cell;"></td>
-                                                <td><img style="width: 25px;" src="../../../images/porce.png" alt=""></td>
-                                            </tr>
-                                        </tbody>                               
-                                    </table>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="10" style="text-align: center;">Ningún dato disponible en esta tabla</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
 
                                     <p id="ayu3" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 1 al 5 de un total de 5 registros</p>
                                     <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1010px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
