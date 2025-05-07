@@ -677,7 +677,7 @@
                 </div>
                 <div class="modal-footer" style="display: flex;">
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Para filtrar a nuestro cliente en cuestion puedes utilizar diferentes datos para esto, en este escenario usaremos unicamente el NUMERO DE ORDEN: RF-003575869');">Despues</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: PS 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">Despues</button>
                 </div>
             </div>
             </div>

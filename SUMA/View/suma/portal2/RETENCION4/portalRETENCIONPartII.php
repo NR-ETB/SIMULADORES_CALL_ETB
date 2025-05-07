@@ -148,7 +148,7 @@
                                 
                         </div>  
 
-                        <img id="arrow_3" src="../../../images/images-suma/arrow2.png" alt="" style="position: relative; left: 1485px; margin-left: 15px; width: 40px; height: 40px; animation: shakeY 2s infinite; display: none;">
+                        <img id="arrow_3" src="../../../images/images-suma/arrow2.png" alt="" style="position: relative; left: 1475px; margin-left: 15px; width: 40px; height: 40px; animation: shakeY 2s infinite; display: none;">
 
                         <div id="btn-comp" class="btn-flot" onclick="habladorText('Aqui podras apreciar, la diferencia entre el plan actual del cliente y el Seleccionado');" style="width: 280px; z-index: 1030;">
                             COMPARACIÓN DE PLANES

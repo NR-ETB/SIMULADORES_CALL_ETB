@@ -184,7 +184,8 @@ function btn_flew() {
     $('#flew8').css('display','none');
     $('#btn_can').css('display','none');
     $('#btn_can2').css('display','block');
-    $('#arrow2').css('display','block');
+    $('#arrow_3').css('display','none');
+    $('#arrow_2').css('display','block');
 
 }
 
