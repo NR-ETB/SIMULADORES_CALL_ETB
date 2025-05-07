@@ -194,6 +194,7 @@ function btn_reto() {
         setTimeout(() => {
             $('#ofertasModal').modal('toggle');
             $('#reto').css('display', 'block');
+            $('#modal-loading').modal('hide');
             habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripcion en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
             $('#arrow_2').css('display','none');
         }, 4000);
