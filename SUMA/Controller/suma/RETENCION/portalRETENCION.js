@@ -316,9 +316,9 @@ function sig() {
     $('#ayu26').css('display','table-row')  
     $('#ayu27').css('display','table-row')
     $('#ayu28').css('display','table-row')    
-    $('#ayu3').css('display','none') 
+    $('#ayu33').css('display','none') 
     $('#ayu4').css('display','block') 
-    $('#ayu5').css('display','none') 
+    $('#ayu55').css('display','none') 
     $('#ayu6').css('display','block')  
 }
 
@@ -339,9 +339,9 @@ function ant() {
     $('#ayu26').css('display','none')   
     $('#ayu27').css('display','none')
     $('#ayu28').css('display','none')  
-    $('#ayu3').css('display','block') 
+    $('#ayu33').css('display','block') 
     $('#ayu4').css('display','none') 
-    $('#ayu5').css('display','block') 
+    $('#ayu55').css('display','block') 
     $('#ayu6').css('display','none') 
 }
 

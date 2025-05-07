@@ -192,7 +192,7 @@ function btn_reto() {
     if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton ACEPTAR');
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripcion en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
             $('#arrow_2').css('display', 'none');

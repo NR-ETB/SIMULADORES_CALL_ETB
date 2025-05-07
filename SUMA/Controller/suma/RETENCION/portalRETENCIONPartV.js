@@ -105,7 +105,7 @@ function btn_reto() {
     if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton ACEPTAR');
+            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripcion en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);
@@ -128,9 +128,27 @@ información en no retenidos`;
     if (textoIngresado === textoDescripcion) {
         $('#paso-1').css('display', 'none');
         $('#paso-2').css('display', 'block');
-        $('#retab1').css('display', 'table-row');
+        $('#retab').css('display', 'table-row');
         document.getElementById('pasoli-1').classList.add("done");
         document.getElementById('pasoli-2').classList.add("active");
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }       
+}
+
+function recha_11() {
+
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Se invocara el tramite de traslado para mejorar proceso de retención, y captar
+información en no retenidos`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
@@ -161,6 +179,24 @@ plan actual`;
     }       
 }
 
+function recha_22() {
+
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Se brinda información al cliente respecto a los beneficios y bondades de su
+plan actual`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description2").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }      
+}
+
 function recha_3() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
@@ -183,6 +219,24 @@ su plan contratado`;
     }       
 }
 
+function recha_33() {
+
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Cliente obtiene 15% de descuento sobre
+su plan contratado`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description3").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }        
+}
+
 function recha_4() {
 
     // Obtener el texto original de la descripción (debe coincidir exactamente)
@@ -203,6 +257,24 @@ Aplican politicas actuales de generación de tramite`;
         // Opcional: mostrar un mensaje si no se cumple la condición
         habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
     }       
+}
+
+function recha_44() {
+
+    // Obtener el texto original de la descripción (debe coincidir exactamente)
+    var textoDescripcion = `Cliente con servicio retenido con el trámite de cesión de contrato.
+Aplican politicas actuales de generación de tramite`;
+
+    // Obtener el contenido del textarea y eliminar espacios extras
+    var textoIngresado = document.getElementById("description4").value.trim();
+
+    // Comparar ambos textos
+    if (textoIngresado === textoDescripcion) {
+        $('#modal-fase1').modal('toggle');
+    } else {
+        // Opcional: mostrar un mensaje si no se cumple la condición
+        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+    }        
 }
 
 function recha_5() {

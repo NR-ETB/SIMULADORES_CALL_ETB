@@ -351,7 +351,7 @@
 
                             <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                                 <div class="mar">
-                                    <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                    <button onclick="recha_11(); style="background-color: #20A4CB;">ACEPTAR</button>
                                     <button id="btn-paso-3" onclick="recha_1();">RECHAZAR >></button>
                                     <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                                 </div>
@@ -386,7 +386,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_22();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_2();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -421,7 +421,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px;  display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_33();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_3();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -456,7 +456,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px;  display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_44();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_4();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -491,7 +491,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_55();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_5();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -1784,7 +1784,7 @@
     <script src="../../../../Controller/security/RETENCION/anti-cheat-ret6.js"></script> 
 
     <script>
-        habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton RECHAZAR');
+        habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton RECHAZAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario');
     </script>
 
 </body>

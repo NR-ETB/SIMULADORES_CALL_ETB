@@ -356,7 +356,7 @@
 
                             <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                                 <div class="mar">
-                                    <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                    <button onclick="recha_11();" style="background-color: #20A4CB;">ACEPTAR</button>
                                     <button id="btn-paso-3" onclick="recha_1();">RECHAZAR >></button>
                                     <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                                 </div>
@@ -391,7 +391,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_22();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_2();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -426,7 +426,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_33();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_3();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -461,7 +461,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_44();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_4();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -496,7 +496,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_55();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_5();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -531,7 +531,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_66();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_6();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -566,7 +566,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_77();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_7();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -601,7 +601,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_88();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_8();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>
@@ -636,7 +636,7 @@
                         <div class="con-btn-paso-2" style="position: relative; top: 180px; display: flex;">
                             <div class="mar">
                                 <button onclick="u();" id="btn-paso-3"><< ANTERIOR</button>
-                                <button style="background-color: #20A4CB;">ACEPTAR</button>
+                                <button onclick="recha_99();" style="background-color: #20A4CB;">ACEPTAR</button>
                                 <button id="btn-paso-3" onclick="recha_9();">RECHAZAR >></button>
                                 <img id="arrow_1" src="../../../images/images-suma/arrow.png" alt="" style="margin-left: 15px; width: 50px; height: 50px; animation: shake 2s infinite;">
                             </div>

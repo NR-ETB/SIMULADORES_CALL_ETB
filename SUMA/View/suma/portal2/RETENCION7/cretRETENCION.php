@@ -331,9 +331,9 @@
                     <div class="paso-1" id="paso-1" style="position: relative; bottom: 40px; height: 380px;">
 
                             <div class="con-btn-paso-2" style="display: flex; position: relative; right: 500px; bottom: 12px;">
-                                <button id="btn-paso-3" style="height: 24px;" onclick="location.href='./portalRETENCIONPartII.php';">RETIRAR >></button>
+                                <button id="btn-paso-3" style="height: 24px;" onclick="recha_0();">RETIRAR >></button>
                                 <button id="btn-paso-3" style="height: 60px;">ABANDONAR RETENCIÓN  <br>>></button>
-                                <img id="arrow_2" src="../../../images/images-suma/arrow2.png" alt="" style="width: 50px; height: 50px; animation: shakeY 2s infinite;position: relative; right: 295px; top: 40px;">
+                                <img id="arrow_3" src="../../../images/images-suma/arrow2.png" alt="" style="width: 50px; height: 50px; animation: shakeY 2s infinite;position: relative; right: 295px; top: 40px;">
                             </div>
 
                             <div style="display: flex; position: relative; left: 270px;">

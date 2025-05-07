@@ -676,7 +676,7 @@
                 <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
                 </div>
                 <div class="modal-footer" style="display: flex;">
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary">OK</button>
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Para filtrar a nuestro cliente en cuestion puedes utilizar diferentes datos para esto, en este escenario usaremos unicamente el NUMERO DE ORDEN: RF-003575869');">Despues</button>
                 </div>
             </div>
@@ -861,9 +861,9 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_contac', 'img_editar_contac', 2, 7)">
-                    <audio id="au_editar_contac" controls class="audio" style="display: none;">
-                        <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten2.mp3">
+                    <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_editar_contac" onclick="alertAudio('au_editar_c', 'img_editar_contac', 2, 7)">
+                    <audio id="au_editar_c" controls class="audio" style="display: none;">
+                        <source type="audio/wav" src="../../../../Model/audioSuma/reten/reten9.mp3">
                     </audio>
                     <h5 class="modal-title">RETENCIONES</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -952,7 +952,7 @@
                                         </tbody>                               
                                     </table>
 
-                                    <p id="ayu3" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 1 al 5 de un total de 5 registros</p>
+                                    <p id="ayu33" style="position: relative; left: 30px; top: 25px;">Mostrando registros del 1 al 5 de un total de 5 registros</p>
                                     <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1010px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 2px 0 0 2px; cursor: pointer;">Anterior</button>
                                     <button type="button" style="width: 100px; background-color: transparent; position: relative; left: 1005px;; bottom: 20px; border: 1px solid rgba(22, 21, 19, 0.5); color: rgba(22, 21, 19, 0.5); border-radius: 0 2px 2px 0; cursor: pointer;">Siguiente</button>
 
@@ -992,17 +992,17 @@
                                 
                                     <div class='content-item-info item-1'>
                                     <br>
-                                    <label>Cuenta de Facturación</label> <span>2222</span><br>
+                                    <label>Cuenta de Facturación</label> <span>7777</span><br>
                                     <br><br>
-                                    <label>Ciudad Instalación</label> <span>Medellin</span><br>
-                                    <label>Estrato Instalación</label> <span>5</span><br>
+                                    <label>Ciudad Instalación</label> <span>Bogota</span><br>
+                                    <label>Estrato Instalación</label> <span>6</span><br>
                                     <label>Servicio Demostración</label> <span></span><br>
                                     <label>Accion Sugerida</label> <span></span><br>
                                     </div>
 
                                     <div class='content-item-info item-2'>
-                                    <label>Direccion Instalación</label> <span>Calle 4D #45 a 28</span><br><br>
-                                    <label>Localidad Instalación</label> <span>16</span><br>
+                                    <label>Direccion Instalación</label> <span>Calle 172 #16 a 24</span><br><br>
+                                    <label>Localidad Instalación</label> <span>22</span><br>
                                     <label>Segmento Servicio</label> <span>Hogares y Mipymes</span><br>
                                     <label>Nivel Riesgo</label> <span></span><br>
                                     <label>Oferta Especia TV:</label> <span>No</span><br> 
@@ -1010,7 +1010,7 @@
 
                                     <div class='content-item-info item-2'>
                                     <label>Pais Instalación</label> <span>COLOMBIA</span><br>
-                                    <label>Departamento Instalación</label> <span>ANTIOQUIA</span><br>
+                                    <label>Departamento Instalación</label> <span>BOGOTA</span><br>
                                     <label>Zona Instalación</label> <span></span><br>
                                     <label>Tecnologia</label> <span>FTTH</span><br>
                                     <label>Variable de Impacto</label> <span></span><br>
@@ -1061,7 +1061,7 @@
 
                     <div id="cambi" style="position: relative; top: 225px;">
                             <div style="position: relative; top: 40px;" id="ocul1">
-                                <p id="ayu5" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
+                                <p id="ayu55" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
                                 <p id="ayu6" style="position: relative; bottom: 20px; left: 50px; display: none;">Mostrar<input style="width: 30px;" type="text" placeholder="2" disabled>registros</p>
                                 <p style="position: relative; bottom: 55px; left: 770px;">Buscar:</p>
                                 <textarea name="" id="des3" cols="30" rows="10" style="width: 200px; height: 40px; position: relative; bottom: 110px; left: 840px;"></textarea>  
@@ -1130,7 +1130,7 @@
                                     </table>
                                 </div>
 
-                                <p id="ayu3" style="position: relative; left: 30px; bottom: 90px;">Mostrando registros del 1 al 2 de un total de 2 registros</p>
+                                <p id="ayu33" style="position: relative; left: 30px; bottom: 90px;">Mostrando registros del 1 al 2 de un total de 2 registros</p>
                                 <p id="ayu4" style="position: relative; left: 30px; bottom: 90px; display: none;">Mostrando registros del 2 al 2 de un total de 2 registros</p>
                                 <button type="button" class="btn-clasic" onclick="">Exportar</button>
                                 <button type="button" class="btn-clasic" style="position: relative; bottom: 80px; left: 780px; background-color: var(--blue-os-etb);" onclick="">Enviar</button>
