@@ -543,7 +543,7 @@
                 <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
                 </div>
                 <div class="modal-footer" style="display: flex;">
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary">OK</button>
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: MILLO MATEOS <br> Numero de Documento: PS 1000110440 <br> Numero de Conexion: 6012078614 <br> Cuenta Facturacion: 3333');">Despues</button>
                 </div>
             </div>

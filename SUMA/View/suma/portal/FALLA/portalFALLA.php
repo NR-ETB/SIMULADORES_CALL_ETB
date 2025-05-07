@@ -676,7 +676,7 @@
                 <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
                 </div>
                 <div class="modal-footer" style="display: flex;">
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary">OK</button>
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: VIVIAN ALVARADO <br> Numero de Documento: CE 1000748526 <br> Numero de Conexion: 6012045786 <br> Cuenta Facturacion: 2222');">Despues</button>
                 </div>
             </div>

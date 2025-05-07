@@ -680,7 +680,7 @@
                 <p style="text-align: left;">Debemos realizar una actualización de la información del cliente para continuar</p>
                 </div>
                 <div class="modal-footer" style="display: flex;">
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary">OK</button>
                     <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: CLAID MUSS <br> Numero de Documento: CC 1000842659 <br> Numero de Conexion: 6012014935 <br> Cuenta Facturacion: 4444');">Despues</button>
                 </div>
             </div>
