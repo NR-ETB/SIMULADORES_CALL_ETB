@@ -198,3 +198,21 @@ function cancel() {
     }, 4000);
 
 }
+
+function cancel2() {
+
+    let v = document.getElementById('mo').value;
+
+    if (v === "1") {
+        $('#modal-loading').modal('toggle');
+        setTimeout(() => {
+            $('#modal-loading').modal('hide');
+            $('#modal-can').modal('toggle');
+            $('#modal-can2').modal('toggle');
+            habladorText('Ahora deberas ingresar una descripcion, para la cancelacion en este caso sera NO HAY COBERTURA, luego da click en ACEPTAR para CONTINUAR')
+        }, 2000);
+    }else{
+        habladorText('Selecciona el motivo SIN COBERTURA, para CONTINUAR')
+    }
+
+}

@@ -675,7 +675,7 @@
 
                     <div id="cambi" style="position: relative; top: 225px;">
                             <div style="position: relative; top: 40px;" id="ocul1">
-                                <p id="ayu5" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
+                                <p id="ayu55" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
                                 <p id="ayu6" style="position: relative; bottom: 20px; left: 50px; display: none;">Mostrar<input style="width: 30px;" type="text" placeholder="2" disabled>registros</p>
                                 <p style="position: relative; bottom: 55px; left: 770px;">Buscar:</p>
                                 <textarea name="" id="des3" cols="30" rows="10" style="width: 200px; height: 40px; position: relative; bottom: 110px; left: 840px;"></textarea>  
@@ -744,7 +744,7 @@
                                     </table>
                                 </div>
 
-                                <p id="ayu3" style="position: relative; left: 30px; bottom: 90px;">Mostrando registros del 1 al 2 de un total de 2 registros</p>
+                                <p id="ayu33" style="position: relative; left: 30px; bottom: 90px;">Mostrando registros del 1 al 2 de un total de 2 registros</p>
                                 <p id="ayu4" style="position: relative; left: 30px; bottom: 90px; display: none;">Mostrando registros del 2 al 2 de un total de 2 registros</p>
                                 <button type="button" class="btn-clasic" onclick="">Exportar</button>
                                 <button type="button" class="btn-clasic" style="position: relative; bottom: 80px; left: 780px; background-color: var(--blue-os-etb);" onclick="">Enviar</button>
@@ -827,7 +827,6 @@
              </div>
          </div>
     </div>
-
     
     <div class="modal fade" id="modal-leyfase2"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">

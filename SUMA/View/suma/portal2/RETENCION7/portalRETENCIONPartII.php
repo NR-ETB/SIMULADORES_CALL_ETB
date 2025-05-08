@@ -154,15 +154,59 @@
             <!-- Motivo de Cancelación -->
             <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Motivo Cancelación <span style="color: red;">*</span></label>
-                <select class="form-control" disabled>
-                <option>VALIDACIÓN CLIENTE - CIERRE POR DEFECTO</option>
+                <select id="mo" class="form-control" onchange="cancel2();">
+                <option value="0">Seleccione una opcion</option>
+                    <option value="1">VALIDACIÓN CLIENTE - CIERRE POR DEFECTO</option>
+                    <option value="0">IDENTIDAD</option>
+                    <option value="0">AUTORIZACIONES</option>
+                    <option value="0">FRAUDE</option>
+                    <option value="0">LISIM</option>
+                    <option value="0">FRAUDE INTERNO</option>
                 </select>
             </div>
     
             <!-- Submotivo de Cancelación -->
             <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Submotivo Cancelación <span style="color: red;">*</span></label>
-                <select class="form-control" disabled>
+                <select class="form-control">
+                <option></option>
+                </select>
+            </div>
+    
+            <!-- Descripción Cancelación -->
+            <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Descripción Cancelación <span style="color: red;">*</span></label>
+                <textarea class="form-control" rows="2"></textarea>
+            </div>
+            </div>
+    
+            <div class="modal-footer" style="display: flex; justify-content: space-between;">
+                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 140px;">ACEPTAR</button>
+                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; margin-right: 140px; left: 0px;">CANCELAR</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-can2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="width: 600px;">
+            <div class="modal-header">
+            <h5 class="modal-title">MOTIVO DE CANCELACIÓN</h5>
+            </div>
+            <div class="modal-body">
+            <!-- Motivo de Cancelación -->
+            <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Motivo Cancelación <span style="color: red;">*</span></label>
+                <select id="mo" class="form-control">
+                    <option value="1">VALIDACIÓN CLIENTE - CIERRE POR DEFECTO</option>
+                </select>
+            </div>
+    
+            <!-- Submotivo de Cancelación -->
+            <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Submotivo Cancelación <span style="color: red;">*</span></label>
+                <select class="form-control">
                 <option>PENDIENTE FASE LISIM - VALIDA</option>
                 </select>
             </div>
@@ -170,7 +214,7 @@
             <!-- Descripción Cancelación -->
             <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Descripción Cancelación <span style="color: red;">*</span></label>
-                <textarea class="form-control" rows="2">PRUEBA DEL SIMULADOR SUMA</textarea>
+                <textarea class="form-control" rows="2"></textarea>
             </div>
             </div>
     
@@ -382,56 +426,6 @@
                     </div>
                 </div>
             </div>
-    </div>
-
-    <div class="modal modal-success-sim" tabindex="-1" id="modal-can">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content" style="width: 600px;">
-            <div class="modal-header">
-              <h5 class="modal-title">MOTIVO DE CANCELACIÓN</h5>
-            </div>
-            <div class="modal-body">
-              <!-- Motivo de Cancelación -->
-              <div class="mb-3">
-                <label style="color: #F36F31; font-weight: bold;">Motivo Cancelación <span style="color: red;">*</span></label>
-                <select class="form-control">
-                  <option>Sin Cobertura</option>
-                </select>
-              </div>
-      
-              <!-- Submotivo de Cancelación -->
-              <div class="mb-3">
-                <label style="color: #F36F31; font-weight: bold;">Submotivo Cancelación <span style="color: red;">*</span></label>
-                <select class="form-control">
-                  <option>Sin cobertura ETB</option>
-                </select>
-              </div>
-      
-              <!-- Lugar Sin Cobertura -->
-              <div class="mb-3">
-                <label style="color: #F36F31; font-weight: bold;">Lugar Sin Cobertura <span style="color: red;">*</span></label>
-                <input type="text" class="form-control" value="BOGOTÁ D.C.">
-              </div>
-      
-              <!-- Dirección De Traslado -->
-              <div class="mb-3">
-                <label style="color: #F36F31; font-weight: bold;">Dirección De Traslado <span style="color: red;">*</span></label>
-                <input type="text" class="form-control" value="CL 145 52 78">
-              </div>
-      
-              <!-- Descripción Cancelación -->
-              <div class="mb-3">
-                <label style="color: #F36F31; font-weight: bold;">Descripción Cancelación <span style="color: red;">*</span></label>
-                <textarea class="form-control" rows="2">No hay Cobertura</textarea>
-              </div>
-            </div>
-      
-            <div class="modal-footer" style="display: flex; justify-content: space-between;">
-                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 140px;" onclick="location.href='./cretRETENCIONPartII.php'">ACEPTAR</button>
-                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; margin-right: 140px; left: 0px;">CANCELAR</button>
-            </div>
-          </div>
-        </div>
     </div>
 
     <div class="modal fade modal-loading" tabindex="-1" id="modal-loading" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

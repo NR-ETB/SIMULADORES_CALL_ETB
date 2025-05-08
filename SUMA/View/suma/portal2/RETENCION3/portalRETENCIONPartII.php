@@ -419,8 +419,51 @@
               <!-- Motivo de Cancelación -->
               <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Motivo Cancelación <span style="color: red;">*</span></label>
+                <select id="mo" class="form-control" onchange="cancel2();">
+                    <option value="0">Seleccione una Opcion</option>
+                    <option value="0">Error de Herramienta</option>
+                    <option value="0">Error Direccíon</option>
+                    <option value="0">Contacto Fallido</option>
+                    <option value="0">Cliente Abandonado</option>
+                    <option value="1">Sin Cobertura</option>
+                </select>
+              </div>
+      
+              <!-- Submotivo de Cancelación -->
+              <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Submotivo Cancelación <span style="color: red;">*</span></label>
                 <select class="form-control">
-                  <option>Sin Cobertura</option>
+                  <option></option>
+                </select>
+              </div>
+      
+              <!-- Descripción Cancelación -->
+              <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Descripción Cancelación <span style="color: red;">*</span></label>
+                <textarea class="form-control" rows="2"></textarea>
+              </div>
+            </div>
+      
+            <div class="modal-footer" style="display: flex; justify-content: space-between;">
+                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; left: 140px;">ACEPTAR</button>
+                <button type="button" class="btn" style="background-color: #F36F31; color: white; font-weight: bold; margin-right: 140px; left: 0px;">CANCELAR</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success-sim" tabindex="-1" id="modal-can2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content" style="width: 600px;">
+            <div class="modal-header">
+              <h5 class="modal-title">MOTIVO DE CANCELACIÓN</h5>
+            </div>
+            <div class="modal-body">
+              <!-- Motivo de Cancelación -->
+              <div class="mb-3">
+                <label style="color: #F36F31; font-weight: bold;">Motivo Cancelación <span style="color: red;">*</span></label>
+                <select class="form-control">
+                    <option value="">Sin Cobertura</option>
                 </select>
               </div>
       
@@ -447,7 +490,7 @@
               <!-- Descripción Cancelación -->
               <div class="mb-3">
                 <label style="color: #F36F31; font-weight: bold;">Descripción Cancelación <span style="color: red;">*</span></label>
-                <textarea class="form-control" rows="2">No hay Cobertura</textarea>
+                <textarea class="form-control" rows="2"></textarea>
               </div>
             </div>
       
