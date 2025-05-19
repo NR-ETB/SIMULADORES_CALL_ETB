@@ -5,41 +5,15 @@ $( document ).ready(function() {
 function dates(){
 
     $('#modal-fase').modal('hide')
-    $('#modal-dates').modal('toggle')
 
 }
 
-var s = false;
-
-function btn_search() {
-    if (!s) {
-        console.log('si');
-        let table_search = document.getElementById('tsearch');
-        table_search.style.display = 'block'; 
-        let l1 = document.getElementsByClassName('solicitante-search');
-        s = true;
-
-        // Iterar sobre cada elemento encontrado
-        for (var i = 0; i < l1.length; i++) {
-            // Cambiar el color de fondo de cada elemento
-            l1[i].style.width = '374px';      
-        }
-
-    }else{
-        console.log('no');
-        let table_search = document.getElementById('tsearch');
-        table_search.style.display = 'none'; 
-        let l1 = document.getElementsByClassName('solicitante-search');
-        s = false;
-
-        // Iterar sobre cada elemento encontrado
-        for (var i = 0; i < l1.length; i++) {
-            // Cambiar el color de fondo de cada elemento
-            l1[i].style.width = '376px'; 
-        }
-
-    }
-}
+let search = document.getElementById('search');
+search.addEventListener('click', () =>{
+    console.log('si');
+    let table_search = document.getElementById('table_search');
+    table_search.style.display = 'block';
+})
 
 let estadoInputs = false;
 function verificarUser() {
@@ -48,21 +22,17 @@ function verificarUser() {
     var numDoc = document.getElementById('num_doc').value; 
     var numCox = document.getElementById('num_conex').value; 
     var numCue = document.getElementById('cuenta_fact').value; 
+    var numOrd = document.getElementById('num_orden').value; 
 
+    if (docType !== '0' && numDoc.trim() !== '' || numCox.trim() !== '' || numCue.trim() !== '' || numOrd.trim() !== '') {
 
-    if (docType !== '0' && numDoc.trim() !== '' || numCox.trim() !== '' || numCue.trim() !== '') {
-
-        if (docType === '1' && numDoc === '1000958632' || numCox === '6012065894' || numCue === '5555') {
+        if (docType === '1' && numDoc === '1000634251' || numCox === '6017829304' || numCue === '7777' || numOrd === 'RF-003575869') {
 
             $('#modal-loading').modal('toggle');
 
             setTimeout(() => {
                 $('#modal-loading').modal('hide');
-                document.getElementById('seccion').style.display = "grid";
-                document.getElementById('table').style.display = "grid";
-                document.getElementById('eyes').style.display = "grid";
-                document.getElementById('age').style.display = "block";
-                $('#modal-ley').modal('toggle') 
+                $('#modal-dates').modal('toggle')
                 habladorText('En este escenario no sera obligatoria esta validacion de ley, presiona en "NO REGISTRAR"')
             }, 4000); 
 
@@ -74,6 +44,17 @@ function verificarUser() {
 
         $('#modal-err').modal('show');
     }
+}
+
+function dates2(){
+
+    $('#modal-dates').modal('hide')
+    document.getElementById('seccion').style.display = "grid";
+    document.getElementById('table').style.display = "grid";
+    document.getElementById('eyes').style.display = "grid";
+    document.getElementById('age').style.display = "block";
+    $('#modal-ley').modal('toggle') 
+
 }
 
 const reload = document.getElementById("btn-reload");

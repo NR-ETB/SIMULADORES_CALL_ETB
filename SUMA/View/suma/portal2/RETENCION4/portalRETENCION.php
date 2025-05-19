@@ -648,7 +648,6 @@
         </div>
     </div>
 
-    <!-- Modal mensaje de bienvenida -->
     <div class="modal modal-success-sim" tabindex="-1" id="modal-fase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -659,7 +658,7 @@
                 <p>Al escenario de CONSULTA RETENCION del simulador SUMA, sigue las indicaciones y aprende en el proceso</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="dates();">ACEPTAR</button>
+                    <button type="button" class="btn btn-secondary" onclick="dates(),habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: CC 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">ACEPTAR</button>
                 </div>
             </div>
             </div>
@@ -677,7 +676,7 @@
                 </div>
                 <div class="modal-footer" style="display: flex;">
                     <button type="button" style="left: 0px;" class="btn btn-secondary">OK</button>
-                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="habladorText('Cliente: HERNAN CAPEIRO <br> Numero de Documento: PS 1000634251 <br> Numero de Conexion: 6017829304 <br> Cuenta Facturacion: 7777');">Despues</button>
+                    <button type="button" style="left: 0px;" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" onclick="dates2();">Despues</button>
                 </div>
             </div>
             </div>

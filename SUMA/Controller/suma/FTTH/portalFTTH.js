@@ -5,7 +5,6 @@ $( document ).ready(function() {
 function dates(){
 
     $('#modal-fase').modal('hide')
-    $('#modal-dates').modal('toggle')
 
 }
 
@@ -33,11 +32,7 @@ function verificarUser() {
 
             setTimeout(() => {
                 $('#modal-loading').modal('hide');
-                document.getElementById('seccion').style.display = "grid";
-                document.getElementById('table').style.display = "grid";
-                document.getElementById('eyes').style.display = "grid";
-                document.getElementById('age').style.display = "block";
-                $('#modal-ley').modal('toggle') 
+                $('#modal-dates').modal('toggle')
                 habladorText('En este escenario no sera obligatoria esta validacion de ley, presiona en "NO REGISTRAR"')
             }, 4000); 
 
@@ -49,6 +44,17 @@ function verificarUser() {
 
         $('#modal-err').modal('show');
     }
+}
+
+function dates2(){
+
+    $('#modal-dates').modal('hide')
+    document.getElementById('seccion').style.display = "grid";
+    document.getElementById('table').style.display = "grid";
+    document.getElementById('eyes').style.display = "grid";
+    document.getElementById('age').style.display = "block";
+    $('#modal-ley').modal('toggle') 
+
 }
 
 const reload = document.getElementById("btn-reload");
