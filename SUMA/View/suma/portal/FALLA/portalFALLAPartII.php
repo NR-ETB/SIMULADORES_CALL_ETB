@@ -774,14 +774,14 @@
 
     <div class="modal fade modales-soporte" tabindex="-1" id="modal-produc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false" style="margin: 10px 50px 0 0;">
         <div class="modal-dialog modal-dialog-centered modal-dialog-exito-s">
-             <div class="modal-content" style="position: relative; min-width: 1100px; width: 100%; min-height: 1100px;">
+             <div class="modal-content" style="position: relative; min-width: 1130px; width: 100%; min-height: 1130px;">
                 <div class="modal-header" style="background-color: #fff; margin-top: 15px; border-radius: 10px 10px 0 0;">
                     <h5 class="modal-title" style="text-align: center; color: #1285B6;">Detalle Servicio</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                        <div class="items-info items-sopor item-datas" id="table1" style="height: 350px; bottom: 160px; margin: 80px 0 0 0;">
+                        <div class="items-info items-sopor item-datas" id="table1" style="height: 350px; bottom: 160px; margin: 70px 0 0 0;">
                             <div class="cabecera">
                             <h5>Producto</h5>
                                 <img src="../../../images/speaker2.png" alt="parlante-audio-etb" class="img-audio" id="img_datos_cliente" onclick="alertAudio('au_datos_cliente2', 'img_datos_cliente', 2, 0)">
@@ -839,7 +839,7 @@
                         </div>
 
                     <div style="position: relative; top: 40px;">
-                                <div class="table-solui"  id="table2" style="top: 215px; position: relative;">
+                                <div class="table-solui"  id="table2" style="top: 225px; position: relative;">
                                     <table class="table-general table-sopor">
                                             <tr>
                                                 <th id="changes1" style="border: solid #fff; color: #000; background-color: #c3c3c3; border-width: thick; width: 100px; text-align: center; border-top-color: #F36F31; cursor: pointer;" onclick="cam();">Productos</th>
@@ -862,7 +862,7 @@
                             </div>
                     </div>
 
-                    <div id="cambi" style="position: relative; top: 225px;">
+                    <div id="cambi" style="position: relative; top: 235px;">
                             <div style="position: relative; top: 40px;" id="ocul1">
                                 <p id="ayu55" style="position: relative; bottom: 20px; left: 50px;">Mostrar<input style="width: 30px;" type="text" placeholder="1" disabled>registros</p>
                                 <p id="ayu6" style="position: relative; bottom: 20px; left: 50px; display: none;">Mostrar<input style="width: 30px;" type="text" placeholder="2" disabled>registros</p>
