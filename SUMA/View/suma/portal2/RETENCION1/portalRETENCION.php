@@ -1154,8 +1154,8 @@
                                 <div class="content" >
                                         <div class="bundle2">
                                             <div class="header-b">
-                                                <p class="f-h-b">SINGLE INTERNET 100M HOG FTTH V2</p>
-                                                <p>$ 64900  <span>Mes</span></p>
+                                                <p class="f-h-b">DUO 700M HOG</p>
+                                                <p>$ 259000  <span>Mes</span></p>
                                             </div>
                                             <div class="service">
                                                 <div class="header-serv">
@@ -1165,7 +1165,7 @@
                                                     <ul>
                                                         <li>PUNTO CABLEADO</li>
                                                         <li>IP DINÁMICA</li>
-                                                        <li>PLAN 100M/100M</li>
+                                                        <li>PLAN 700M/700M</li>
                                                     </ul>
                                                 </div>
                                             </div>
