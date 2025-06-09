@@ -1800,7 +1800,7 @@
     <script src="../../../../Controller/security/RETENCION/anti-cheat-ret3.js"></script> 
 
     <script>
-        habladorText('Selecciona el Motivo PROBLEMAS TÉCNICOS y el Submotivo FALLA TODOS LOS SERVICIOS, da click en el boton RETENER')
+        habladorText('Selecciona el Motivo PROBLEMAS TÉCNICOS y el Submotivo FALLA TODOS LOS SERVICIOS, da click en el botón RETENER')
     </script>
 
 </body>

@@ -209,7 +209,7 @@ function cancel2() {
             $('#modal-loading').modal('hide');
             $('#modal-can').modal('toggle');
             $('#modal-can2').modal('toggle');
-            habladorText('Ahora deberas ingresar una descripcion, para la cancelacion en este caso sera NO HAY COBERTURA, luego da click en ACEPTAR para CONTINUAR')
+            habladorText('Ahora deberás ingresar una descripción, para la cancelación en este caso será NO HAY COBERTURA, luego da click en ACEPTAR para CONTINUAR')
         }, 2000);
     }else{
         habladorText('Selecciona el motivo SIN COBERTURA, para CONTINUAR')

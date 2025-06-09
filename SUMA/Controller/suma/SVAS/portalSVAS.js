@@ -456,6 +456,7 @@ function cam() {
     $('#ocul4').css('display','grid')
     $('#ocul5').css('display','grid')
     $('#table1').css('margin','0')
+    $('#table1').css('bottom','200px')
     $('#table2').css('top','120px')
     $('#changes1').css('background-color','#868686') 
     $('#changes2').css('background-color','#c3c3c3')   

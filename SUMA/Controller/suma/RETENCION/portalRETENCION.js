@@ -33,7 +33,7 @@ function verificarUser() {
             setTimeout(() => {
                 $('#modal-loading').modal('hide');
                 $('#modal-dates').modal('toggle')
-                habladorText('En este escenario no sera obligatoria esta validacion de ley, presiona en "NO REGISTRAR"')
+                habladorText('En este escenario no sera obligatoria esta validación de ley, presiona en "NO REGISTRAR"')
             }, 4000); 
 
         } else {
@@ -360,6 +360,7 @@ function cam() {
     $('#ocul4').css('display','grid')
     $('#ocul5').css('display','grid')
     $('#table1').css('margin','0')
+    $('#table1').css('bottom','200px')
     $('#table2').css('top','120px')
     $('#changes1').css('background-color','#868686') 
     $('#changes2').css('background-color','#c3c3c3')   

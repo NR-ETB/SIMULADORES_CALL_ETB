@@ -1784,7 +1784,7 @@
     <script src="../../../../Controller/security/RETENCION/anti-cheat-ret6.js"></script> 
 
     <script>
-        habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual deberas copiar y pegar lo referente a la descripcion en la casilla de observaciones, acto seguido presiona en el boton RECHAZAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario');
+        habladorText('En la parte inferior se habrá desplegado un paso a paso, en el cual deberás copiar y pegar lo referente a la descripción en la casilla de observaciones, acto seguido presiona en el botón RECHAZAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario');
     </script>
 
 </body>

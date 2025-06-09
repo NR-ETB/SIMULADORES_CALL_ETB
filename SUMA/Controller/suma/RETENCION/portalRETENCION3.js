@@ -197,7 +197,7 @@ function btn_reto() {
     if (textoIngresado === textoDescripcion) {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripcion en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
+            habladorText('En la parte inferior se habrá desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripción en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
             $('#ofertasModal').modal('toggle');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
@@ -227,7 +227,7 @@ de su plan actual`;
         document.getElementById('pasoli-2').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -245,7 +245,7 @@ de su plan actual`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }        
 }
 
@@ -267,7 +267,7 @@ competitiva (sin promoción)`;
         document.getElementById('pasoli-3').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -285,7 +285,7 @@ competitiva (sin promoción)`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }        
 }
 
@@ -307,7 +307,7 @@ de descuento captura promocial`;
         document.getElementById('pasoli-4').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -322,7 +322,7 @@ de descuento captura promocial`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -336,7 +336,7 @@ function recha_4() {
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#ofertasModal_2').modal('toggle');
         $('#paso-4').css('display', 'none');
         $('#paso-5').css('display', 'block');
@@ -345,7 +345,7 @@ function recha_4() {
         document.getElementById('pasoli-5').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -362,7 +362,7 @@ function recha_44() {
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }          
 }
 
@@ -377,7 +377,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#ofertasModal_3').modal('toggle');
         $('#paso-5').css('display', 'none');
         $('#paso-6').css('display', 'block');
@@ -386,7 +386,7 @@ plan contratado`;
         document.getElementById('pasoli-6').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -404,7 +404,7 @@ plan contratado`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -419,7 +419,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#ofertasModal_4').modal('toggle');
         $('#paso-6').css('display', 'none');
         $('#paso-7').css('display', 'block');
@@ -428,7 +428,7 @@ plan contratado`;
         document.getElementById('pasoli-7').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -446,7 +446,7 @@ plan contratado`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -461,7 +461,7 @@ plan contratado`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#ofertasModal_5').modal('toggle');
         $('#paso-7').css('display', 'none');
         $('#paso-8').css('display', 'block');
@@ -470,7 +470,7 @@ plan contratado`;
         document.getElementById('pasoli-8').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -488,7 +488,7 @@ plan contratado`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -502,7 +502,7 @@ function recha_8() {
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#paso-8').css('display', 'none');
         $('#paso-9').css('display', 'block');
         $('#retab7').css('display', 'table-row');
@@ -510,7 +510,7 @@ function recha_8() {
         document.getElementById('pasoli-9').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -527,7 +527,7 @@ function recha_88() {
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -542,7 +542,7 @@ cancelación de alguno de los productos`;
 
     // Comparar ambos textos
     if (textoIngresado === textoDescripcion) {
-        habladorText('Aqui podras ver la oferta desglozada para este paso de la retencion.');
+        habladorText('Aquí podras ver la oferta desglosada para este paso de la retención.');
         $('#ofertasModal_6').modal('toggle');
         $('#paso-9').css('display', 'none');
         $('#paso-10').css('display', 'block');
@@ -551,7 +551,7 @@ cancelación de alguno de los productos`;
         document.getElementById('pasoli-10').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }
 
@@ -569,7 +569,7 @@ cancelación de alguno de los productos`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }   
 }
 
@@ -587,6 +587,6 @@ del 15% en la Oferta retención S`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }  
 }

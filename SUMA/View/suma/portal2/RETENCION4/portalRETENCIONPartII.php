@@ -73,7 +73,7 @@
 
                         <div class="con-btn-paso-2">
                             <div class="mar">
-                                <button id="btn-paso-3" onclick="valid(),habladorText('Ahora da click al boton NUEVA DIRECCION');">SIGUIENTE >></button>
+                                <button id="btn-paso-3" onclick="valid(),habladorText('Ahora da click al botón NUEVA DIRECCION');">SIGUIENTE >></button>
                             </div>
                         </div>
                     </div>
@@ -150,17 +150,17 @@
 
                         <img id="arrow_3" src="../../../images/images-suma/arrow2.png" alt="" style="position: relative; left: 1475px; margin-left: 15px; width: 40px; height: 40px; animation: shakeY 2s infinite; display: none;">
 
-                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aqui podras apreciar, la diferencia entre el plan actual del cliente y el Seleccionado');" style="width: 280px; z-index: 1030;">
+                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aquí podrás apreciar, la diferencia entre el plan actual del cliente y el Seleccionado');" style="width: 280px; z-index: 1030;">
                             COMPARACIÓN DE PLANES
                         </div>
 
-                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aqui podras apreciar, una sencilla comparación de los SVAs que al cliente se le han adicionado o retirado');" style="width: 280px; background-color: #20A4CB; margin-left: 400px;">
+                        <div id="btn-comp" class="btn-flot" onclick="habladorText('Aquí podrás apreciar, una sencilla comparación de los SVAs que al cliente se le han adicionado o retirado');" style="width: 280px; background-color: #20A4CB; margin-left: 400px;">
                             COMPARACIÓN DE SVAs
                         </div>
 
                         <div class="con-btn-paso-2" style="display: flex;">
                             <img id="arrow_1" src="../../../images/images-suma/arrow3.png" alt="" style="margin-left: 15px; width: 40px; height: 40px; animation: shake 2s infinite;">
-                            <button onclick="new_dir(),habladorText('Ingresa el departamento BOGOTA, Selecciona la ciudad BOGOTA D.C y da click en la casilla de Dirección de Intalación');">Nueva Direccion</button>
+                            <button onclick="new_dir(),habladorText('Ingresa el departamento BOGOTA, Selecciona la ciudad BOGOTA D.C y da click en la casilla de Dirección de Instalación');">Nueva Direccion</button>
                         </div>
                     </div>
 
@@ -169,7 +169,7 @@
                         <div class="con-btn-paso-2" style="display: flex; position: relative; bottom: 30px;"> 
                         <img id="arrow_2" src="../../../images/images-suma/arrow3.png" alt="" style="margin-left: 15px; width: 40px; height: 40px; animation: shake 2s infinite; display: none;">
                         <button id="btn_can" style="background-color: #20A4CB;">CERRAR INTERACCIÓN</button>
-                        <button id="btn_can2" onclick="cancel(),habladorText('En este modal el ASESOR, debe de ingresar el motivo y detalles pertinentes del CIERRE DE LA INTERACCION, para continuar presiona en CONTINUAR');" style="background-color: #20A4CB; display: none;">CERRAR INTERACCIÓN</button>
+                        <button id="btn_can2" onclick="cancel(),habladorText('En este modal el ASESOR, debe de ingresar el motivo y detalles pertinentes del CIERRE DE LA INTERACCION, para continuar presiona en CONTINUARs');" style="background-color: #20A4CB; display: none;">CERRAR INTERACCIÓN</button>
                         <button>SIGUIENTE >></button>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                 
                         <div class="mb-3">
                             <label for="direccion" style="color: #F36F31; font-weight: bold;">Dirección de Instalación</label>
-                            <button id="direccion" class="form-control" style="border: 1px solid #ccc; border: 1px solid #ccc; left: 0; width: 285px; background-color: #fff;" onclick="add_dir(),habladorText('En las casillas con bordes anaranjados, deberas ingresar, la direccion CALLE 145 52 78, luego de esto dar en ACEPTAR');"></button>
+                            <button id="direccion" class="form-control" style="border: 1px solid #ccc; border: 1px solid #ccc; left: 0; width: 285px; background-color: #fff;" onclick="add_dir(),habladorText('En las casillas con bordes anaranjados, deberás ingresar, la dirección CALLE 145 52 78, luego de esto dar en ACEPTAR');"></button>
                         </div>
                 </div>                
                 <div class="modal-footer" style="display: flex;">
@@ -403,7 +403,7 @@
                         <p>098 - La validación de cobertura de la dirección FTTC arroja tipo de distancia XX, no es posible continuar</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="left: 0;" onclick="habladorText('Ahora podras apreciar que se ha añadido nuestra nueva dioorreccion, pero que esta no cuenta con covertura, deberas seleccionarla, dando click en el boton blanco y luego deberas CERRAR LA INTERACCION, por medio del boton AZUL.');">ACEPTAR</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal-ps4error" style="left: 0;" onclick="habladorText('Ahora podrás apreciar que se ha añadido nuestra nueva dirección, pero que esta no cuenta con cobertura, deberás seleccionarla, dando click en el botón blanco y luego deberás CERRAR LA INTERACCION, por medio del botón AZUL.');">ACEPTAR</button>
                     </div>
                 </div>
             </div>

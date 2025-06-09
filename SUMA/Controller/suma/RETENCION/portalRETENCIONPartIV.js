@@ -105,7 +105,7 @@ function btn_reto() {
     if (selectMotivo === "4" && selectSubmotivo === "1") {
         $('#modal-loading').modal('toggle');
         setTimeout(() => {
-            habladorText('En la parte inferior se habra desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripcion en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
+            habladorText('En la parte inferior se habrá desplegado un paso a paso, en el cual encontraras los botones de RETIRAR para continuar con el paso a paso o ACEPTAR para finalizar el escenario, copia y pega el texto de la descripción en las observaciones, para poder utilizar los botones antes mencionados, RECUERDA QUE EN UNA GESTION REAL, SE DEBEN APLICAR LAS PLANTILLAS DE LA ESTRATEGIA A UTILIZAR.');
             $('#reto').css('display', 'block');
             $('#modal-loading').modal('hide');
         }, 4000);
@@ -133,7 +133,7 @@ información en no retenidos`;
         document.getElementById('pasoli-2').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -151,7 +151,7 @@ información en no retenidos`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }   
 }
 
@@ -173,7 +173,7 @@ plan actual`;
         document.getElementById('pasoli-3').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -191,7 +191,7 @@ plan actual`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }        
 }
 
@@ -213,7 +213,7 @@ competitiva (sin promoción)`;
         document.getElementById('pasoli-4').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -231,7 +231,7 @@ competitiva (sin promoción)`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }        
 }
 
@@ -252,7 +252,7 @@ function recha_4() {
         document.getElementById('pasoli-5').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -269,7 +269,7 @@ function recha_44() {
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }     
 }
 
@@ -291,7 +291,7 @@ políticas actuales de generación de trámites`;
         document.getElementById('pasoli-6').classList.add("active");
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -309,7 +309,7 @@ políticas actuales de generación de trámites`;
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }       
 }
 
@@ -326,6 +326,6 @@ function recha_6() {
         $('#modal-fase1').modal('toggle');
     } else {
         // Opcional: mostrar un mensaje si no se cumple la condición
-        habladorText('Por favor, ingrese la descripcion dada en la parte superior derecha de esta sección.');
+        habladorText('Por favor, ingrese la descripción dada en la parte superior derecha de esta sección.');
     }
 }

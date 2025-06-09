@@ -16,7 +16,7 @@ function cancel2() {
             $('#modal-loading').modal('hide');
             $('#modal-can').modal('toggle');
             $('#modal-can2').modal('toggle');
-            habladorText('Ahora deberas ingresar una descripcion, para la cancelacion en este caso sera PRUEBA SIMULADOR SUMA, luego da click en ACEPTAR para FINALIZAR')
+            habladorText('Ahora deberás ingresar una descripción, para la cancelación en este caso será PRUEBA SIMULADOR SUMA, luego da click en ACEPTAR para FINALIZAR')
         }, 2000);
     }else{
         habladorText('Selecciona el motivo VALIDACIÓN CLIENTE - CIERRE POR DEFECTO, para CONTINUAR')

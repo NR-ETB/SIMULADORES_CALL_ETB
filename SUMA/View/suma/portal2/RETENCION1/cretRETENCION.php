@@ -1551,7 +1551,7 @@
     <script src="../../../../Controller/security/RETENCION/anti-cheat-ret1.js"></script> 
 
     <script>
-        habladorText3('En este apartado, encontraras todo lo relacionado con la retencion seleccionada, puedes ver a completo detalle, todo lo que se a realizado con la misma y tambien poder ver de manera completa los datos del cliente. para finalizar con el escenario dirigite a la parte inferior y da click en el boton FINALIZAR')
+        habladorText3('En este apartado, encontraras todo lo relacionado con la retención seleccionada, puedes ver a completo detalle, todo lo que se ha realizado con la misma y también poder ver de manera completa los datos del cliente. para finalizar con el escenario diríjase a la parte inferior y da click en el botón FINALIZAR')
     </script>
 
 </body>
